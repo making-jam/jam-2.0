@@ -1,0 +1,76 @@
+$nav-height: $quadruple-unit-layout + $double-unit-layout
+
+nav#navTop
+  +clearfix
+  +z-index(nav-logged-in)
+
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: $nav-height
+  padding: 0 $base-unit-layout
+
+  .logo
+    $logo-width: $quadruple-unit-layout * 1.75
+
+    float: left
+    display: block
+    width: $logo-width
+    height: $nav-height
+    margin-right: $double-unit-layout
+    background:
+      color: transparent
+      image: url('#{$image-base}/logo/jam-horizontal-white.svg')
+      position: left center
+      repeat: no-repeat
+      size: $logo-width
+
+    strong
+      @extend .text-center
+
+      opacity: 0
+      display: block
+      height: $nav-height
+      line-height: $nav-height
+
+  ul
+    +clearfix
+    @extend .unstyled
+
+    //padding: 0 $base-unit-layout
+    float: left
+
+    li
+      float: left
+      font:
+        size: rem(15px)
+
+      a
+        @extend .text-uppercase
+        //text-transform: uppercase
+        text-decoration: none
+        color: white
+        display: block
+        height: $nav-height
+        line-height: $nav-height
+        padding: 0 $base-unit-layout
+
+  button
+    padding-top: $base-unit-layout + $quarter-unit-layout
+    padding-bottom: $base-unit-layout + $quarter-unit-layout
+    float: right
+    margin: $base-unit-layout 0 0
+
+  &.solid
+    background: rgba(255,255,255,.98)
+    border-bottom: 1px solid $color-grey-50
+
+    .logo
+      background:
+        image: url('#{$image-base}/logo/jam-horizontal.svg')
+
+    ul
+      li
+        a
+          color: $color-black

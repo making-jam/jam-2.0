@@ -1,0 +1,13 @@
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+.env
+.idea
+.sass-cache
+
+Homestead.yaml
+
+/node_modules
+/vendor

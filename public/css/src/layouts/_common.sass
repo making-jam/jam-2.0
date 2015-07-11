@@ -1,0 +1,81 @@
+section
+  @extend .text-center
+
+  position: relative
+  padding: ($quadruple-unit-layout * 1.25) $base-unit-layout
+
+  h3
+    font:
+      size: rem(36px)
+
+  &.grey
+    background: $color-grey-50
+
+  &.jam
+    background: $color-jam
+
+  .see-schedule
+    position: absolute
+    bottom: -($double-unit-layout)
+    left: 50%
+    width: rem(180px)
+    margin-left: -(rem(180px) / 2)
+
+main.static section
+  @extend .text-left
+
+header
+  position: relative
+  background:
+    color: $color-grey-300
+
+  &.text
+    height: rem(300px)
+
+    .hero
+      color: white
+      width: 100%
+      position: absolute
+      bottom: $quadruple-unit-layout
+
+      h1
+        font:
+          size: rem(45px)
+
+footer
+  background: $color-black
+  color: $color-grey-300
+  font-size: rem(14px)
+  padding: ($quadruple-unit-layout * 1.5) $base-unit-layout
+
+  .logo
+    $logo-width: $quadruple-unit-layout * 2
+
+    display: block
+    width: $logo-width
+    height: $logo-width / 2
+    margin-right: $double-unit-layout
+    background:
+      color: transparent
+      image: url('#{$image-base}/logo/jam-horizontal-white.svg')
+      position: left top
+      repeat: no-repeat
+      size: contain
+
+    strong
+      @extend .text-center
+
+      opacity: 0
+      display: block
+      height: $logo-width / 2
+      line-height: $logo-width / 2
+
+  ul
+    @extend .unstyled
+
+    li
+      a
+        display: block
+        color: $color-grey-500
+        padding: $quarter-unit-layout 0
+        text-decoration: none

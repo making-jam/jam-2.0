@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: JAM
+        psr4_prefix: JAM
+        src_path: app

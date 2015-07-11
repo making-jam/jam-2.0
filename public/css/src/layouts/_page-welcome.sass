@@ -1,0 +1,81 @@
+.page-welcome
+  header
+    display: table
+    height: 100vh
+    width: 100%
+    background:
+      image: url('#{$image-base}/bg/hero.jpg')
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .hero
+      display: table-cell
+      vertical-align: middle
+
+      .container-narrow
+        position: relative
+        color: white
+
+        .intro
+          h1
+            margin: 0 0 $base-unit-layout
+            line-height: 1.4
+            font:
+              size: rem(45px)
+
+          p
+            margin: 0
+
+          button
+            margin: $double-half-unit-layout 0 0
+
+        .features
+          position: absolute
+          right: 0
+          height: 100%
+          background: $color-jam
+
+          ul
+            @extend .unstyled
+            margin: $base-unit-layout 0
+
+            li
+              padding: $base-unit-layout 0 0
+              margin: 0 $base-unit-layout
+              font:
+                size: rem(19px)
+
+  section#getInvolved
+    button
+      margin: 0 0 $double-unit-layout
+
+    small
+      display: block
+
+      a
+        color: $color-black
+
+  section#topics
+    .topics
+      //padding: $double-half-unit-layout 0
+
+      .topic
+        @extend .text-uppercase
+
+        padding: $base-unit-layout 0
+        font:
+          size: rem(20px)
+
+  section#speakers
+    .speaker
+      .avatar
+        +border-radius(100%)
+
+        width: rem(160px)
+        height: rem(160px)
+        background: $color-grey-100
+        margin: 0 auto $base-unit-layout
+
+      small, strong, a
+        display: block
