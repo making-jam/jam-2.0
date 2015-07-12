@@ -38,6 +38,22 @@
     padding: $double-unit-layout 0
     color: white
 
+    .close
+      @extend .text-center
+
+      cursor: pointer
+      position: absolute
+      right: $double-unit-layout
+      top: 50%
+      width: $double-unit-layout
+      height: $double-unit-layout
+      line-height: $double-unit-layout
+      margin-top: -($double-unit-layout / 2)
+      //background: red
+      font:
+        size: rem(34px)
+        weight: 300
+
     .container-narrow
       +clearfix
 

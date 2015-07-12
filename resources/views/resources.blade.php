@@ -28,7 +28,8 @@
         @endforeach
     </main>
 
-    <div class="resources-sign-up">
+    <div class="resources-sign-up" id="resourcesSignUpForm">
+        <div class="close" id="closeResourcesSignUpForm">&times;</div>
         <div class="container-narrow">
             <div class="pull-left">The best design stories, sent to your inbox.</div>
             <form class="pull-right" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">

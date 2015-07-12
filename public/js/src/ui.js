@@ -17,4 +17,8 @@ $(document).ready(function () {
     $(document).scroll(function () {
         applyNavClass();
     });
+
+    $('#closeResourcesSignUpForm').click(function () {
+        $('#resourcesSignUpForm').addClass('hide');
+    });
 });

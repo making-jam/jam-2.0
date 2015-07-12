@@ -1987,7 +1987,7 @@ h1, h2, h3, h4, h5, h6 {
 .margin-triple {
   margin: 3rem !important; }
 
-.text-center, .button.flat-grey, button.flat-grey, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong {
+.text-center, .button.flat-grey, button.flat-grey, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
   text-align: center; }
 
 .text-right {
@@ -2323,6 +2323,17 @@ footer {
   background: #263238;
   padding: 2rem 0;
   color: white; }
+  .page-resources .resources-sign-up .close {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: -1rem;
+    font-size: 2.125rem;
+    font-weight: 300; }
   .page-resources .resources-sign-up .container-narrow {
     zoom: 1; }
     .page-resources .resources-sign-up .container-narrow:before, .page-resources .resources-sign-up .container-narrow:after {
