@@ -11,7 +11,7 @@
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
-                    <button class="black">Get Your Early Bird Ticket</button>
+                    <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
                 </div>
                 <div class="col-sm-4 features">
                     <ul>
@@ -63,12 +63,12 @@
                 <h3>And a wide selection of topics.</h3>
 
                 <div class="row topics">
-                    <div class="col-sm-4 topic">Data-driven design</div>
-                    <div class="col-sm-4 topic">Data-driven design</div>
-                    <div class="col-sm-4 topic">Data-driven design</div>
-                    <div class="col-sm-4 topic">Data-driven design</div>
-                    <div class="col-sm-4 topic">Data-driven design</div>
-                    <div class="col-sm-4 topic">Data-driven design</div>
+                    <div class="col-sm-6 topic">Deciding what to build</div>
+                    <div class="col-sm-6 topic">Making products more human</div>
+                    <div class="col-sm-6 topic">Nurturing a product-driven culture</div>
+                    <div class="col-sm-6 topic">Data-driven design</div>
+                    <div class="col-sm-6 topic">Organising teams for success</div>
+                    <div class="col-sm-6 topic">TBC</div>
                 </div>
             </div>
 
@@ -76,14 +76,31 @@
         </section>
 
         <section id="sponsors">
-            <div class="container">
-                <h3>JAM wouldn't be possible without the generous help of our sponsors.</h3>
+            <div class="container-small">
+                <h3>JAM wouldn't be possible without <br/>the generous help of our sponsors.</h3>
 
-                <div class="row">
-                    <div class="col-sm-3">
-                        <a href="#sponsor" class="sponsor"><span>Sponsor Name</span></a>
-                    </div>
-                </div>
+                <ul class="row sponsors">
+                    <li class="col-sm-4" id="adbrain">
+                        <a href="http://www.adbrain.com/" target="_blank"><strong>Adbrain</strong></a>
+                    </li>
+                    <li class="col-sm-4" id="gocardless">
+                        <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
+                    </li>
+                    <li class="col-sm-4" id="deskbeers">
+                        <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
+                    </li>
+                    <li class="col-sm-4" id="lyst">
+                        <a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>
+                    </li>
+                    <li class="col-sm-4" id="balsamiq">
+                        <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
+                    </li>
+                    <li class="col-sm-4" id="hirespace">
+                        <a href="https://hirespace.com/" target="_blank"><strong>Hire Space</strong></a>
+                    </li>
+                </ul>
+
+                <a href="/sponsors" class="button black">See full list of sponsors</a>
             </div>
         </section>
 
@@ -91,7 +108,7 @@
             <div class="container">
                 <h3>Get Involved</h3>
 
-                <button class="white">Book Your Early Bird Ticket</button>
+                <a class="button white" href="/buy">Book Your Early Bird Ticket</a>
 
                 <small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>
             </div>

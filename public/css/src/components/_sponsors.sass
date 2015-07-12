@@ -1,0 +1,85 @@
+ul.sponsors
+  li
+    //margin-bottom: $double-unit-layout
+
+    a
+      @extend .text-center
+
+      display: block
+      height: $triple-unit-layout * 2
+      line-height: $triple-unit-layout * 2
+      background:
+        color: transparent
+        image: url('#{$image-base}/sponsors/adbrain.png')
+        position: center center
+        repeat: no-repeat
+        size: 80% auto
+
+      strong
+        opacity: 0
+
+    &#balsamiq
+      a
+        background:
+          image: url('#{$image-base}/sponsors/balsamiq.png')
+          size: 70% auto
+
+    &#bohemiancoding
+      a
+        background:
+          image: url('#{$image-base}/sponsors/bohemian-coding.png')
+          size: auto 80%
+
+    &#deskbeers
+      a
+        background:
+          image: url('#{$image-base}/sponsors/deskbeers.jpg')
+          size: 70% auto
+
+    &#dotgrid
+      a
+        background:
+          image: url('#{$image-base}/sponsors/dotgrid.png')
+          size: auto 80%
+
+    &#gocardless
+      a
+        background:
+          image: url('#{$image-base}/sponsors/gocardless.png')
+          size: 90% auto
+
+    &#hirespace
+      a
+        background:
+          image: url('#{$image-base}/sponsors/hirespace.png')
+
+    &#lyst
+      a
+        background:
+          image: url('#{$image-base}/sponsors/lyst.png')
+          size: 40% auto
+
+    &#marvelapp
+      a
+        background:
+          image: url('#{$image-base}/sponsors/marvelapp.png')
+
+    &#podio
+      a
+        background:
+          image: url('#{$image-base}/sponsors/podio.png')
+
+    &#treehouse
+      a
+        background:
+          image: url('#{$image-base}/sponsors/treehouse.png')
+
+    +respond-to-size(800px)
+      a
+        background:
+          size: auto 50% !important
+
+      &#gocardless
+        a
+          background:
+            size: auto 35% !important

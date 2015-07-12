@@ -1055,7 +1055,7 @@ dl {
     font-size: 0.875rem; }
 
 .modal-backdrop {
-  z-index: 9;
+  z-index: 4;
   top: 0;
   left: 0;
   position: fixed;
@@ -1090,7 +1090,7 @@ dl {
 
 nav#navTop {
   zoom: 1;
-  z-index: 7;
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -1136,7 +1136,8 @@ nav#navTop {
         height: 6rem;
         line-height: 6rem;
         padding: 0 1rem; }
-  nav#navTop button {
+  nav#navTop .button {
+    display: inline-block;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     float: right;
@@ -1153,7 +1154,7 @@ nav#navTop {
   -webkit-transition: top .25s;
   -o-transition: top .25s;
   transition: top .25s;
-  z-index: 8;
+  z-index: 3;
   padding: 0 1rem;
   position: fixed;
   width: 100%;
@@ -1214,6 +1215,49 @@ nav#navTop {
   .progress-bar.archived .bar {
     width: 100%;
     background: #263238; }
+
+ul.sponsors li a {
+  display: block;
+  height: 6rem;
+  line-height: 6rem;
+  background-color: transparent;
+  background-image: url('../images//sponsors/adbrain.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80% auto; }
+  ul.sponsors li a strong {
+    opacity: 0; }
+ul.sponsors li#balsamiq a {
+  background-image: url('../images//sponsors/balsamiq.png');
+  background-size: 70% auto; }
+ul.sponsors li#bohemiancoding a {
+  background-image: url('../images//sponsors/bohemian-coding.png');
+  background-size: auto 80%; }
+ul.sponsors li#deskbeers a {
+  background-image: url('../images//sponsors/deskbeers.jpg');
+  background-size: 70% auto; }
+ul.sponsors li#dotgrid a {
+  background-image: url('../images//sponsors/dotgrid.png');
+  background-size: auto 80%; }
+ul.sponsors li#gocardless a {
+  background-image: url('../images//sponsors/gocardless.png');
+  background-size: 90% auto; }
+ul.sponsors li#hirespace a {
+  background-image: url('../images//sponsors/hirespace.png'); }
+ul.sponsors li#lyst a {
+  background-image: url('../images//sponsors/lyst.png');
+  background-size: 40% auto; }
+ul.sponsors li#marvelapp a {
+  background-image: url('../images//sponsors/marvelapp.png'); }
+ul.sponsors li#podio a {
+  background-image: url('../images//sponsors/podio.png'); }
+ul.sponsors li#treehouse a {
+  background-image: url('../images//sponsors/treehouse.png'); }
+@media all and (max-width: 800px) {
+  ul.sponsors li a {
+    background-size: auto 50% !important; }
+  ul.sponsors li#gocardless a {
+    background-size: auto 35% !important; } }
 
 table {
   max-width: 100%; }
@@ -1804,6 +1848,9 @@ h1, h2, h3, h4, h5, h6 {
 .padding-top-double {
   padding-top: 2rem !important; }
 
+.padding-top-triple {
+  padding-top: 3rem !important; }
+
 .padding-right-quarter {
   padding-right: 0.25rem !important; }
 
@@ -1815,6 +1862,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .padding-right-double {
   padding-right: 2rem !important; }
+
+.padding-right-triple {
+  padding-right: 3rem !important; }
 
 .padding-bottom-quarter {
   padding-bottom: 0.25rem !important; }
@@ -1828,6 +1878,9 @@ h1, h2, h3, h4, h5, h6 {
 .padding-bottom-double {
   padding-bottom: 2rem !important; }
 
+.padding-bottom-triple {
+  padding-bottom: 3rem !important; }
+
 .padding-left-quarter {
   padding-left: 0.25rem !important; }
 
@@ -1839,6 +1892,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .padding-left-double {
   padding-left: 2rem !important; }
+
+.padding-left-triple {
+  padding-left: 3rem !important; }
 
 .padding-quarter {
   padding: 0.25rem !important; }
@@ -1852,6 +1908,9 @@ h1, h2, h3, h4, h5, h6 {
 .padding-double {
   padding: 2rem !important; }
 
+.padding-triple {
+  padding: 3rem !important; }
+
 .margin-top-quarter {
   margin-top: 0.25rem !important; }
 
@@ -1863,6 +1922,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .margin-top-double {
   margin-top: 2rem !important; }
+
+.margin-top-triple {
+  margin-top: 3rem !important; }
 
 .margin-right-quarter {
   margin-right: 0.25rem !important; }
@@ -1876,6 +1938,9 @@ h1, h2, h3, h4, h5, h6 {
 .margin-right-double {
   margin-right: 2rem !important; }
 
+.margin-right-triple {
+  margin-right: 3rem !important; }
+
 .margin-bottom-quarter {
   margin-bottom: 0.25rem !important; }
 
@@ -1887,6 +1952,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .margin-bottom-double {
   margin-bottom: 2rem !important; }
+
+.margin-bottom-triple {
+  margin-bottom: 3rem !important; }
 
 .margin-left-quarter {
   margin-left: 0.25rem !important; }
@@ -1900,6 +1968,9 @@ h1, h2, h3, h4, h5, h6 {
 .margin-left-double {
   margin-left: 2rem !important; }
 
+.margin-left-triple {
+  margin-left: 3rem !important; }
+
 .margin-quarter {
   margin: 0.25rem !important; }
 
@@ -1912,7 +1983,10 @@ h1, h2, h3, h4, h5, h6 {
 .margin-double {
   margin: 2rem !important; }
 
-.text-center, .button.flat-grey, button.flat-grey, nav#navTop .logo strong, #notification main, .tabs > li, section, footer .logo strong {
+.margin-triple {
+  margin: 3rem !important; }
+
+.text-center, .button.flat-grey, button.flat-grey, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong {
   text-align: center; }
 
 .text-right {
@@ -1947,6 +2021,7 @@ section {
   section.jam {
     background: #04f799; }
   section .see-schedule {
+    z-index: 1;
     position: absolute;
     bottom: -2rem;
     left: 50%;
@@ -2214,7 +2289,8 @@ footer {
         font-size: 2.8125rem; }
       .page-welcome header .hero .container-narrow .intro p {
         margin: 0; }
-      .page-welcome header .hero .container-narrow .intro button {
+      .page-welcome header .hero .container-narrow .intro .button {
+        display: inline-block;
         margin: 1.5rem 0 0; }
       .page-welcome header .hero .container-narrow .features {
         position: absolute;
@@ -2227,14 +2303,15 @@ footer {
             padding: 1rem 0 0;
             margin: 0 1rem;
             font-size: 1.1875rem; }
-.page-welcome section#getInvolved button {
+.page-welcome section#getInvolved .button {
+  display: inline-block;
   margin: 0 0 2rem; }
 .page-welcome section#getInvolved small {
   display: block; }
   .page-welcome section#getInvolved small a {
     color: #263238; }
 .page-welcome section#topics .topics .topic {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-size: 1.25rem; }
 .page-welcome section#speakers .speaker .avatar {
   -webkit-border-radius: 100%;
@@ -2245,3 +2322,5 @@ footer {
   margin: 0 auto 1rem; }
 .page-welcome section#speakers .speaker small, .page-welcome section#speakers .speaker strong, .page-welcome section#speakers .speaker a {
   display: block; }
+.page-welcome section#sponsors .button {
+  display: inline-block; }

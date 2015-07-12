@@ -27,7 +27,8 @@
           p
             margin: 0
 
-          button
+          .button
+            display: inline-block
             margin: $double-half-unit-layout 0 0
 
         .features
@@ -47,7 +48,8 @@
                 size: rem(19px)
 
   section#getInvolved
-    button
+    .button
+      display: inline-block
       margin: 0 0 $double-unit-layout
 
     small
@@ -58,12 +60,10 @@
 
   section#topics
     .topics
-      //padding: $double-half-unit-layout 0
-
       .topic
         @extend .text-uppercase
 
-        padding: $base-unit-layout 0
+        padding: $double-half-unit-layout 0
         font:
           size: rem(20px)
 
@@ -79,3 +79,7 @@
 
       small, strong, a
         display: block
+
+  section#sponsors
+    .button
+      display: inline-block
