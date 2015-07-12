@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome', ['title' => 'Welcome', 'bodyClass' => 'welcome']);
-});
+Route::get('/', 'WelcomeController@renderView');
 
 Route::get('/buy', function () {
     return view('buy', ['title' => 'Buy Tickets', 'bodyClass' => 'buy']);
@@ -30,6 +28,8 @@ Route::get('/manifesto', function () {
 Route::get('/programme', function () {
     return view('programme', ['title' => 'Programme', 'bodyClass' => 'programme']);
 });
+
+Route::get('/resources/{name?}', 'ResourcesController@renderView');
 
 Route::get('/sponsors', function () {
     return view('sponsors', ['title' => 'Sponsors', 'bodyClass' => 'sponsors']);

@@ -31,6 +31,26 @@ header
   background:
     color: $color-grey-300
 
+  .features
+    +z-index(features)
+
+    position: absolute
+    top: 0
+    right: 0
+    min-height: 100%
+    height: auto
+    background: $color-jam
+
+    ul
+      @extend .unstyled
+      margin: $base-unit-layout 0
+
+      li
+        padding: $base-unit-layout 0 0
+        margin: 0 $base-unit-layout
+        font:
+          size: rem(19px)
+
   &.text
     height: rem(300px)
 

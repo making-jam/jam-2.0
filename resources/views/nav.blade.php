@@ -4,7 +4,7 @@
     <ul>
         <li><a href="/programme">Programme</a></li>
         <li><a href="/sponsors">Sponsors</a></li>
-        <li><a href="/getting-here">Getting Here</a></li>
+        {{--<li><a href="/getting-here">Getting Here</a></li>--}}
         <li><a href="/resources">Resources</a></li>
     </ul>
 

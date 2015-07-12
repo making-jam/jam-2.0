@@ -29,27 +29,13 @@
 
           .button
             display: inline-block
+            line-height: 1
             margin: $double-half-unit-layout 0 0
-
-        .features
-          position: absolute
-          right: 0
-          height: 100%
-          background: $color-jam
-
-          ul
-            @extend .unstyled
-            margin: $base-unit-layout 0
-
-            li
-              padding: $base-unit-layout 0 0
-              margin: 0 $base-unit-layout
-              font:
-                size: rem(19px)
 
   section#getInvolved
     .button
       display: inline-block
+      line-height: 1
       margin: 0 0 $double-unit-layout
 
     small
@@ -69,9 +55,12 @@
 
   section#speakers
     .speaker
-      .avatar
+      padding-top: $double-unit-layout
+
+      img
         +border-radius(100%)
 
+        display: block
         width: rem(160px)
         height: rem(160px)
         background: $color-grey-100
@@ -80,6 +69,81 @@
       small, strong, a
         display: block
 
+      small
+        padding-top: $quarter-unit-layout
+        color: $color-grey
+
+      a
+        em
+          opacity: 0
+          font:
+            size: rem(12px)
+            style: normal
+
+        margin-top: $base-unit-layout
+        width: 100%
+        height: 25px
+        color: inherit
+        background:
+          color: transparent
+          position: center center
+          repeat: no-repeat
+          size: auto 100%
+
+        &#google-chrome-team
+          background:
+            image: url('#{$image-base}/speakers/companies/google.png')
+
+        &#gosquared
+          background:
+            image: url('#{$image-base}/speakers/companies/gosquared.png')
+            size: auto 85%
+
+        &#government-digital-service
+          background:
+            image: url('#{$image-base}/speakers/companies/governmentds.png')
+            size: auto 100%
+
+        &#hire-space
+          background:
+            image: url('#{$image-base}/speakers/companies/hirespace.png')
+
+        &#onefinestay
+          background:
+            image: url('#{$image-base}/speakers/companies/onefinestay.png')
+
+        &#swiftkey
+          background:
+            image: url('#{$image-base}/speakers/companies/swiftkey.png')
+            size: auto 85%
+
+        &#the-dots
+          background:
+            image: url('#{$image-base}/speakers/companies/thedots.png')
+
+        &#transferwise
+          background:
+            image: url('#{$image-base}/speakers/companies/transferwise.png')
+            size: auto 80%
+
+        &#yplan
+          background:
+            image: url('#{$image-base}/speakers/companies/yplan.png')
+            size: auto 70%
+
   section#sponsors
+    .sponsors
+      margin-top: $triple-unit-layout
+      margin-bottom: $triple-unit-layout
+
     .button
       display: inline-block
+
+  section#quote
+    p
+      line-height: 1.6
+      font:
+        size: rem(36px)
+
+    a
+      color: $color-black

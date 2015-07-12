@@ -1038,7 +1038,7 @@ ul, ol {
     margin: 0; }
   ul:last-child, ol:last-child {
     margin-bottom: 0; }
-  ul.unstyled, nav#navTop ul, footer ul, .page-welcome header .hero .container-narrow .features ul, ol.unstyled {
+  ul.unstyled, nav#navTop ul, header .features ul, footer ul, ol.unstyled {
     list-style-type: none;
     margin: 0;
     padding: 0; }
@@ -1055,7 +1055,7 @@ dl {
     font-size: 0.875rem; }
 
 .modal-backdrop {
-  z-index: 4;
+  z-index: 5;
   top: 0;
   left: 0;
   position: fixed;
@@ -1090,7 +1090,7 @@ dl {
 
 nav#navTop {
   zoom: 1;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
@@ -1138,6 +1138,7 @@ nav#navTop {
         padding: 0 1rem; }
   nav#navTop .button {
     display: inline-block;
+    line-height: 1;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     float: right;
@@ -1154,7 +1155,7 @@ nav#navTop {
   -webkit-transition: top .25s;
   -o-transition: top .25s;
   transition: top .25s;
-  z-index: 3;
+  z-index: 4;
   padding: 0 1rem;
   position: fixed;
   width: 100%;
@@ -2021,7 +2022,7 @@ section {
   section.jam {
     background: #04f799; }
   section .see-schedule {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     bottom: -2rem;
     left: 50%;
@@ -2031,6 +2032,20 @@ section {
 header {
   position: relative;
   background-color: #90A4AE; }
+  header .features {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    height: auto;
+    background: #04f799; }
+    header .features ul {
+      margin: 1rem 0; }
+      header .features ul li {
+        padding: 1rem 0 0;
+        margin: 0 1rem;
+        font-size: 1.1875rem; }
   header.text {
     height: 18.75rem; }
     header.text .hero {
@@ -2066,6 +2081,15 @@ footer {
     color: #607D8B;
     padding: 0.25rem 0;
     text-decoration: none; }
+
+.page-buy section {
+  padding-top: 2rem; }
+  .page-buy section .buy-tickets-iframe {
+    background-color: transparent;
+    background-image: url('../images//other/loading.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem; }
 
 .container-narrow.documentation header {
   padding: 8rem 0; }
@@ -2269,6 +2293,30 @@ footer {
   background: #CFD8DC;
   margin: 0 auto 1rem; }
 
+.page-resources main a {
+  -webkit-transition: background .25s;
+  -o-transition: background .25s;
+  transition: background .25s;
+  padding: 3rem 1rem;
+  display: block;
+  color: #263238;
+  text-decoration: none;
+  border-bottom: 1px solid #ECEFF1; }
+  .page-resources main a:hover, .page-resources main a:focus {
+    background: #ECEFF1; }
+  .page-resources main a article p {
+    margin: 0; }
+  .page-resources main a article .title {
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+    text-decoration: underline;
+    font-size: 2.125rem; }
+  .page-resources main a article .description {
+    display: block;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.4;
+    font-size: 1.25rem; }
+
 .page-welcome header {
   display: table;
   height: 100vh;
@@ -2291,20 +2339,11 @@ footer {
         margin: 0; }
       .page-welcome header .hero .container-narrow .intro .button {
         display: inline-block;
+        line-height: 1;
         margin: 1.5rem 0 0; }
-      .page-welcome header .hero .container-narrow .features {
-        position: absolute;
-        right: 0;
-        height: 100%;
-        background: #04f799; }
-        .page-welcome header .hero .container-narrow .features ul {
-          margin: 1rem 0; }
-          .page-welcome header .hero .container-narrow .features ul li {
-            padding: 1rem 0 0;
-            margin: 0 1rem;
-            font-size: 1.1875rem; }
 .page-welcome section#getInvolved .button {
   display: inline-block;
+  line-height: 1;
   margin: 0 0 2rem; }
 .page-welcome section#getInvolved small {
   display: block; }
@@ -2313,14 +2352,64 @@ footer {
 .page-welcome section#topics .topics .topic {
   padding: 1.5rem 0;
   font-size: 1.25rem; }
-.page-welcome section#speakers .speaker .avatar {
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  width: 10rem;
-  height: 10rem;
-  background: #CFD8DC;
-  margin: 0 auto 1rem; }
-.page-welcome section#speakers .speaker small, .page-welcome section#speakers .speaker strong, .page-welcome section#speakers .speaker a {
-  display: block; }
+.page-welcome section#speakers .speaker {
+  padding-top: 2rem; }
+  .page-welcome section#speakers .speaker img {
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background: #CFD8DC;
+    margin: 0 auto 1rem; }
+  .page-welcome section#speakers .speaker small, .page-welcome section#speakers .speaker strong, .page-welcome section#speakers .speaker a {
+    display: block; }
+  .page-welcome section#speakers .speaker small {
+    padding-top: 0.25rem;
+    color: #607D8B; }
+  .page-welcome section#speakers .speaker a {
+    margin-top: 1rem;
+    width: 100%;
+    height: 25px;
+    color: inherit;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%; }
+    .page-welcome section#speakers .speaker a em {
+      opacity: 0;
+      font-size: 0.75rem;
+      font-style: normal; }
+    .page-welcome section#speakers .speaker a#google-chrome-team {
+      background-image: url('../images//speakers/companies/google.png'); }
+    .page-welcome section#speakers .speaker a#gosquared {
+      background-image: url('../images//speakers/companies/gosquared.png');
+      background-size: auto 85%; }
+    .page-welcome section#speakers .speaker a#government-digital-service {
+      background-image: url('../images//speakers/companies/governmentds.png');
+      background-size: auto 100%; }
+    .page-welcome section#speakers .speaker a#hire-space {
+      background-image: url('../images//speakers/companies/hirespace.png'); }
+    .page-welcome section#speakers .speaker a#onefinestay {
+      background-image: url('../images//speakers/companies/onefinestay.png'); }
+    .page-welcome section#speakers .speaker a#swiftkey {
+      background-image: url('../images//speakers/companies/swiftkey.png');
+      background-size: auto 85%; }
+    .page-welcome section#speakers .speaker a#the-dots {
+      background-image: url('../images//speakers/companies/thedots.png'); }
+    .page-welcome section#speakers .speaker a#transferwise {
+      background-image: url('../images//speakers/companies/transferwise.png');
+      background-size: auto 80%; }
+    .page-welcome section#speakers .speaker a#yplan {
+      background-image: url('../images//speakers/companies/yplan.png');
+      background-size: auto 70%; }
+.page-welcome section#sponsors .sponsors {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 .page-welcome section#sponsors .button {
   display: inline-block; }
+.page-welcome section#quote p {
+  line-height: 1.6;
+  font-size: 2.25rem; }
+.page-welcome section#quote a {
+  color: #263238; }

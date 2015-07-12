@@ -8,7 +8,7 @@
                 <li><a href="/manifesto">Manifesto</a></li>
                 <li><a href="/resources">Resources</a></li>
                 <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                <li><a href="/#sponsors">Sponsors</a></li>
+                <li><a href="/sponsors">Sponsors</a></li>
             </ul>
         </div>
         <div class="col-md-3">

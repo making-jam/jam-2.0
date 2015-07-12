@@ -48,13 +48,17 @@
         </section>
 
         <section id="speakers">
-            <div class="container">
-                <div class="col-sm-4 speaker">
-                    <div class="avatar"></div>
-                    <strong>Name</strong>
-                    <small>Position</small>
-                    <a href="#company" class="company"><span>Company name</span></a>
-                </div>
+            <div class="container-narrow">
+                @foreach ($speakers as $name => $info)
+                    <div class="col-sm-4 speaker">
+                        <img src="/images/speakers/{{$info['img']}}">
+
+                        <strong>{{$name}}</strong>
+                        <small>{{$info['position']}}</small>
+                        <a href="{{$info['link']}}" target="_blank" id="{{$info['id']}}"
+                           class="company"><em>{{$info['company']}}</em></a>
+                    </div>
+                @endforeach
             </div>
         </section>
 
@@ -111,6 +115,15 @@
                 <a class="button white" href="/buy">Book Your Early Bird Ticket</a>
 
                 <small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>
+            </div>
+        </section>
+
+        <section id="quote">
+            <div class="container">
+                <p>&ldquo;We believe a great product should be the <br> first focus of every startup.&rdquo;</p>
+                <a href="https://www.intercom.io/books/product-management" target="_blank">
+                    <small>Intercom, Product Management</small>
+                </a>
             </div>
         </section>
     </main>
