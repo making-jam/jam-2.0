@@ -18,7 +18,7 @@
     <script src="//use.typekit.net/ulw5hgl.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="page-{{$bodyClass}}">
+<body class="preload page-{{$bodyClass}}">
 
 <div id="notification"></div>
 
