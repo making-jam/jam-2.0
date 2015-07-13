@@ -9,11 +9,13 @@ var autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
-    compileSass('website', 'public/css/src')
+    compileSass('website', 'public/css/src');
 });
 
 gulp.task('js', function () {
-    gulp.src('public/js/src/*.js')
+    gulp.src(['bower_components/jquery/dist/jquery.min.js',
+        'bower_components/smooth-scroll.js/dist/js/smooth-scroll.min.js',
+        'public/js/src/*.js'])
         .pipe(concat('website.js'))
         .pipe(uglify())
         .pipe(gulp.dest('public/js'))

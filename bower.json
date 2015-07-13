@@ -1,0 +1,21 @@
+{
+  "name": "jamnew",
+  "version": "2.0.0",
+  "homepage": "https://github.com/making-jam/jam-2.0",
+  "authors": [
+    "Slavomir Vojacek <slavomirvojacek@gmail.com>"
+  ],
+  "description": "JAM London Official Website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smooth-scroll.js": "~7.0.2",
+    "jquery": "~2.1.4"
+  }
+}

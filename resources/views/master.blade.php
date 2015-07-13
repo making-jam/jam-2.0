@@ -19,14 +19,15 @@
     <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="page-{{$bodyClass}}">
+
+<div id="notification"></div>
+
 @include('nav')
 
 @yield('content')
 
 @include('footer')
 
-<script src="/js/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="/js/smooth-scroll.min.js" type="text/javascript"></script>
 <script src="/js/website.js"></script>
 
 <script>

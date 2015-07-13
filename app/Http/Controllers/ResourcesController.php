@@ -8,8 +8,9 @@ use JAM\Http\Controllers\Controller;
 
 class ResourcesController extends Controller
 {
-    public function renderView()
+    public function renderView($name)
     {
+        var_dump($name);
 //        var_dump(self::getResources());
         return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources()]);
     }
