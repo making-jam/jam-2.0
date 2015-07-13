@@ -8,16 +8,15 @@ use JAM\Http\Controllers\Controller;
 
 class ResourcesController extends Controller
 {
-    public function renderView($name)
+    public function renderView($name = false)
     {
-        var_dump($name);
-//        var_dump(self::getResources());
-        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources()]);
+        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources($name)]);
     }
 
-    private static function getResources()
+    private
+    static function getResources($name = false)
     {
-        $files = Storage::files('resources');
+        $files = $name ? ['resources/' . $name . '.json'] : Storage::files('resources');
 
         foreach ($files as $path) {
             // This gets the file name from the current file path.
@@ -25,7 +24,6 @@ class ResourcesController extends Controller
             $content = json_decode($fileContents, true);
             $contentTimestamp = strtotime($content["date"]);
             $today = strtotime(date("d F Y"));
-//            array_push($this->map, $fileName);
             foreach ($content["tags"] as $k) {
                 $tags[$k][] = "";
             }
