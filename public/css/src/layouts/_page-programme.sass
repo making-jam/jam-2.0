@@ -2,13 +2,102 @@
   main
     section
       .time
-        .avatar
+        strong
+          display: block
+          margin-bottom: $base-unit-layout
+
+        img
           +border-radius(100%)
 
-          width: rem(160px)
-          height: rem(160px)
+          display: block
+          width: rem(140px)
+          height: rem(140px)
           background: $color-grey-100
           margin: 0 auto $base-unit-layout
 
+        a
+          display: block
+
+          em
+            opacity: 0
+            font:
+              size: rem(12px)
+              style: normal
+
+          margin-top: $base-unit-layout
+          width: 100%
+          height: 25px
+          color: inherit
+          background:
+            color: transparent
+            position: center center
+            repeat: no-repeat
+            size: auto 100%
+
+          &#google-chrome-team
+            background:
+              image: url('#{$image-base}/speakers/companies/google.png')
+
+          &#gosquared
+            background:
+              image: url('#{$image-base}/speakers/companies/gosquared.png')
+              size: auto 85%
+
+          &#government-digital-service
+            background:
+              image: url('#{$image-base}/speakers/companies/governmentds.png')
+              size: auto 100%
+
+          &#hire-space
+            background:
+              image: url('#{$image-base}/speakers/companies/hirespace.png')
+
+          &#onefinestay
+            background:
+              image: url('#{$image-base}/speakers/companies/onefinestay.png')
+
+          &#swiftkey
+            background:
+              image: url('#{$image-base}/speakers/companies/swiftkey.png')
+              size: auto 85%
+
+          &#the-dots
+            background:
+              image: url('#{$image-base}/speakers/companies/thedots.png')
+
+          &#transferwise
+            background:
+              image: url('#{$image-base}/speakers/companies/transferwise.png')
+              size: auto 80%
+
+          &#yplan
+            background:
+              image: url('#{$image-base}/speakers/companies/yplan.png')
+              size: auto 70%
+
       .info
         @extend .text-left
+
+        h3
+          margin: 0
+          position: relative
+          top: -($half-unit-layout)
+          line-height: 1.4
+          font:
+            size: rem(28px)
+            weight: 700
+
+        p
+          line-height: 1.7
+          margin: $half-unit-layout 0 0
+
+          &.speaker-name, &.speaker-company
+            line-height: 1.5
+            margin: 0
+            font:
+              size: rem(16px)
+
+          &.speaker-company
+            color: $color-grey
+            font:
+              size: rem(14px)
