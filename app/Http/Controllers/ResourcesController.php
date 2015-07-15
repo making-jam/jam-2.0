@@ -22,10 +22,10 @@ class ResourcesController extends Controller
             // This gets the file name from the current file path.
             $fileContents = Storage::disk('local')->get($path);
             $content = json_decode($fileContents, true);
-            $contentTimestamp = strtotime($content["date"]);
-            $today = strtotime(date("d F Y"));
-            foreach ($content["tags"] as $k) {
-                $tags[$k][] = "";
+            $contentTimestamp = strtotime($content['date']);
+            $today = strtotime(date('d F Y'));
+            foreach ($content['tags'] as $k) {
+                $tags[$k][] = '';
             }
             if ($contentTimestamp <= $today) {
                 $data[$contentTimestamp] = $content;

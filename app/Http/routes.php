@@ -25,9 +25,7 @@ Route::get('/manifesto', function () {
     return view('manifesto', ['title' => 'Manifesto', 'bodyClass' => 'manifesto']);
 });
 
-Route::get('/programme', function () {
-    return view('programme', ['title' => 'Programme', 'bodyClass' => 'programme']);
-});
+Route::get('/programme', 'ProgrammeController@renderView');
 
 Route::get('/resources/{name?}', 'ResourcesController@renderView');
 

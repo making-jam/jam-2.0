@@ -36,6 +36,8 @@
                     designers, and engineers make it all happen?</p>
 
                 <p>JAM is a 1-day event to reveal the stories behind the products you know and love.</p>
+
+                <a class="button black see-schedule" href="/manifesto">Read our Story</a>
             </div>
         </section>
 

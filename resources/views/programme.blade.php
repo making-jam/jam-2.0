@@ -11,19 +11,20 @@
 
     <main>
         <section class="container-narrow">
+            @foreach ($speakers as $name => $info)
             <article>
                 <aside class="col-sm-3 time">
-                    <strong>9:00 am</strong>
-                    <img src="/images/speakers/scott-weiss.jpg">
-                    <a href="/" target="_blank" id="swiftkey"
-                       class="company"><em>SwiftKey</em></a>
+                    <strong>{{$info['programme']['time']}}</strong>
+                    <img src="/images/speakers/{{$info['img']}}">
+                    <a href="{{$info['link']}}" target="_blank" id="{{$info['id']}}"
+                       class="company"><em>{{$info['company']}}</em></a>
                 </aside>
                 <aside class="col-sm-9 info">
                     <h3>Organizing Product Teams for Success</h3>
 
-                    <p class="speaker-name">Scott Weiss</p>
+                    <p class="speaker-name">{{$info['name']}}</p>
 
-                    <p class="speaker-company">SwiftKey</p>
+                    <p class="speaker-company">{{$info['position']}}</p>
 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -31,6 +32,7 @@
                         but also the leap into electronic typesetting remaining essentially unchanged.</p>
                 </aside>
             </article>
+            @endforeach
         </section>
     </main>
 @endsection
