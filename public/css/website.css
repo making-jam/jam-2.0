@@ -1993,7 +1993,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-right {
   text-align: right; }
 
-.text-left, main.static section, .page-programme main section .info {
+.text-left, main.static section, .page-programme main section article .info {
   text-align: left; }
 
 .text-justify {
@@ -2285,71 +2285,85 @@ footer {
         margin: 0.5rem 0;
         font-size: 0.9375rem; }
 
-.page-programme main section .time strong {
-  display: block;
-  margin-bottom: 1rem; }
-.page-programme main section .time img {
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  display: block;
-  width: 8.75rem;
-  height: 8.75rem;
-  background: #CFD8DC;
-  margin: 0 auto 1rem; }
-.page-programme main section .time a {
-  display: block;
-  margin-top: 1rem;
-  width: 100%;
-  height: 25px;
-  color: inherit;
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto 100%; }
-  .page-programme main section .time a em {
-    opacity: 0;
-    font-size: 0.75rem;
-    font-style: normal; }
-  .page-programme main section .time a#google-chrome-team {
-    background-image: url('../images//speakers/companies/google.png'); }
-  .page-programme main section .time a#gosquared {
-    background-image: url('../images//speakers/companies/gosquared.png');
-    background-size: auto 85%; }
-  .page-programme main section .time a#government-digital-service {
-    background-image: url('../images//speakers/companies/governmentds.png');
+.page-programme main section article {
+  zoom: 1;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ECEFF1; }
+  .page-programme main section article:before, .page-programme main section article:after {
+    content: "";
+    display: table; }
+  .page-programme main section article:after {
+    clear: both; }
+  .page-programme main section article:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0; }
+  .page-programme main section article .time strong {
+    display: block;
+    margin-bottom: 1rem; }
+  .page-programme main section article .time img {
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    width: 8.75rem;
+    height: 8.75rem;
+    background: #CFD8DC;
+    margin: 0 auto 1rem; }
+  .page-programme main section article .time a {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    height: 25px;
+    color: inherit;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: auto 100%; }
-  .page-programme main section .time a#hire-space {
-    background-image: url('../images//speakers/companies/hirespace.png'); }
-  .page-programme main section .time a#onefinestay {
-    background-image: url('../images//speakers/companies/onefinestay.png'); }
-  .page-programme main section .time a#swiftkey {
-    background-image: url('../images//speakers/companies/swiftkey.png');
-    background-size: auto 85%; }
-  .page-programme main section .time a#the-dots {
-    background-image: url('../images//speakers/companies/thedots.png'); }
-  .page-programme main section .time a#transferwise {
-    background-image: url('../images//speakers/companies/transferwise.png');
-    background-size: auto 80%; }
-  .page-programme main section .time a#yplan {
-    background-image: url('../images//speakers/companies/yplan.png');
-    background-size: auto 70%; }
-.page-programme main section .info h3 {
-  margin: 0;
-  position: relative;
-  top: -0.5rem;
-  line-height: 1.4;
-  font-size: 1.75rem;
-  font-weight: 700; }
-.page-programme main section .info p {
-  line-height: 1.7;
-  margin: 0.5rem 0 0; }
-  .page-programme main section .info p.speaker-name, .page-programme main section .info p.speaker-company {
-    line-height: 1.5;
+    .page-programme main section article .time a em {
+      opacity: 0;
+      font-size: 0.75rem;
+      font-style: normal; }
+    .page-programme main section article .time a#google-chrome-team {
+      background-image: url('../images//speakers/companies/google.png'); }
+    .page-programme main section article .time a#gosquared {
+      background-image: url('../images//speakers/companies/gosquared.png');
+      background-size: auto 85%; }
+    .page-programme main section article .time a#government-digital-service {
+      background-image: url('../images//speakers/companies/governmentds.png');
+      background-size: auto 100%; }
+    .page-programme main section article .time a#hire-space {
+      background-image: url('../images//speakers/companies/hirespace.png'); }
+    .page-programme main section article .time a#onefinestay {
+      background-image: url('../images//speakers/companies/onefinestay.png'); }
+    .page-programme main section article .time a#swiftkey {
+      background-image: url('../images//speakers/companies/swiftkey.png');
+      background-size: auto 85%; }
+    .page-programme main section article .time a#the-dots {
+      background-image: url('../images//speakers/companies/thedots.png'); }
+    .page-programme main section article .time a#transferwise {
+      background-image: url('../images//speakers/companies/transferwise.png');
+      background-size: auto 80%; }
+    .page-programme main section article .time a#yplan {
+      background-image: url('../images//speakers/companies/yplan.png');
+      background-size: auto 70%; }
+  .page-programme main section article .info h3 {
     margin: 0;
-    font-size: 1rem; }
-  .page-programme main section .info p.speaker-company {
-    color: #607D8B;
-    font-size: 0.875rem; }
+    position: relative;
+    top: -0.5rem;
+    line-height: 1.4;
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .page-programme main section article .info p {
+    line-height: 1.7;
+    margin: 0.5rem 0 0; }
+    .page-programme main section article .info p.speaker-name, .page-programme main section article .info p.speaker-company {
+      line-height: 1.5;
+      margin: 0;
+      font-size: 1rem; }
+    .page-programme main section article .info p.speaker-company {
+      color: #607D8B;
+      font-size: 0.875rem; }
 
 .page-resources main a {
   -webkit-transition: background .25s;

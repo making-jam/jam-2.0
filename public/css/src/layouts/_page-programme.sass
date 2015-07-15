@@ -1,103 +1,115 @@
 .page-programme
   main
     section
-      .time
-        strong
-          display: block
-          margin-bottom: $base-unit-layout
+      article
+        +clearfix
 
-        img
-          +border-radius(100%)
+        padding-bottom: $triple-unit-layout
+        margin-bottom: $triple-unit-layout
+        border-bottom: 1px solid $color-grey-50
 
-          display: block
-          width: rem(140px)
-          height: rem(140px)
-          background: $color-grey-100
-          margin: 0 auto $base-unit-layout
+        &:last-of-type
+          padding-bottom: 0
+          margin-bottom: 0
+          border-bottom: 0
 
-        a
-          display: block
+        .time
+          strong
+            display: block
+            margin-bottom: $base-unit-layout
 
-          em
-            opacity: 0
-            font:
-              size: rem(12px)
-              style: normal
+          img
+            +border-radius(100%)
 
-          margin-top: $base-unit-layout
-          width: 100%
-          height: 25px
-          color: inherit
-          background:
-            color: transparent
-            position: center center
-            repeat: no-repeat
-            size: auto 100%
+            display: block
+            width: rem(140px)
+            height: rem(140px)
+            background: $color-grey-100
+            margin: 0 auto $base-unit-layout
 
-          &#google-chrome-team
+          a
+            display: block
+
+            em
+              opacity: 0
+              font:
+                size: rem(12px)
+                style: normal
+
+            margin-top: $base-unit-layout
+            width: 100%
+            height: 25px
+            color: inherit
             background:
-              image: url('#{$image-base}/speakers/companies/google.png')
-
-          &#gosquared
-            background:
-              image: url('#{$image-base}/speakers/companies/gosquared.png')
-              size: auto 85%
-
-          &#government-digital-service
-            background:
-              image: url('#{$image-base}/speakers/companies/governmentds.png')
+              color: transparent
+              position: center center
+              repeat: no-repeat
               size: auto 100%
 
-          &#hire-space
-            background:
-              image: url('#{$image-base}/speakers/companies/hirespace.png')
+            &#google-chrome-team
+              background:
+                image: url('#{$image-base}/speakers/companies/google.png')
 
-          &#onefinestay
-            background:
-              image: url('#{$image-base}/speakers/companies/onefinestay.png')
+            &#gosquared
+              background:
+                image: url('#{$image-base}/speakers/companies/gosquared.png')
+                size: auto 85%
 
-          &#swiftkey
-            background:
-              image: url('#{$image-base}/speakers/companies/swiftkey.png')
-              size: auto 85%
+            &#government-digital-service
+              background:
+                image: url('#{$image-base}/speakers/companies/governmentds.png')
+                size: auto 100%
 
-          &#the-dots
-            background:
-              image: url('#{$image-base}/speakers/companies/thedots.png')
+            &#hire-space
+              background:
+                image: url('#{$image-base}/speakers/companies/hirespace.png')
 
-          &#transferwise
-            background:
-              image: url('#{$image-base}/speakers/companies/transferwise.png')
-              size: auto 80%
+            &#onefinestay
+              background:
+                image: url('#{$image-base}/speakers/companies/onefinestay.png')
 
-          &#yplan
-            background:
-              image: url('#{$image-base}/speakers/companies/yplan.png')
-              size: auto 70%
+            &#swiftkey
+              background:
+                image: url('#{$image-base}/speakers/companies/swiftkey.png')
+                size: auto 85%
 
-      .info
-        @extend .text-left
+            &#the-dots
+              background:
+                image: url('#{$image-base}/speakers/companies/thedots.png')
 
-        h3
-          margin: 0
-          position: relative
-          top: -($half-unit-layout)
-          line-height: 1.4
-          font:
-            size: rem(28px)
-            weight: 700
+            &#transferwise
+              background:
+                image: url('#{$image-base}/speakers/companies/transferwise.png')
+                size: auto 80%
 
-        p
-          line-height: 1.7
-          margin: $half-unit-layout 0 0
+            &#yplan
+              background:
+                image: url('#{$image-base}/speakers/companies/yplan.png')
+                size: auto 70%
 
-          &.speaker-name, &.speaker-company
-            line-height: 1.5
+        .info
+          @extend .text-left
+
+          h3
             margin: 0
+            position: relative
+            top: -($half-unit-layout)
+            line-height: 1.4
             font:
-              size: rem(16px)
+              size: rem(28px)
+              weight: 700
 
-          &.speaker-company
-            color: $color-grey
-            font:
-              size: rem(14px)
+          p
+            line-height: 1.7
+            margin: $half-unit-layout 0 0
+
+            &.speaker-name, &.speaker-company
+              line-height: 1.5
+              margin: 0
+              font:
+                size: rem(16px)
+
+            &.speaker-company
+              color: $color-grey
+              font:
+                size: rem(14px)
