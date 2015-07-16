@@ -69,12 +69,12 @@
                 <h3>And a wide selection of topics.</h3>
 
                 <div class="row topics">
+                    <div class="col-sm-6 topic">User-centered design</div>
                     <div class="col-sm-6 topic">Deciding what to build</div>
                     <div class="col-sm-6 topic">Making products more human</div>
                     <div class="col-sm-6 topic">Nurturing a product-driven culture</div>
-                    <div class="col-sm-6 topic">Data-driven design</div>
                     <div class="col-sm-6 topic">Organising teams for success</div>
-                    <div class="col-sm-6 topic">TBC</div>
+                    <div class="col-sm-6 topic">Data-driven design</div>
                 </div>
             </div>
 
@@ -114,7 +114,7 @@
             <div class="container">
                 <h3>Get Involved</h3>
 
-                <a class="button white" href="/buy">Book Your Early Bird Ticket</a>
+                <a class="button white" href="/buy">Get Your Early Bird Ticket</a>
 
                 <small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>
             </div>

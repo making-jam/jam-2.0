@@ -3,7 +3,6 @@
 namespace JAM\Http\Controllers;
 
 use Storage;
-//use Illuminate\Http\Request;
 use JAM\Http\Controllers\Controller;
 
 class ResourcesController extends Controller

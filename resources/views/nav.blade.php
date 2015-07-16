@@ -8,5 +8,5 @@
         <li><a href="/resources">Resources</a></li>
     </ul>
 
-    <a class="button black" href="/buy">Buy Tickets</a>
+    <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
 </nav>

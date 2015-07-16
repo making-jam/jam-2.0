@@ -2,6 +2,7 @@
 
 namespace JAM\Http\Controllers;
 
+use Storage;
 use JAM\Http\Controllers\Controller;
 
 class ProgrammeController extends Controller
@@ -17,10 +18,11 @@ class ProgrammeController extends Controller
 
         $data = [];
 
-        foreach($speakerData as $name => $info) {
+        foreach ($speakerData as $name => $info) {
             $contentTimestamp = strtotime($info['programme']['time']);
 
             $info['name'] = $name;
+            $info['biog'] = Storage::disk('local')->get('/bios/' . $info['bio'] . '.html');
             $data[$contentTimestamp] = $info;
         }
 
