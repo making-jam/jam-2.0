@@ -19,10 +19,9 @@
         </div>
         <div class="col-md-3">
             <ul>
-                <li><a href="/facebook">Facebook</a></li>
-                <li><a href="/twitter">Twitter</a></li>
-                <li><a href="/google">Google</a></li>
-                <li><a href="/linkedin">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/makingjam" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/Jam2015London" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/jam-london" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
     </div>
