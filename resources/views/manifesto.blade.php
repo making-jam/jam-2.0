@@ -36,41 +36,22 @@
         <section class="grey" id="team">
             <h3 class="text-center">Who are we?</h3>
 
-            <div class="team row">
-                <div class="col-md-4 member">
-                    <div class="avatar"></div>
+            <div class="team container">
+                <div class="row">
+                    @foreach ($team as $teamMember)
+                        <div class="col-md-4 member">
+                            <img src="/images/team/{{$teamMember['photo']}}">
 
-                    <div class=" details">
-                        <strong>Team Member</strong>
+                            <div class=" details">
+                                <strong>{{$teamMember['name']}}</strong>
 
-                        <p>Lorem ipsum.</p>
-                        <small><a href="/linkedin">LinkedIn</a> &bull;
-                            <a href="/twitter">Twitter</a></small>
-                    </div>
-                </div>
-
-                <div class="col-md-4 member">
-                    <div class="avatar"></div>
-
-                    <div class=" details">
-                        <strong>Team Member</strong>
-
-                        <p>Lorem ipsum.</p>
-                        <small><a href="/linkedin">LinkedIn</a> &bull;
-                            <a href="/twitter">Twitter</a></small>
-                    </div>
-                </div>
-
-                <div class="col-md-4 member">
-                    <div class="avatar"></div>
-
-                    <div class=" details">
-                        <strong>Team Member</strong>
-
-                        <p>Lorem ipsum.</p>
-                        <small><a href="/linkedin">LinkedIn</a> &bull;
-                            <a href="/twitter">Twitter</a></small>
-                    </div>
+                                <p>{{$teamMember['desc']}}</p>
+                                <small>
+                                    <a href="https://uk.linkedin.com/in/{{$teamMember['linkedin']}}">LinkedIn</a> &bull;
+                                    <a href="https://twitter.com/{{$teamMember['twitter']}}">Twitter</a></small>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>

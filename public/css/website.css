@@ -2265,25 +2265,26 @@ footer {
 .page-manifesto .team {
   padding-top: 2rem; }
   .page-manifesto .team .member {
-    zoom: 1; }
-    .page-manifesto .team .member:before, .page-manifesto .team .member:after {
-      content: "";
-      display: table; }
-    .page-manifesto .team .member:after {
-      clear: both; }
-    .page-manifesto .team .member .avatar {
+    position: relative; }
+    .page-manifesto .team .member img {
       -webkit-border-radius: 100%;
       border-radius: 100%;
-      float: left;
+      display: block;
+      position: absolute;
       width: 6.25rem;
       height: 6.25rem;
+      left: 0;
+      top: 0;
       background: #CFD8DC;
-      margin: 0 1rem 0 0; }
+      margin: 0; }
     .page-manifesto .team .member .details {
-      float: left; }
+      padding: 0 0.5rem 0 6.25rem; }
       .page-manifesto .team .member .details p {
         margin: 0.5rem 0;
+        line-height: 1.5;
         font-size: 0.9375rem; }
+      .page-manifesto .team .member .details small a {
+        color: #263238; }
 
 .page-programme main section article {
   zoom: 1;

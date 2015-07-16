@@ -21,9 +21,7 @@ Route::get('/code-of-conduct', function () {
     return view('codeOfConduct', ['title' => 'Code of Conduct', 'bodyClass' => 'code-of-conduct']);
 });
 
-Route::get('/manifesto', function () {
-    return view('manifesto', ['title' => 'Manifesto', 'bodyClass' => 'manifesto']);
-});
+Route::get('/manifesto', 'ManifestoController@renderView');
 
 Route::get('/programme', 'ProgrammeController@renderView');
 
