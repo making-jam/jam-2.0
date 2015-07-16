@@ -4,11 +4,11 @@ namespace JAM\Http\Controllers;
 
 use JAM\Http\Controllers\Controller;
 
-class WelcomeController extends Controller
+class BuyController extends Controller
 {
     public function renderView()
     {
-        return view('welcome', ['title' => 'Welcome', 'bodyClass' => 'welcome', 'speakers' => parent::getSpeakers(),
+        return view('buy', ['title' => 'Get Your Early Bird Ticket', 'bodyClass' => 'buy',
             'url' => parent::getMetaUrl()]);
     }
 }

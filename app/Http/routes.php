@@ -13,13 +13,9 @@
 
 Route::get('/', 'WelcomeController@renderView');
 
-Route::get('/buy', function () {
-    return view('buy', ['title' => 'Buy Tickets', 'bodyClass' => 'buy']);
-});
+Route::get('/buy', 'BuyController@renderView');
 
-Route::get('/code-of-conduct', function () {
-    return view('codeOfConduct', ['title' => 'Code of Conduct', 'bodyClass' => 'code-of-conduct']);
-});
+Route::get('/code-of-conduct', 'CodeOfConductController@renderView');
 
 Route::get('/manifesto', 'ManifestoController@renderView');
 
@@ -27,6 +23,4 @@ Route::get('/programme', 'ProgrammeController@renderView');
 
 Route::get('/resources/{name?}', 'ResourcesController@renderView');
 
-Route::get('/sponsors', function () {
-    return view('sponsors', ['title' => 'Sponsors', 'bodyClass' => 'sponsors']);
-});
+Route::get('/sponsors', 'SponsorsController@renderView');

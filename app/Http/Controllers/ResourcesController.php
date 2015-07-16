@@ -9,7 +9,8 @@ class ResourcesController extends Controller
 {
     public function renderView($name = false)
     {
-        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources($name)]);
+        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources($name),
+            'url' => parent::getMetaUrl()]);
     }
 
     private

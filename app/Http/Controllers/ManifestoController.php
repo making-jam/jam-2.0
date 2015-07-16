@@ -8,7 +8,8 @@ class ManifestoController extends Controller
 {
     public function renderView()
     {
-        return view('manifesto', ['title' => 'Manifesto', 'bodyClass' => 'manifesto', 'team' => self::teamData()]);
+        return view('manifesto', ['title' => 'Manifesto', 'bodyClass' => 'manifesto', 'team' => self::teamData(),
+            'url' => parent::getMetaUrl()]);
     }
 
     private static function teamData()
