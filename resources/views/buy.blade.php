@@ -29,15 +29,20 @@
                             scrolling="auto" allowtransparency="true"></iframe>
                 </div>
 
-                <p>Coming as a group? Send us an <a href="mailto:hello@jam2015.london">email</a> to get a group
-                    discount.</p>
+                <p>Want to come with your team? Great, we're doing group discounts. Just email <a
+                            href="mailto:hello@jam2015.london">hello@jam2015.london</a> and tell us how many tickets
+                    you'd like.</p>
                 <small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>
 
                 <p>Substitutions</p>
-                <small>Lorem Ipsum</small>
+                <small>If you are unable to attend JAM 2015, you can send someone in your place. Just email us the info
+                    of the original attendee and the new attendee and we'll take care of the rest.
+                </small>
 
                 <p>Cancellations</p>
-                <small>Lorem Ipsum</small>
+                <small>Cancellations made at least 30 days prior to the event will receive a 50% refund of their ticket
+                    less applicable fees.
+                </small>
             </div>
         </section>
     </main>

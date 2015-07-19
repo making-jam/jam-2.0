@@ -14,7 +14,7 @@ html, body, div, span, object, iframe, hr, h1, h2, h3, h4, h5, h6, p, blockquote
   border: 0;
   outline: 0;
   vertical-align: baseline;
-  font-weight: 400; }
+  font-weight: 300; }
 
 html {
   font-size: 16px;
@@ -327,7 +327,7 @@ input:invalid, textarea:invalid {
     background: #263238;
     color: white; }
     .button.black:hover, .button.black:focus, button.black:hover, button.black:focus {
-      background: #37474F; }
+      background: #263238; }
   .button.jam, button.jam {
     background: #04f799;
     color: white; }
@@ -1128,7 +1128,7 @@ nav#navTop {
       clear: both; }
     nav#navTop ul li {
       float: left;
-      font-size: 0.9375rem; }
+      font-size: 0.875rem; }
       nav#navTop ul li a {
         text-decoration: none;
         color: white;
@@ -2031,7 +2031,7 @@ section {
 
 header {
   position: relative;
-  background-color: #90A4AE; }
+  background-color: #78909C; }
   header .features {
     z-index: 1;
     position: absolute;
@@ -2077,10 +2077,15 @@ footer {
       height: 4rem;
       line-height: 4rem; }
   footer ul li a {
+    -webkit-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
     display: block;
-    color: #607D8B;
+    color: #78909C;
     padding: 0.25rem 0;
     text-decoration: none; }
+    footer ul li a:hover, footer ul li a:focus {
+      color: white; }
 
 .page-buy section {
   padding-top: 2rem; }
@@ -2458,7 +2463,8 @@ footer {
         line-height: 1.4;
         font-size: 2.8125rem; }
       .page-welcome header .hero .container-narrow .intro p {
-        margin: 0; }
+        margin: 0;
+        color: #ECEFF1; }
       .page-welcome header .hero .container-narrow .intro .button {
         display: inline-block;
         line-height: 1;

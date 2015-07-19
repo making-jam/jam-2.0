@@ -45,7 +45,7 @@
             <div class="container-small">
                 <h3>9 speakers from some of the best product companies share their stories.</h3>
 
-                <a class="button black see-schedule" href="/programme">See Schedule</a>
+                <a class="button black see-schedule" href="/speakers">Find Out More</a>
             </div>
         </section>
 
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <a class="button black see-schedule" href="/programme">See Schedule</a>
+            <a class="button black see-schedule" href="/speakers">Find Out More</a>
         </section>
 
         <section id="sponsors">

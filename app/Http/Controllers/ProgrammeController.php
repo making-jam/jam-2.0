@@ -9,7 +9,7 @@ class ProgrammeController extends Controller
 {
     public function renderView()
     {
-        return view('programme', ['title' => 'Programme', 'bodyClass' => 'programme', 'speakers' => self::programmeData(),
+        return view('programme', ['title' => 'Speakers', 'bodyClass' => 'programme', 'speakers' => self::programmeData(),
             'url' => parent::getMetaUrl()]);
     }
 
