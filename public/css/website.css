@@ -1304,9 +1304,9 @@ nav#navTop {
           font-size: 1.25rem; }
           nav#navTop ul li a {
             color: white !important;
-            height: auto;
-            line-height: 2;
-            padding: 0.5rem 0; }
+            height: 3rem;
+            line-height: 3rem;
+            padding: 0; }
       nav#navTop .button {
         float: none;
         background: white;
