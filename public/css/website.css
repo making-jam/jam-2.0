@@ -1279,7 +1279,7 @@ nav#navTop {
     margin: 1.1875rem 0 0; }
   nav#navTop.solid {
     background: rgba(255, 255, 255, 0.98);
-    border-bottom: 1px solid #F5F5F5; }
+    border-bottom: 1px solid #EEEEEE; }
     nav#navTop.solid .logo {
       background-image: url('../images/logo/jam-horizontal.svg'); }
     nav#navTop.solid ul li a {
@@ -2493,7 +2493,7 @@ footer {
   zoom: 1;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #FAFAFA; }
+  border-bottom: 1px solid #EEEEEE; }
   .page-programme main section article:before, .page-programme main section article:after {
     content: "";
     display: table; }
