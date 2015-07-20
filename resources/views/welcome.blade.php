@@ -31,7 +31,7 @@
     <main>
         <section>
             <div class="container-small">
-                <p>Have you ever wondered how successful companies like TransferWise, YPlan, GoSquared, or CityMapper go
+                <p>Have you ever wondered how successful companies like TransferWise, YPlan, GoSquared, or SwiftKey go
                     about building groundbreaking products? What goes on behind the scenes? How do product managers,
                     designers, and engineers make it all happen?</p>
 

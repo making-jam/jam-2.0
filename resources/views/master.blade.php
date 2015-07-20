@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{$url}}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="JAM London 2015">
-    <meta property="og:image" content="{{$url}}images/social/cover.png">
+    <meta property="og:image" content="{{$url}}images/social/og-image.png">
     <meta property="og:description" content="We're sharing the stories behind great products.">
 
     <title>JAM London - {{$title}}</title>
