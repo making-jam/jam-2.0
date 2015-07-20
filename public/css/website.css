@@ -1130,7 +1130,7 @@ dl {
     font-size: 0.875rem; }
 
 .modal-backdrop {
-  z-index: 5;
+  z-index: 7;
   top: 0;
   left: 0;
   position: fixed;
@@ -1165,7 +1165,7 @@ dl {
 
 nav#navTop {
   zoom: 1;
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -1177,6 +1177,56 @@ nav#navTop {
     display: table; }
   nav#navTop:after {
     clear: both; }
+  nav#navTop .toggle-nav {
+    display: none;
+    position: absolute;
+    right: -5rem;
+    top: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: #ECEFF1;
+    background: #263238; }
+    nav#navTop .toggle-nav i {
+      position: absolute;
+      display: block;
+      height: 1px;
+      background: #263238;
+      background: white;
+      width: 50%;
+      left: 25%;
+      top: 50%; }
+      nav#navTop .toggle-nav i:first-of-type {
+        top: 35%; }
+      nav#navTop .toggle-nav i:last-of-type {
+        top: 65%; }
+    nav#navTop .toggle-nav .close {
+      -webkit-transition: opacity .25s;
+      -o-transition: opacity .25s;
+      transition: opacity .25s;
+      z-index: 5;
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      background: #ECEFF1;
+      background: #263238; }
+      nav#navTop .toggle-nav .close.active {
+        opacity: 1; }
+      nav#navTop .toggle-nav .close i {
+        top: 50% !important; }
+        nav#navTop .toggle-nav .close i:first-of-type {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        nav#navTop .toggle-nav .close i:last-of-type {
+          -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          -o-transform: rotate(135deg);
+          transform: rotate(135deg); }
   nav#navTop .logo {
     float: left;
     display: block;
@@ -1211,13 +1261,17 @@ nav#navTop {
         height: 6rem;
         line-height: 6rem;
         padding: 0 1rem; }
+        nav#navTop ul li a:hover, nav#navTop ul li a:focus {
+          text-decoration: underline; }
+      nav#navTop ul li.active a {
+        font-weight: 700; }
   nav#navTop .button {
     display: inline-block;
     line-height: 1;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     float: right;
-    margin: 1rem 0 0; }
+    margin: 1.1875rem 0 0; }
   nav#navTop.solid {
     background: rgba(255, 255, 255, 0.98);
     border-bottom: 1px solid #ECEFF1; }
@@ -1225,12 +1279,45 @@ nav#navTop {
       background-image: url('../images//logo/jam-horizontal.svg'); }
     nav#navTop.solid ul li a {
       color: #263238; }
+  @media all and (max-width: 768px) {
+    nav#navTop {
+      -webkit-transition: left .25s;
+      -o-transition: left .25s;
+      transition: left .25s;
+      background: #263238 !important;
+      height: 100%;
+      width: 18.75rem;
+      border-bottom: 0 !important;
+      left: -18.75rem; }
+      nav#navTop.active {
+        left: 0; }
+      nav#navTop .toggle-nav {
+        display: block; }
+      nav#navTop .logo {
+        float: none;
+        background-image: url('../images//logo/jam-horizontal-white.svg') !important; }
+      nav#navTop ul {
+        padding-top: 0.5rem;
+        float: none; }
+        nav#navTop ul li {
+          float: none;
+          font-size: 1.25rem; }
+          nav#navTop ul li a {
+            color: white !important;
+            height: auto;
+            line-height: 2;
+            padding: 0.5rem 0; }
+      nav#navTop .button {
+        float: none;
+        background: white;
+        color: #263238;
+        margin-top: 2rem; } }
 
 #notification {
   -webkit-transition: top .25s;
   -o-transition: top .25s;
   transition: top .25s;
-  z-index: 4;
+  z-index: 6;
   padding: 0 1rem;
   position: fixed;
   width: 100%;
@@ -1255,6 +1342,8 @@ nav#navTop {
     text-overflow: ellipsis;
     white-space: nowrap;
     color: rgba(0, 0, 0, 0.4); }
+    #notification main a {
+      color: rgba(0, 0, 0, 0.4); }
 
 .progress-bar {
   -webkit-border-radius: 0.25rem;
@@ -2062,7 +2151,7 @@ h1, h2, h3, h4, h5, h6 {
 .margin-triple {
   margin: 3rem !important; }
 
-.text-center, .button.flat-grey, button.flat-grey, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
+.text-center, .button.flat-grey, button.flat-grey, nav#navTop .toggle-nav, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
   text-align: center; }
 
 .text-right {
@@ -2474,6 +2563,7 @@ footer {
   .page-resources main a:hover article .title, .page-resources main a:focus article .title {
     text-decoration: underline; }
 .page-resources .resources-sign-up {
+  z-index: 3;
   position: fixed;
   bottom: 0;
   width: 100%;

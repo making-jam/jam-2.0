@@ -27,7 +27,7 @@ class ProgrammeController extends Controller
             $data[$contentTimestamp] = $info;
         }
 
-        ksort($data);
+//        ksort($data);
 
         return $data;
     }

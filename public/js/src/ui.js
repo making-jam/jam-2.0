@@ -2,6 +2,10 @@ $(document).ready(function () {
     // Do not remove this bit, as it fixes transition bugs.
     $('body').removeClass('preload');
 
+    $('.toggle-nav').click(function (e) {
+        $('#navTop, #navTop .toggle-nav .close').toggleClass('active');
+    });
+
     var applyNavClass = function () {
         var scrollTop = $('body').scrollTop();
 

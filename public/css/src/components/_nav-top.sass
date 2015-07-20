@@ -11,6 +11,62 @@ nav#navTop
   height: $nav-height
   padding: 0 $base-unit-layout
 
+  .toggle-nav
+    $toggle-box-size: $double-unit-layout * 1.5
+
+    @extend .text-center
+
+    display: none
+    position: absolute
+    right: -($toggle-box-size + $double-unit-layout)
+    top: $double-unit-layout
+    width: $toggle-box-size
+    height: $toggle-box-size
+    background: $color-grey-50
+    background: $color-black
+
+    i
+      position: absolute
+      display: block
+      height: 1px
+      background: $color-black
+      background: white
+      width: 50%
+      left: 25%
+      top: 50%
+
+      &:first-of-type
+        top: 35%
+
+      &:last-of-type
+        top: 65%
+
+    .close
+      +transition(opacity .25s)
+      +z-index(close-nav)
+
+      position: relative
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      cursor: pointer
+      background: $color-grey-50
+      background: $color-black
+
+      &.active
+        opacity: 1
+
+      i
+        top: 50% !important
+
+        &:first-of-type
+          +transform(rotate(45deg))
+
+        &:last-of-type
+          +transform(rotate(135deg))
+
   .logo
     $logo-width: $quadruple-unit-layout * 1.75
 
@@ -38,7 +94,6 @@ nav#navTop
     +clearfix
     @extend .unstyled
 
-    //padding: 0 $base-unit-layout
     float: left
 
     li
@@ -48,7 +103,7 @@ nav#navTop
 
       a
         @extend .text-uppercase
-        //text-transform: uppercase
+
         text-decoration: none
         color: white
         display: block
@@ -56,13 +111,21 @@ nav#navTop
         line-height: $nav-height
         padding: 0 $base-unit-layout
 
+        +hover
+          text-decoration: underline
+
+      &.active
+        a
+          font:
+            weight: 700
+
   .button
     display: inline-block
     line-height: 1
     padding-top: $base-unit-layout + $quarter-unit-layout
     padding-bottom: $base-unit-layout + $quarter-unit-layout
     float: right
-    margin: $base-unit-layout 0 0
+    margin: ($base-unit-layout + rem(3px)) 0 0
 
   &.solid
     background: rgba(255,255,255,.98)
@@ -76,3 +139,44 @@ nav#navTop
       li
         a
           color: $color-black
+          
+  +respond-to-size($screen-sm)
+    +transition(left .25s)
+
+    background: $color-black !important
+    height: 100%
+    width: rem(300px)
+    border-bottom: 0 !important
+    left: -(rem(300px))
+
+    &.active
+      left: 0
+
+    .toggle-nav
+      display: block
+
+    .logo
+      float: none
+      background:
+        image: url('#{$image-base}/logo/jam-horizontal-white.svg') !important
+
+    ul
+      padding-top: $half-unit-layout
+      float: none
+
+      li
+        float: none
+        font:
+          size: rem(20px)
+
+        a
+          color: white !important
+          height: auto
+          line-height: 2
+          padding: $half-unit-layout 0
+
+    .button
+      float: none
+      background: white
+      color: $color-black
+      margin-top: $double-unit-layout
