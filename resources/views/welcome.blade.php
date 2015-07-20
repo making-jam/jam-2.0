@@ -16,10 +16,9 @@
                 <div class="col-sm-4 features">
                     <ul>
                         <li>9 world-class speakers</li>
-                        {{--<li>Unlimited tea &amp; coffee</li>--}}
-                        {{--<li>Lunch &amp; snacks</li>--}}
-                        <li>1 free drink at the bar</li>
-                        <li>£1000+ worth of free goodies</li>
+                        <li>200 like-minded attendees to meet</li>
+                        <li>Free lunch, unlimited tea &amp; coffee</li>
+                        <li>Exclusive discounts for the best product design tools around</li>
                         <li>...and much more!</li>
                     </ul>
                 </div>
