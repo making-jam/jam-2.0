@@ -16,8 +16,8 @@
                 <div class="col-sm-4 features">
                     <ul>
                         <li>9 world-class speakers</li>
-                        <li>Unlimited tea &amp; coffee</li>
-                        <li>Lunch &amp; snacks</li>
+                        {{--<li>Unlimited tea &amp; coffee</li>--}}
+                        {{--<li>Lunch &amp; snacks</li>--}}
                         <li>1 free drink at the bar</li>
                         <li>£1000+ worth of free goodies</li>
                         <li>...and much more!</li>
@@ -96,9 +96,9 @@
                     <li class="col-sm-4" id="deskbeers">
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
-                    <li class="col-sm-4" id="lyst">
-                        <a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>
-                    </li>
+                    {{--<li class="col-sm-4" id="lyst">--}}
+                        {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
+                    {{--</li>--}}
                     <li class="col-sm-4" id="balsamiq">
                         <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
                     </li>

@@ -21,9 +21,9 @@
                 <li class="col-sm-4 margin-bottom-double" id="deskbeers">
                     <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                 </li>
-                <li class="col-sm-4" id="lyst">
-                    <a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>
-                </li>
+                {{--<li class="col-sm-4" id="lyst">--}}
+                    {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
+                {{--</li>--}}
                 <li class="col-sm-4" id="balsamiq">
                     <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
                 </li>
