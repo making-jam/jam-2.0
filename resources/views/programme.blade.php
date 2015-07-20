@@ -14,15 +14,15 @@
             @foreach ($speakers as $name => $info)
                 <article>
                     <aside class="col-sm-3 time">
-                        <strong>{{$info['programme']['time']}}</strong>
+                        {{--<strong>{{$info['programme']['time']}}</strong>--}}
                         <img src="/images/speakers/{{$info['img']}}">
                         <a href="{{$info['link']}}" target="_blank" id="{{$info['id']}}"
                            class="company"><em>{{$info['company']}}</em></a>
                     </aside>
                     <aside class="col-sm-9 info">
-                        <h3>Organizing Product Teams for Success</h3>
+                        <h3>{{$info['name']}}</h3>
 
-                        <p class="speaker-name">{{$info['name']}}</p>
+                        {{--<p class="speaker-name">{{$info['name']}}</p>--}}
 
                         <p class="speaker-company">{{$info['position']}}</p>
 

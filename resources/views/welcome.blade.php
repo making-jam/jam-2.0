@@ -15,6 +15,7 @@
                 </div>
                 <div class="col-sm-4 features">
                     <ul>
+                        <li>9 world-class speakers</li>
                         <li>Unlimited tea &amp; coffee</li>
                         <li>Lunch &amp; snacks</li>
                         <li>1 free drink at the bar</li>
@@ -112,7 +113,7 @@
 
         <section class="jam" id="getInvolved">
             <div class="container">
-                <h3>Get Involved</h3>
+                <h3>Join us!</h3>
 
                 <a class="button white" style="margin-bottom: 0" href="/buy">Get Your Early Bird Ticket</a>
 

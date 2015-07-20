@@ -47,8 +47,9 @@
 
                                 <p>{{$teamMember['desc']}}</p>
                                 <small>
-                                    <a href="https://uk.linkedin.com/in/{{$teamMember['linkedin']}}">LinkedIn</a> &bull;
-                                    <a href="https://twitter.com/{{$teamMember['twitter']}}">Twitter</a></small>
+                                    <a target="_blank" href="https://uk.linkedin.com/in/{{$teamMember['linkedin']}}">LinkedIn</a> &bull;
+                                    <a target="_blank" href="https://twitter.com/{{$teamMember['twitter']}}">Twitter</a>
+                                </small>
                             </div>
                         </div>
                     @endforeach
