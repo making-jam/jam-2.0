@@ -36,7 +36,7 @@
         <section class="grey" id="team">
             <h3 class="text-center">Who are we?</h3>
 
-            <div class="team container">
+            <div class="team container-narrow">
                 <div class="row">
                     @foreach ($team as $teamMember)
                         <div class="col-md-4 member">
