@@ -3,7 +3,7 @@
     a
       +transition(background .25s)
 
-      padding: $triple-unit-layout $base-unit-layout
+      padding: $triple-unit-layout 0
       display: block
       color: $color-black
       text-decoration: none
@@ -42,6 +42,26 @@
     background: $color-black
     padding: $double-unit-layout 0
     color: white
+
+    +respond-to-size($screen-md)
+      div, form
+        float: none
+
+      div
+        text-align: center
+
+      form
+        input
+          width: 70%
+
+        button
+          width: 30%
+
+    +respond-to-size($screen-sm)
+      form
+        input, button
+          width: 100%
+          float: none
 
     .close
       @extend .text-center

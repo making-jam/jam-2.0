@@ -95,6 +95,12 @@ footer
       height: $logo-width / 2
       line-height: $logo-width / 2
 
+    +respond-to-size($screen-sm)
+      width: 100%
+      margin-bottom: $double-unit-layout
+      background:
+        position: center top
+
   ul
     @extend .unstyled
 
@@ -109,3 +115,6 @@ footer
 
         +hover
           color: white
+
+      +respond-to-size($screen-sm)
+        text-align: center

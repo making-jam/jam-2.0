@@ -15,6 +15,7 @@ nav#navTop
     $toggle-box-size: $double-unit-layout * 1.5
 
     @extend .text-center
+    +transition(all .25s)
 
     display: none
     position: absolute
@@ -42,7 +43,7 @@ nav#navTop
         top: 65%
 
     .close
-      +transition(opacity .25s)
+      +transition(all .25s)
       +z-index(close-nav)
 
       position: relative
@@ -148,9 +149,23 @@ nav#navTop
     width: rem(300px)
     border-bottom: 0 !important
     left: -(rem(300px))
+    padding: 0 $double-half-unit-layout
 
     &.active
       left: 0
+
+      .toggle-nav
+        right: $double-half-unit-layout
+        background: white
+
+        i
+          background: $color-black
+
+        .close
+          background: white
+
+          i
+            background: $color-black
 
     .toggle-nav
       display: block

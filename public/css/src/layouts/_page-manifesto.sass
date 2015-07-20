@@ -33,3 +33,9 @@
         small
           a
             color: $color-black
+
+      +respond-to-size($screen-sm)
+        padding-bottom: $triple-unit-layout
+
+        &:last-of-type
+          padding-bottom: 0

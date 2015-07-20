@@ -4,7 +4,7 @@
     <header class="text">
         <div class="hero">
             <div class="container-narrow relative">
-                <h1>Buy Tickets</h1>
+                <h1 class="col-sm-12">Buy Tickets</h1>
 
                 <div class="col-sm-4 features">
                     <ul>

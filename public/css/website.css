@@ -457,7 +457,9 @@ input:invalid, textarea:invalid {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  zoom: 1; }
+  zoom: 1;
+  padding-left: 30px;
+  padding-right: 30px; }
   .container-narrow:before, .container-narrow:after {
     content: "";
     display: table; }
@@ -1113,7 +1115,7 @@ ul, ol {
     margin: 0; }
   ul:last-child, ol:last-child {
     margin-bottom: 0; }
-  ul.unstyled, nav#navTop ul, header .features ul, footer ul, ol.unstyled {
+  ul.unstyled, nav#navTop ul, ul.sponsors, header .features ul, footer ul, ol.unstyled {
     list-style-type: none;
     margin: 0;
     padding: 0; }
@@ -1178,6 +1180,9 @@ nav#navTop {
   nav#navTop:after {
     clear: both; }
   nav#navTop .toggle-nav {
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
     display: none;
     position: absolute;
     right: -5rem;
@@ -1200,9 +1205,9 @@ nav#navTop {
       nav#navTop .toggle-nav i:last-of-type {
         top: 65%; }
     nav#navTop .toggle-nav .close {
-      -webkit-transition: opacity .25s;
-      -o-transition: opacity .25s;
-      transition: opacity .25s;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s;
       z-index: 5;
       position: relative;
       left: 0;
@@ -1288,9 +1293,19 @@ nav#navTop {
       height: 100%;
       width: 18.75rem;
       border-bottom: 0 !important;
-      left: -18.75rem; }
+      left: -18.75rem;
+      padding: 0 1.5rem; }
       nav#navTop.active {
         left: 0; }
+        nav#navTop.active .toggle-nav {
+          right: 1.5rem;
+          background: white; }
+          nav#navTop.active .toggle-nav i {
+            background: #263238; }
+          nav#navTop.active .toggle-nav .close {
+            background: white; }
+            nav#navTop.active .toggle-nav .close i {
+              background: #263238; }
       nav#navTop .toggle-nav {
         display: block; }
       nav#navTop .logo {
@@ -2244,6 +2259,11 @@ footer {
       display: block;
       height: 4rem;
       line-height: 4rem; }
+    @media all and (max-width: 768px) {
+      footer .logo {
+        width: 100%;
+        margin-bottom: 2rem;
+        background-position: center top; } }
   footer ul li a {
     -webkit-transition: color .25s;
     -o-transition: color .25s;
@@ -2254,6 +2274,9 @@ footer {
     text-decoration: none; }
     footer ul li a:hover, footer ul li a:focus {
       color: white; }
+  @media all and (max-width: 768px) {
+    footer ul li {
+      text-align: center; } }
 
 .page-buy section {
   padding-top: 2rem; }
@@ -2461,6 +2484,11 @@ footer {
         font-size: 0.9375rem; }
       .page-manifesto #team .member .details small a {
         color: #263238; }
+    @media all and (max-width: 768px) {
+      .page-manifesto #team .member {
+        padding-bottom: 3rem; }
+        .page-manifesto #team .member:last-of-type {
+          padding-bottom: 0; } }
 
 .page-programme main section article {
   zoom: 1;
@@ -2541,12 +2569,16 @@ footer {
     .page-programme main section article .info p.speaker-company {
       color: #607D8B;
       font-size: 0.875rem; }
+  @media all and (max-width: 768px) {
+    .page-programme main section article .info {
+      text-align: center;
+      margin-top: 2rem; } }
 
 .page-resources main a {
   -webkit-transition: background .25s;
   -o-transition: background .25s;
   transition: background .25s;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   display: block;
   color: #263238;
   text-decoration: none;
@@ -2574,6 +2606,19 @@ footer {
   background: #263238;
   padding: 2rem 0;
   color: white; }
+  @media all and (max-width: 1024px) {
+    .page-resources .resources-sign-up div, .page-resources .resources-sign-up form {
+      float: none; }
+    .page-resources .resources-sign-up div {
+      text-align: center; }
+    .page-resources .resources-sign-up form input {
+      width: 70%; }
+    .page-resources .resources-sign-up form button {
+      width: 30%; } }
+  @media all and (max-width: 768px) {
+    .page-resources .resources-sign-up form input, .page-resources .resources-sign-up form button {
+      width: 100%;
+      float: none; } }
   .page-resources .resources-sign-up .close {
     cursor: pointer;
     position: absolute;
