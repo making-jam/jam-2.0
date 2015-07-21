@@ -368,6 +368,9 @@ input:invalid, textarea:invalid {
   color: #E0E0E0;
   font-size: 1rem;
   font-family: "adelle-sans", Helvetica, Arial, sans-serif !important; }
+  .button.small, button.small {
+    padding: 1.25rem 1.625rem;
+    font-size: 0.875rem; }
   .button:hover, .button:focus, button:hover, button:focus {
     -webkit-animation: pulse .3s linear;
     -o-animation: pulse .3s linear;

@@ -6,7 +6,7 @@
             <div class="container-narrow">
                 <div class="col-sm-8 intro">
                     <h1>Sharing the Stories <br/>Behind Great Products</h1>
-                    
+
                     <p>1 day. 9 world-class speakers. Great coffee.</p>
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
@@ -37,7 +37,7 @@
 
                 <p>JAM is a 1-day event to reveal the stories behind the products you know and love.</p>
 
-                <a class="button black" href="/manifesto">Read our Story</a>
+                <a class="button black margin-top-base" href="/manifesto">Read our Story</a>
             </div>
         </section>
 
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <a class="button black" href="/speakers">Find Out More</a>
+            {{--<a class="button black" href="/speakers">Find Out More</a>--}}
         </section>
 
         <section id="sponsors">
