@@ -7,7 +7,7 @@
                 <div class="col-sm-8 intro">
                     <h1>Sharing the Stories <br/>Behind Great Products</h1>
 
-                    <p>1 day. 10 speakers. Great coffee.</p>
+                    <p>1 day. 9 speakers. Great coffee.</p>
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
