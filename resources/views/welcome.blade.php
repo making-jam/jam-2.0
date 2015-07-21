@@ -6,14 +6,14 @@
             <div class="container-narrow">
                 <div class="col-sm-8 intro">
                     <h1>Sharing the Stories <br/>Behind Great Products</h1>
-
-                    <p>1 day. 9 speakers. Great coffee.</p>
+                    
+                    <p>1 day. 9 world-class speakers. Great coffee.</p>
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
                     <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
                 </div>
-                <div class="col-sm-4 features">
+                <div class="col-sm-4 features is-hidden">
                     <ul>
                         <li>9 world-class speakers</li>
                         <li>200 like-minded attendees to meet</li>
@@ -96,7 +96,7 @@
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
                     {{--<li class="col-sm-4" id="lyst">--}}
-                        {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
+                    {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
                     {{--</li>--}}
                     <li class="col-sm-4" id="balsamiq">
                         <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
