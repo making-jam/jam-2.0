@@ -9,7 +9,7 @@ $(document).ready(function () {
     var applyNavClass = function () {
         var scrollTop = $('body').scrollTop();
 
-        if (scrollTop > (100)) {
+        if (scrollTop > (1)) {
             $('#navTop').addClass('solid');
         } else {
             $('#navTop').removeClass('solid');

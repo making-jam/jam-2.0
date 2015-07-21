@@ -37,7 +37,7 @@
 
                 <p>JAM is a 1-day event to reveal the stories behind the products you know and love.</p>
 
-                <a class="button black see-schedule" href="/manifesto">Read our Story</a>
+                <a class="button black" href="/manifesto">Read our Story</a>
             </div>
         </section>
 
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <a class="button black see-schedule" href="/speakers">Find Out More</a>
+            <a class="button black" href="/speakers">Find Out More</a>
         </section>
 
         <section id="sponsors">
