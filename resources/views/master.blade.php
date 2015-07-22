@@ -5,11 +5,11 @@
     <meta name="google-site-verification" content="uxoGRyCIKZAqXoimSbwGR7hmpL-tBV0aA6Pu-ypnIMA" />
     <meta name="description" content="JAM is a 1-day event designed to reveal the stories behind the products you know and love.">
 
-    <meta property="og:url" content="{{$url}}">
+    <meta property="og:url" content="{{ $ogMeta['link'] or $url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="JAM London 2015">
-    <meta property="og:image" content="{{$url}}images/social/og-image.png">
-    <meta property="og:description" content="JAM is a 1-day event designed to reveal the stories behind the products you know and love.">
+    <meta property="og:title" content="{{ $ogMeta['title'] or 'JAM London 2015' }}">
+    <meta property="og:image" content="{{ $ogMeta['image'] or  $url . 'images/social/og-image.png' }}">
+    <meta property="og:description" content="{{ $ogMeta['desc'] or 'JAM is a 1-day event designed to reveal the stories behind the products you know and love.'}}">
 
     <title>JAM London - {{$title}}</title>
 

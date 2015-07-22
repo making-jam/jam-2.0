@@ -7,14 +7,17 @@ use JAM\Http\Controllers\Controller;
 
 class ResourcesController extends Controller
 {
+    private $resources;
+
     public function renderView($name = false)
     {
-        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => self::getResources($name),
-            'url' => parent::getMetaUrl()]);
+        $this->getResources($name);
+
+        return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => $this->resources,
+            'url' => parent::getMetaUrl(), 'ogMeta' => $this->getOgMeta()]);
     }
 
-    private
-    static function getResources($name = false)
+    private function getResources($name = false)
     {
         $files = $name ? ['resources/' . $name . '.json'] : Storage::files('resources');
 
@@ -34,6 +37,22 @@ class ResourcesController extends Controller
 
         krsort($data);
 
-        return $data;
+        $this->resources = $data;
+    }
+
+    private function getOgMeta()
+    {
+        if (count($this->resources) > 1) {
+            return false;
+        } else {
+            $meta = array_values($this->resources)[0];
+
+            return [
+                'desc' => $meta['desc'],
+                'image' => $meta['image'],
+                'title' => $meta['title'],
+                'link' => $meta['link']
+            ];
+        }
     }
 }
