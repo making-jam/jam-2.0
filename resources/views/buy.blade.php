@@ -32,7 +32,7 @@
                 <p>Want to come with your team? Great, we're doing group discounts. Just email <a
                             href="mailto:hello@jam2015.london">hello@jam2015.london</a> and tell us how many tickets
                     you'd like.</p>
-                {{--<small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>--}}
+                <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download our PDF</a></small>
 
                 <p>Substitutions</p>
                 <small>If you are unable to attend JAM 2015, you can send someone in your place. Just email us the info

@@ -114,9 +114,9 @@
             <div class="container">
                 <h3>Join us!</h3>
 
-                <a class="button white" style="margin-bottom: 0" href="/buy">Get Your Early Bird Ticket</a>
+                <a class="button white" href="/buy">Get Your Early Bird Ticket</a>
 
-                {{--<small><a href="/">Need Help Convincing Your Boss? Download our PDF</a></small>--}}
+                <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download our PDF</a></small>
             </div>
         </section>
 
