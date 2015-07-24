@@ -46,7 +46,7 @@
             <p class="how-does-it-work">How does it work?</p>
 
             <p>It’s simple. The 3 people who’ve referred the most friends will be our winners!
-                Just tell your friends to enter your name on the booking page.</p>
+                Just tell your friends to enter your name in the “Referrer” field when booking tickets.</p>
 
             <p class="how-does-it-work">Share and tweet</p>
 
