@@ -26,3 +26,5 @@ Route::get('/resources/{name?}', 'ResourcesController@renderView');
 Route::get('/sponsors', 'SponsorsController@renderView');
 
 Route::get('/speakers', 'ProgrammeController@renderView');
+
+Route::get('/thank-you', 'ConfirmationController@renderView');
