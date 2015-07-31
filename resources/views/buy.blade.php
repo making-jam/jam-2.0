@@ -21,7 +21,7 @@
 
     <main class="static">
         <section class="container-narrow">
-            <div class="col-sm-8">
+            <div class="col-sm-7">
                 <div class="buy-tickets-iframe">
                     <iframe src="http://www.eventbrite.com/tickets-external?eid=16351563968&ref=etckt&v=2"
                             frameborder="0"

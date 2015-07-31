@@ -121,16 +121,23 @@ nav#navTop
             weight: 700
 
   .button
+    +transition(opacity .4s)
+
+    opacity: 0
     display: inline-block
     line-height: 1
-    padding-top: $base-unit-layout + $quarter-unit-layout
-    padding-bottom: $base-unit-layout + $quarter-unit-layout
+    padding: rem(18px) rem(22px)
     float: right
-    margin: ($base-unit-layout + rem(3px)) 0 0
+    margin: rem(22px) 0 0
+    font:
+      size: rem(14px)
 
   &.solid
     background: rgba(255,255,255,.98)
     border-bottom: 1px solid $color-grey-200
+
+    .button
+      opacity: 1
 
     .logo
       background:
