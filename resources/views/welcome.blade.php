@@ -86,12 +86,14 @@
                 <h3>JAM wouldn't be possible without <br/>the generous help of our sponsors.</h3>
 
                 <ul class="row sponsors">
-                    <li class="col-sm-4" id="adbrain">
+                    <li class="col-sm-6" id="adbrain">
                         <a href="http://www.adbrain.com/" target="_blank"><strong>Adbrain</strong></a>
                     </li>
-                    <li class="col-sm-4" id="gocardless">
+                    <li class="col-sm-6" id="gocardless">
                         <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
                     </li>
+                </ul>
+                <ul class="row sponsors">
                     <li class="col-sm-4" id="deskbeers">
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
@@ -116,7 +118,8 @@
 
                 <a class="button white" href="/buy">Get Your Early Bird Ticket</a>
 
-                <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download our PDF</a></small>
+                <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
+                        our PDF</a></small>
             </div>
         </section>
 

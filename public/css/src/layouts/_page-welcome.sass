@@ -69,12 +69,9 @@
         padding-top: $base-unit-layout
 
       img
-        +border-radius(100%)
-
         display: block
-        width: rem(160px)
-        height: rem(160px)
-        background: $color-grey-100
+        width: rem(180px)
+        height: rem(180px)
         margin: 0 auto $base-unit-layout
 
       small, strong, a
@@ -146,6 +143,12 @@
     .sponsors
       margin-top: $triple-unit-layout
       margin-bottom: $triple-unit-layout
+
+      &:first-of-type
+        margin-bottom: 0
+
+      &:last-of-type
+        margin-top: $base-unit-layout
 
     .button
       display: inline-block
