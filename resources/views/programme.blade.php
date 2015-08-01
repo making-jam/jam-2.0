@@ -27,6 +27,12 @@
                         <p class="speaker-company">{{$info['position']}}</p>
 
                         {!! $info['biog'] !!}
+
+
+                        <div class="topic">
+                            <span class="label">Topic</span>
+                            <h4>{{ $info['programme']['topic'] or 'Coming Soon...' }}</h4>
+                        </div>
                     </aside>
                 </article>
             @endforeach

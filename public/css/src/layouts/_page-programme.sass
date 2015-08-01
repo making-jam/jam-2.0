@@ -102,7 +102,7 @@
             margin: $base-unit-layout 0 0
 
             &.speaker-name, &.speaker-company
-              line-height: 1.5
+              line-height: 1
               margin: 0
               font:
                 size: rem(16px)
@@ -111,6 +111,15 @@
               color: $color-grey
               font:
                 size: rem(14px)
+
+          .topic
+            margin: $double-unit-layout 0 0
+
+            h4
+              display: block
+              padding-top: $quarter-unit-layout
+              font:
+                size: rem(22px)
 
         +respond-to-size($screen-sm)
           //.time
