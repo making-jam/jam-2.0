@@ -361,7 +361,7 @@ input:invalid, textarea:invalid {
 .button, button {
   background: white;
   text-decoration: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.125rem 1.5rem;
   cursor: pointer;
   display: inline-block;
   border: 0;
