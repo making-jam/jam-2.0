@@ -133,7 +133,7 @@ nav#navTop
       size: rem(14px)
 
   &.solid
-    background: rgba(255,255,255,.98)
+    background: rgba(255, 255, 255, .98)
     border-bottom: 1px solid $color-grey-200
 
     .button
@@ -147,7 +147,7 @@ nav#navTop
       li
         a
           color: $color-black
-          
+
   +respond-to-size($screen-sm)
     +transition(left .25s)
 
@@ -194,11 +194,29 @@ nav#navTop
 
         a
           color: white !important
-          height: $triple-unit-layout + $half-unit-layout
-          line-height: $triple-unit-layout + $half-unit-layout
+          height: $triple-unit-layout
+          line-height: rem(20px)
           padding: 0
+          display: inline-block
+
+          &:after
+            +transition(width .25s)
+
+            content: ''
+            width: 0%
+            height: 2px
+            background: white
+            display: block
+            margin-top: $quarter-unit-layout
+
+          +hover
+            text-decoration: none
+
+            &:after
+              width: 100%
 
     .button
+      opacity: 1
       float: none
       background: white
       color: $color-black
