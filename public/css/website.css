@@ -2618,11 +2618,16 @@ footer {
       color: #9E9E9E;
       font-size: 0.875rem; }
   .page-programme main section article .info .topic {
-    margin: 2rem 0 0; }
+    border-top: 1px solid #EEEEEE;
+    margin: 2rem 0 0;
+    padding: 2rem 0 0; }
     .page-programme main section article .info .topic h4 {
       display: block;
       padding-top: 0.25rem;
       font-size: 1.375rem; }
+    .page-programme main section article .info .topic .description p {
+      line-height: 1.6;
+      font-size: 0.9375rem; }
   @media all and (max-width: 768px) {
     .page-programme main section article .info {
       text-align: center;

@@ -113,13 +113,21 @@
                 size: rem(14px)
 
           .topic
+            border-top: 1px solid $color-grey-200
             margin: $double-unit-layout 0 0
+            padding: $double-unit-layout 0 0
 
             h4
               display: block
               padding-top: $quarter-unit-layout
               font:
                 size: rem(22px)
+
+            .description
+              p
+                line-height: 1.6
+                font:
+                  size: rem(15px)
 
         +respond-to-size($screen-sm)
           //.time

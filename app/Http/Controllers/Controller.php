@@ -51,7 +51,7 @@ abstract class Controller extends BaseController
                 'company' => 'Hire Space', 'link' => 'https://hirespace.com/', 'id' => 'hire-space',
                 'bio' => 'will-swannell'],
             'Tim Davey' => ['img' => 'tim-davey.jpg', 'position' => 'Co-Founder &amp; Head of Product',
-                'programme' => ['time' => '11:00 am', 'topic' => 'Living your culture'],
+                'programme' => ['time' => '11:00 am', 'topic' => 'Getting the culture right'],
                 'company' => 'OneFineStay', 'link' => 'http://www.onefinestay.com/', 'id' => 'onefinestay',
                 'bio' => 'tim-davey'],
         ];

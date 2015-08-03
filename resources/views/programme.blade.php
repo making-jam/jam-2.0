@@ -32,6 +32,10 @@
                         <div class="topic">
                             <span class="label">Topic</span>
                             <h4>{{ $info['programme']['topic'] or 'Coming Soon...' }}</h4>
+
+                            <div class="description">
+                                {!! $info['topic']['description'] !!}
+                            </div>
                         </div>
                     </aside>
                 </article>

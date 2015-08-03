@@ -24,6 +24,7 @@ class ProgrammeController extends Controller
 
             $info['name'] = $name;
             $info['biog'] = Storage::disk('local')->get('/bios/' . $info['bio'] . '.html');
+            $info['topic']['description'] = Storage::disk('local')->get('/topics/' . $info['bio'] . '.html');
             $data[$contentTimestamp] = $info;
         }
 
