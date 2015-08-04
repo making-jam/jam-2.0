@@ -42,6 +42,10 @@ abstract class Controller extends BaseController
                 'programme' => ['time' => '4:00 pm', 'topic' => 'Perception vs Reality'],
                 'company' => 'YPlan', 'link' => 'https://yplanapp.com/', 'id' => 'yplan',
                 'bio' => 'karolis-kosas'],
+            'Tim Davey' => ['img' => 'tim-davey.jpg', 'position' => 'Co-Founder &amp; Head of Product',
+                'programme' => ['time' => '11:00 am', 'topic' => 'Getting the culture right'],
+                'company' => 'OneFineStay', 'link' => 'http://www.onefinestay.com/', 'id' => 'onefinestay',
+                'bio' => 'tim-davey'],
             'Anna Wojnarowska' => ['img' => 'anna-wojnarowska.jpg', 'position' => 'User Researcher',
                 'programme' => ['time' => '3:00 pm'],
                 'company' => 'Government Digital Service', 'link' => 'https://gds.blog.gov.uk/', 'id' => 'government-digital-service',
@@ -50,10 +54,6 @@ abstract class Controller extends BaseController
                 'programme' => ['time' => '12:00 pm'],
                 'company' => 'Hire Space', 'link' => 'https://hirespace.com/', 'id' => 'hire-space',
                 'bio' => 'will-swannell'],
-            'Tim Davey' => ['img' => 'tim-davey.jpg', 'position' => 'Co-Founder &amp; Head of Product',
-                'programme' => ['time' => '11:00 am', 'topic' => 'Getting the culture right'],
-                'company' => 'OneFineStay', 'link' => 'http://www.onefinestay.com/', 'id' => 'onefinestay',
-                'bio' => 'tim-davey'],
         ];
     }
 }
