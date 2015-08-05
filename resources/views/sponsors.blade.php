@@ -34,9 +34,9 @@
                 </li>
             </ul>
 
-            <hr class="margin-top-triple margin-bottom-triple">
+            <hr class="margin-top-triple margin-bottom-triple is-hidden">
 
-            <ul class="row sponsors">
+            <ul class="row sponsors is-hidden">
                 <li class="col-sm-2" id="treehouse">
                     <a href="https://teamtreehouse.com/" target="_blank"><strong>Treehouse</strong></a>
                 </li>

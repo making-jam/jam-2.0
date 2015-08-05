@@ -93,7 +93,8 @@
                         <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
                     </li>
                 </ul>
-                <ul class="row sponsors">
+                {{--margin-bottom-half temporary--}}
+                <ul class="row sponsors margin-bottom-half">
                     <li class="col-sm-4" id="deskbeers">
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
@@ -108,7 +109,7 @@
                     </li>
                 </ul>
 
-                <a href="/sponsors" class="button black">See full list of sponsors</a>
+                <a href="/sponsors" class="button black is-hidden">See full list of sponsors</a>
             </div>
         </section>
 
