@@ -2645,6 +2645,8 @@ footer {
   border-bottom: 1px solid #F5F5F5; }
   .page-resources main a:hover, .page-resources main a:focus {
     background: #F5F5F5; }
+  .page-resources main a.more-offset {
+    padding: 4rem 0; }
   .page-resources main a article p {
     margin: 0; }
   .page-resources main a article .title {
@@ -2667,6 +2669,8 @@ footer {
   background: #212121;
   padding: 2rem 0;
   color: white; }
+  .page-resources .resources-sign-up.relative {
+    position: relative; }
   @media all and (max-width: 1024px) {
     .page-resources .resources-sign-up div, .page-resources .resources-sign-up form {
       float: none; }

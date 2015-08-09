@@ -11,7 +11,7 @@
 
     <main class="static">
         @foreach ($resources as $data)
-            <a href="{{$data['link']}}" target="_blank">
+            <a href="{{$data['link']}}" target="_blank" class="{{$ogMeta['link'] ? 'more-offset' : ''}}">
                 <article class="container-narrow">
                     <p class="title">{{$data['title']}}</p>
                     <strong class="date">{{$data['date']}}</strong>
@@ -28,7 +28,7 @@
         @endforeach
     </main>
 
-    <div class="resources-sign-up" id="resourcesSignUpForm">
+    <div class="resources-sign-up{{$ogMeta['link'] ? ' relative' : ''}}" id="resourcesSignUpForm">
         <div class="close" id="closeResourcesSignUpForm">&times;</div>
         <div class="container-narrow">
             <div class="pull-left">The best design stories, sent to your inbox.</div>
