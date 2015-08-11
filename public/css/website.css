@@ -1169,6 +1169,9 @@ dl {
       .modal-backdrop .modal {
         margin: 2rem auto; } }
 
+.page-welcome nav#navTop .button {
+  opacity: 0; }
+
 nav#navTop {
   zoom: 1;
   z-index: 4;
@@ -1278,7 +1281,6 @@ nav#navTop {
     -webkit-transition: opacity .4s;
     -o-transition: opacity .4s;
     transition: opacity .4s;
-    opacity: 0;
     display: inline-block;
     line-height: 1;
     padding: 1.125rem 1.375rem;
