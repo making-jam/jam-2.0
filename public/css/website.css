@@ -2014,7 +2014,7 @@ h1, h2, h3, h4, h5, h6 {
   .block.block, .show.block, .is-visible.block {
     min-width: 100%; }
 
-.show-inline {
+.show-inline, .inline {
   display: inline !important; }
 
 .is-hidden {
@@ -2220,6 +2220,17 @@ h1, h2, h3, h4, h5, h6 {
 .description {
   color: #9E9E9E; }
 
+.social {
+  zoom: 1; }
+  .social:before, .social:after {
+    content: "";
+    display: table; }
+  .social:after {
+    clear: both; }
+  .social .left {
+    float: left;
+    margin: 0 0.5rem 0 0; }
+
 section {
   position: relative;
   padding: 5rem 1rem; }
@@ -2328,16 +2339,6 @@ footer {
   margin: 2rem 0 1rem;
   font-size: 1.5rem;
   font-weight: 700; }
-.page-confirmation section .social {
-  zoom: 1; }
-  .page-confirmation section .social:before, .page-confirmation section .social:after {
-    content: "";
-    display: table; }
-  .page-confirmation section .social:after {
-    clear: both; }
-  .page-confirmation section .social .left {
-    float: left;
-    margin: 0 0.5rem 0 0; }
 
 .container-narrow.documentation header {
   padding: 8rem 0; }
@@ -2762,7 +2763,8 @@ footer {
 .page-welcome section#getInvolved small {
   display: block; }
   .page-welcome section#getInvolved small a {
-    color: #212121; }
+    color: #212121;
+    font-size: 1.125rem; }
 .page-welcome section#topics .button {
   margin-top: 2rem;
   display: inline-block; }

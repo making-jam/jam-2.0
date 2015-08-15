@@ -1,6 +1,33 @@
 @extends('master')
 
 @section('content')
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=613473935364036";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));</script>
+
     <header>
         <div class="hero">
             <div class="container-narrow">
@@ -12,6 +39,25 @@
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
                     <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
+
+                    <div class="social padding-top-base">
+                        <div class="left">
+                            <div class="fb-share-button" data-href="http://www.jam2015.london/"
+                                 data-layout="button"></div>
+                        </div>
+
+                        <div class="left">
+                            <a class="twitter-share-button"
+                               href="https://twitter.com/intent/tweet?text={{ $tweetText }}&url={{ $tweetUrl }}"
+                               data-count="none">
+                                Tweet</a>
+                        </div>
+
+                        <div class="left">
+                            <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                            <script type="IN/Share" data-url="http://www.jam2015.london"></script>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 features is-hidden">
                     <ul>
@@ -121,6 +167,25 @@
 
                 <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
                         our PDF</a></small>
+
+                <div class="social block-center padding-top-double">
+                    <div class="inline">
+                        <div class="fb-share-button" data-href="http://www.jam2015.london/"
+                             data-layout="button"></div>
+                    </div>
+
+                    <div class="inline">
+                        <a class="twitter-share-button"
+                           href="https://twitter.com/intent/tweet?text={{ $tweetText }}&url={{ $tweetUrl }}"
+                           data-count="none">
+                            Tweet</a>
+                    </div>
+
+                    <div class="inline">
+                        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                        <script type="IN/Share" data-url="http://www.jam2015.london"></script>
+                    </div>
+                </div>
             </div>
         </section>
 
