@@ -99,7 +99,7 @@
             <div class="container-narrow">
                 @foreach ($speakers as $name => $info)
                     <div class="col-sm-4 speaker">
-                        <img src="/images/speakers/{{$info['img']}}">
+                        <img src="/images/speakers/optimised/{{$info['img']}}">
 
                         <strong>{{$name}}</strong>
                         <small>{{$info['position']}}</small>

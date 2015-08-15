@@ -1,0 +1,1 @@
+mogrify -path optimised -quality 00 *.png

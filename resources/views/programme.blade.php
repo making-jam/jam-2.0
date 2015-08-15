@@ -15,7 +15,7 @@
                 <article>
                     <aside class="col-sm-3 time">
                         {{--<strong>{{$info['programme']['time']}}</strong>--}}
-                        <img src="/images/speakers/{{$info['img']}}">
+                        <img src="/images/speakers/optimised/{{$info['img']}}">
                         <a href="{{$info['link']}}" target="_blank" id="{{$info['id']}}"
                            class="company"><em>{{$info['company']}}</em></a>
                     </aside>

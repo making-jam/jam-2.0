@@ -1430,38 +1430,38 @@ ul.sponsors li a {
   height: 6rem;
   line-height: 6rem;
   background-color: transparent;
-  background-image: url('../images/sponsors/adbrain.png');
+  background-image: url('../images/sponsors/optimised/adbrain.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 80% auto; }
   ul.sponsors li a strong {
     opacity: 0; }
 ul.sponsors li#balsamiq a {
-  background-image: url('../images/sponsors/balsamiq.png');
+  background-image: url('../images/sponsors/optimised/balsamiq.png');
   background-size: 70% auto; }
 ul.sponsors li#bohemiancoding a {
-  background-image: url('../images/sponsors/bohemian-coding.png');
+  background-image: url('../images/sponsors/optimised/bohemian-coding.png');
   background-size: auto 80%; }
 ul.sponsors li#deskbeers a {
-  background-image: url('../images/sponsors/deskbeers.jpg');
+  background-image: url('../images/sponsors/optimised/deskbeers.png');
   background-size: 70% auto; }
 ul.sponsors li#dotgrid a {
-  background-image: url('../images/sponsors/dotgrid.png');
+  background-image: url('../images/sponsors/optimised/dotgrid.png');
   background-size: auto 80%; }
 ul.sponsors li#gocardless a {
-  background-image: url('../images/sponsors/gocardless.png');
+  background-image: url('../images/sponsors/optimised/gocardless.png');
   background-size: 90% auto; }
 ul.sponsors li#hirespace a {
-  background-image: url('../images/sponsors/hirespace.png'); }
+  background-image: url('../images/sponsors/optimised/hirespace.png'); }
 ul.sponsors li#lyst a {
-  background-image: url('../images/sponsors/lyst.png');
+  background-image: url('../images/sponsors/optimised/lyst.png');
   background-size: 40% auto; }
 ul.sponsors li#marvelapp a {
-  background-image: url('../images/sponsors/marvelapp.png'); }
+  background-image: url('../images/sponsors/optimised/marvelapp.png'); }
 ul.sponsors li#podio a {
-  background-image: url('../images/sponsors/podio.png'); }
+  background-image: url('../images/sponsors/optimised/podio.png'); }
 ul.sponsors li#treehouse a {
-  background-image: url('../images/sponsors/treehouse.png'); }
+  background-image: url('../images/sponsors/optimised/treehouse.png'); }
 @media all and (max-width: 800px) {
   ul.sponsors li a {
     background-size: auto 50% !important; }
@@ -2581,27 +2581,27 @@ footer {
       font-size: 0.75rem;
       font-style: normal; }
     .page-programme main section article .time a#google-chrome-team {
-      background-image: url('../images/speakers/companies/google.png'); }
+      background-image: url('../images/speakers/companies/optimisedgoogle.png'); }
     .page-programme main section article .time a#gosquared {
-      background-image: url('../images/speakers/companies/gosquared.png');
+      background-image: url('../images/speakers/companies/optimisedgosquared.png');
       background-size: auto 85%; }
     .page-programme main section article .time a#government-digital-service {
-      background-image: url('../images/speakers/companies/governmentds.png');
+      background-image: url('../images/speakers/companies/optimisedgovernmentds.png');
       background-size: auto 100%; }
     .page-programme main section article .time a#hire-space {
-      background-image: url('../images/speakers/companies/hirespace.png'); }
+      background-image: url('../images/speakers/companies/optimisedhirespace.png'); }
     .page-programme main section article .time a#onefinestay {
-      background-image: url('../images/speakers/companies/onefinestay.png'); }
+      background-image: url('../images/speakers/companies/optimisedonefinestay.png'); }
     .page-programme main section article .time a#swiftkey {
-      background-image: url('../images/speakers/companies/swiftkey.png');
+      background-image: url('../images/speakers/companies/optimisedswiftkey.png');
       background-size: auto 85%; }
     .page-programme main section article .time a#the-dots {
-      background-image: url('../images/speakers/companies/thedots.png'); }
+      background-image: url('../images/speakers/companies/optimisedthedots.png'); }
     .page-programme main section article .time a#transferwise {
-      background-image: url('../images/speakers/companies/transferwise.png');
+      background-image: url('../images/speakers/companies/optimisedtransferwise.png');
       background-size: auto 80%; }
     .page-programme main section article .time a#yplan {
-      background-image: url('../images/speakers/companies/yplan.png');
+      background-image: url('../images/speakers/companies/optimisedyplan.png');
       background-size: auto 70%; }
   .page-programme main section article .info h3 {
     margin: 0;
@@ -2811,27 +2811,27 @@ footer {
       font-size: 0.75rem;
       font-style: normal; }
     .page-welcome section#speakers .speaker a#google-chrome-team {
-      background-image: url('../images/speakers/companies/google.png'); }
+      background-image: url('../images/speakers/companies/optimised/google.png'); }
     .page-welcome section#speakers .speaker a#gosquared {
-      background-image: url('../images/speakers/companies/gosquared.png');
+      background-image: url('../images/speakers/companies/optimised/gosquared.png');
       background-size: auto 85%; }
     .page-welcome section#speakers .speaker a#government-digital-service {
-      background-image: url('../images/speakers/companies/governmentds.png');
+      background-image: url('../images/speakers/companies/optimised/governmentds.png');
       background-size: auto 100%; }
     .page-welcome section#speakers .speaker a#hire-space {
-      background-image: url('../images/speakers/companies/hirespace.png'); }
+      background-image: url('../images/speakers/companies/optimised/hirespace.png'); }
     .page-welcome section#speakers .speaker a#onefinestay {
-      background-image: url('../images/speakers/companies/onefinestay.png'); }
+      background-image: url('../images/speakers/companies/optimised/onefinestay.png'); }
     .page-welcome section#speakers .speaker a#swiftkey {
-      background-image: url('../images/speakers/companies/swiftkey.png');
+      background-image: url('../images/speakers/companies/optimised/swiftkey.png');
       background-size: auto 85%; }
     .page-welcome section#speakers .speaker a#the-dots {
-      background-image: url('../images/speakers/companies/thedots.png'); }
+      background-image: url('../images/speakers/companies/optimised/thedots.png'); }
     .page-welcome section#speakers .speaker a#transferwise {
-      background-image: url('../images/speakers/companies/transferwise.png');
+      background-image: url('../images/speakers/companies/optimised/transferwise.png');
       background-size: auto 80%; }
     .page-welcome section#speakers .speaker a#yplan {
-      background-image: url('../images/speakers/companies/yplan.png');
+      background-image: url('../images/speakers/companies/optimised/yplan.png');
       background-size: auto 70%; }
 .page-welcome section#sponsors .sponsors {
   margin-top: 3rem;
