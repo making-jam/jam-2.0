@@ -39,25 +39,6 @@
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
                     <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
-
-                    <div class="social padding-top-base">
-                        <div class="left">
-                            <div class="fb-share-button" data-href="http://www.jam2015.london/"
-                                 data-layout="button"></div>
-                        </div>
-
-                        <div class="left">
-                            <a class="twitter-share-button"
-                               href="https://twitter.com/intent/tweet?text={{ $tweetText }}&url={{ $tweetUrl }}"
-                               data-count="none">
-                                Tweet</a>
-                        </div>
-
-                        <div class="left">
-                            <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                            <script type="IN/Share" data-url="http://www.jam2015.london"></script>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-sm-4 features is-hidden">
                     <ul>
