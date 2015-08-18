@@ -39,7 +39,7 @@ abstract class Controller extends BaseController
                 'company' => 'Transferwise', 'link' => 'https://transferwise.com/', 'id' => 'transferwise',
                 'bio' => 'graham-paterson'],
             'Karolis Kosas' => ['img' => 'karolis-kosas.jpg', 'position' => 'Creative Director',
-                'programme' => ['time' => '4:00 pm', 'topic' => 'Perception vs Reality'],
+                'programme' => ['time' => '4:00 pm', 'topic' => 'Perception vs Reality: How to reconcile product’s perception and the needs of its customers'],
                 'company' => 'YPlan', 'link' => 'https://yplanapp.com/', 'id' => 'yplan',
                 'bio' => 'karolis-kosas'],
             'Tim Davey' => ['img' => 'tim-davey.jpg', 'position' => 'Co-Founder &amp; Head of Product',
