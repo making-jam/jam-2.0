@@ -149,7 +149,7 @@
                 <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
                         our PDF</a></small>
 
-                <div class="social block-center padding-top-double">
+                <div class="social block-center padding-top-double is-hidden">
                     <div class="inline">
                         <div class="fb-share-button" data-href="http://www.jam2015.london/"
                              data-layout="button"></div>
