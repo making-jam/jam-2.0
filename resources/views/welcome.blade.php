@@ -72,7 +72,7 @@
             <div class="container-small">
                 <h3>9 speakers from some of the best product companies share their stories.</h3>
 
-                <a class="button black see-schedule" href="/speakers">Find Out More</a>
+                <a class="button black see-schedule" href="/schedule">Find Out More</a>
             </div>
         </section>
 
@@ -148,25 +148,6 @@
 
                 <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
                         our PDF</a></small>
-
-                <div class="social block-center padding-top-double is-hidden">
-                    <div class="inline">
-                        <div class="fb-share-button" data-href="http://www.jam2015.london/"
-                             data-layout="button"></div>
-                    </div>
-
-                    <div class="inline">
-                        <a class="twitter-share-button"
-                           href="https://twitter.com/intent/tweet?text={{ $tweetText }}&url={{ $tweetUrl }}"
-                           data-count="none">
-                            Tweet</a>
-                    </div>
-
-                    <div class="inline">
-                        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                        <script type="IN/Share" data-url="http://www.jam2015.london"></script>
-                    </div>
-                </div>
             </div>
         </section>
 

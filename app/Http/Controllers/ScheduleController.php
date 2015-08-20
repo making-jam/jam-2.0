@@ -5,15 +5,15 @@ namespace JAM\Http\Controllers;
 use Storage;
 use JAM\Http\Controllers\Controller;
 
-class ProgrammeController extends Controller
+class ScheduleController extends Controller
 {
     public function renderView()
     {
-        return view('programme', ['title' => 'Speakers', 'bodyClass' => 'programme', 'speakers' => self::programmeData(),
+        return view('schedule', ['title' => 'Schedule', 'bodyClass' => 'schedule', 'speakers' => self::scheduleData(),
             'url' => parent::getMetaUrl()]);
     }
 
-    private static function programmeData()
+    private static function scheduleData()
     {
         $speakerData = parent::getSpeakers();
 

@@ -4,7 +4,7 @@
     <header class="text">
         <div class="hero">
             <div class="container-narrow">
-                <h1>Speakers</h1>
+                <h1>Schedule</h1>
             </div>
         </div>
     </header>
