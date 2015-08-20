@@ -23,12 +23,13 @@ class ScheduleController extends Controller
             $contentTimestamp = strtotime($info['programme']['time']);
 
             $info['name'] = $name;
+            $info['firstName'] = explode(' ', $name)[0];
             $info['biog'] = Storage::disk('local')->get('/bios/' . $info['bio'] . '.html');
             $info['topic']['description'] = Storage::disk('local')->get('/topics/' . $info['bio'] . '.html');
             $data[$contentTimestamp] = $info;
         }
 
-//        ksort($data);
+        ksort($data);
 
         return $data;
     }

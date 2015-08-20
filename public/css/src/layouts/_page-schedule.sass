@@ -2,26 +2,68 @@
   main
     section
       article
+        $speaker-image-size: rem(160px)
+        $time-offset: ($speaker-image-size / 2) - $base-unit-layout
+
         +clearfix
 
-        padding-bottom: $triple-unit-layout
-        margin-bottom: $triple-unit-layout
-        border-bottom: 1px solid $color-grey-200
+        display: table
+        table-layout: fixed
+
+        aside
+          display: table-cell
+          padding: 0
+          float: none
+          vertical-align: top
+
+        &:first-of-type
+          .time
+            &:before
+              top: $time-offset
 
         &:last-of-type
           padding-bottom: 0
           margin-bottom: 0
           border-bottom: 0
 
+          .time
+            &:before
+              height: $time-offset
+
         .time
+          &:before
+            +z-index(schedule-time-line)
+
+            position: absolute
+            content: ''
+            height: 100%
+            top: 0
+            left: 50%
+            width: 1px
+            background: $color-grey-200
+
+          strong
+            +z-index(schedule-time)
+
+            background: white
+            position: relative
+            display: inline-block
+            margin-top: $time-offset
+            border: 2px solid $color-black
+            padding: rem(6px) rem(12px)
+            line-height: 1
+            font:
+              size: rem(14px)
+
+        .speaker
           strong
             display: block
             margin-bottom: $base-unit-layout
 
           img
             display: block
-            width: rem(160px)
-            height: rem(160px)
+            width: $speaker-image-size
+            height: $speaker-image-size
             background: $color-grey-100
             margin: 0 auto $base-unit-layout
 
@@ -46,60 +88,61 @@
 
             &#google-chrome-team
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedgoogle.png')
+                image: url('#{$image-base}/speakers/companies/optimised/google.png')
 
             &#gosquared
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedgosquared.png')
+                image: url('#{$image-base}/speakers/companies/optimised/gosquared.png')
                 size: auto 85%
 
             &#government-digital-service
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedgovernmentds.png')
+                image: url('#{$image-base}/speakers/companies/optimised/governmentds.png')
                 size: auto 100%
 
             &#hire-space
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedhirespace.png')
+                image: url('#{$image-base}/speakers/companies/optimised/hirespace.png')
 
             &#onefinestay
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedonefinestay.png')
+                image: url('#{$image-base}/speakers/companies/optimised/onefinestay.png')
 
             &#swiftkey
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedswiftkey.png')
+                image: url('#{$image-base}/speakers/companies/optimised/swiftkey.png')
                 size: auto 85%
 
             &#the-dots
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedthedots.png')
+                image: url('#{$image-base}/speakers/companies/optimised/thedots.png')
 
             &#transferwise
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedtransferwise.png')
+                image: url('#{$image-base}/speakers/companies/optimised/transferwise.png')
                 size: auto 80%
 
             &#yplan
               background:
-                image: url('#{$image-base}/speakers/companies/optimisedyplan.png')
+                image: url('#{$image-base}/speakers/companies/optimised/yplan.png')
                 size: auto 70%
 
         .info
           @extend .text-left
 
+          padding-bottom: $triple-unit-layout * 1.5
+
           h3
             margin: 0
             position: relative
             top: -($half-unit-layout)
-            line-height: 1.4
+            line-height: 1.3
             font:
-              size: rem(28px)
-              weight: 700
+              size: rem(24px)
 
           p
             line-height: 1.7
-            margin: $base-unit-layout 0 0
+            margin: 0 0 $quarter-unit-layout
 
             &.speaker-name, &.speaker-company
               line-height: 1
@@ -112,25 +155,32 @@
               font:
                 size: rem(14px)
 
-          .topic
-            border-top: 1px solid $color-grey-200
-            margin: $double-unit-layout 0 0
+            &.topic-description
+              margin-top: $base-unit-layout
+              font:
+                size: rem(15px)
+
+          .about
+            //border-top: 1px solid $color-grey-200
+            //margin: $double-unit-layout 0 0
             padding: $double-unit-layout 0 0
 
             h4
+              @extend .text-uppercase
+
               display: block
-              text-transform: capitalize
               padding-top: $half-unit-layout
               line-height: 1.4
               font:
-                size: rem(22px)
+                size: rem(15px)
 
             .description
               p
-                line-height: 1.6
-                color: $color-black
+                line-height: 1.7
+                margin: $half-unit-layout 0 0
+                //color: $color-black
                 font:
-                  size: rem(15px)
+                  size: rem(13px)
 
         +respond-to-size($screen-sm)
           //.time

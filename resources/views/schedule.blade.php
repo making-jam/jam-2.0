@@ -13,28 +13,30 @@
         <section class="container-narrow">
             @foreach ($speakers as $name => $info)
                 <article>
-                    <aside class="col-sm-3 time">
-                        {{--<strong>{{$info['programme']['time']}}</strong>--}}
+                    <aside class="col-sm-2 time">
+                        <strong>{{$info['programme']['time']}}</strong>
+                    </aside>
+                    <aside class="col-sm-3 speaker">
                         <img src="/images/speakers/optimised/{{$info['img']}}">
                         <a href="{{$info['link']}}" target="_blank" id="{{$info['id']}}"
                            class="company"><em>{{$info['company']}}</em></a>
                     </aside>
-                    <aside class="col-sm-9 info">
-                        <h3>{{$info['name']}}</h3>
+                    <aside class="col-sm-7 info">
+                        <h3>{{ $info['programme']['topic'] or 'Coming Soon...' }}</h3>
 
-                        {{--<p class="speaker-name">{{$info['name']}}</p>--}}
+                        <p>{{$info['name']}}</p>
 
-                        <p class="speaker-company">{{$info['position']}}</p>
+                        <p class="speaker-company">{{$info['position']}}, {{$info['company']}}</p>
 
-                        {!! $info['biog'] !!}
+                        {!! $info['topic']['description'] !!}
 
 
-                        <div class="topic">
-                            <span class="label">Topic</span>
-                            <h4>{{ $info['programme']['topic'] or 'Coming Soon...' }}</h4>
+                        <div class="about">
+                            {{--<span class="label">Topic</span>--}}
+                            <h4>About {{$info['firstName']}}</h4>
 
                             <div class="description">
-                                {!! $info['topic']['description'] !!}
+                                {!! $info['biog'] !!}
                             </div>
                         </div>
                     </aside>

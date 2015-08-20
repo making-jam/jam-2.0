@@ -1136,7 +1136,7 @@ dl {
     font-size: 0.875rem; }
 
 .modal-backdrop {
-  z-index: 7;
+  z-index: 9;
   top: 0;
   left: 0;
   position: fixed;
@@ -1174,7 +1174,7 @@ dl {
 
 nav#navTop {
   zoom: 1;
-  z-index: 4;
+  z-index: 6;
   position: fixed;
   top: 0;
   left: 0;
@@ -1215,7 +1215,7 @@ nav#navTop {
       -webkit-transition: all .25s;
       -o-transition: all .25s;
       transition: all .25s;
-      z-index: 5;
+      z-index: 7;
       position: relative;
       left: 0;
       top: 0;
@@ -1361,7 +1361,7 @@ nav#navTop {
   -webkit-transition: top .25s;
   -o-transition: top .25s;
   transition: top .25s;
-  z-index: 6;
+  z-index: 8;
   padding: 0 1rem;
   position: fixed;
   width: 100%;
@@ -2207,7 +2207,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-justify {
   text-align: justify; }
 
-.text-uppercase, nav#navTop ul li a, .page-welcome section#topics .topics .topic {
+.text-uppercase, nav#navTop ul li a, .page-schedule main section article .info .about h4, .page-welcome section#topics .topics .topic {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -2241,7 +2241,7 @@ section {
   section.jam {
     background: #04f799; }
   section .see-schedule {
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     bottom: -2rem;
     left: 50%;
@@ -2252,7 +2252,7 @@ header {
   position: relative;
   background-color: #757575; }
   header .features {
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     top: 0;
     right: 0;
@@ -2545,28 +2545,55 @@ footer {
 
 .page-schedule main section article {
   zoom: 1;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #EEEEEE; }
+  display: table;
+  table-layout: fixed; }
   .page-schedule main section article:before, .page-schedule main section article:after {
     content: "";
     display: table; }
   .page-schedule main section article:after {
     clear: both; }
+  .page-schedule main section article aside {
+    display: table-cell;
+    padding: 0;
+    float: none;
+    vertical-align: top; }
+  .page-schedule main section article:first-of-type .time:before {
+    top: 4rem; }
   .page-schedule main section article:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0; }
+    .page-schedule main section article:last-of-type .time:before {
+      height: 4rem; }
+  .page-schedule main section article .time:before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    background: #EEEEEE; }
   .page-schedule main section article .time strong {
+    z-index: 2;
+    background: white;
+    position: relative;
+    display: inline-block;
+    margin-top: 4rem;
+    border: 2px solid #212121;
+    padding: 0.375rem 0.75rem;
+    line-height: 1;
+    font-size: 0.875rem; }
+  .page-schedule main section article .speaker strong {
     display: block;
     margin-bottom: 1rem; }
-  .page-schedule main section article .time img {
+  .page-schedule main section article .speaker img {
     display: block;
     width: 10rem;
     height: 10rem;
     background: #F5F5F5;
     margin: 0 auto 1rem; }
-  .page-schedule main section article .time a {
+  .page-schedule main section article .speaker a {
     display: block;
     margin-top: 1rem;
     width: 100%;
@@ -2576,64 +2603,65 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto 100%; }
-    .page-schedule main section article .time a em {
+    .page-schedule main section article .speaker a em {
       opacity: 0;
       font-size: 0.75rem;
       font-style: normal; }
-    .page-schedule main section article .time a#google-chrome-team {
-      background-image: url('../images/speakers/companies/optimisedgoogle.png'); }
-    .page-schedule main section article .time a#gosquared {
-      background-image: url('../images/speakers/companies/optimisedgosquared.png');
+    .page-schedule main section article .speaker a#google-chrome-team {
+      background-image: url('../images/speakers/companies/optimised/google.png'); }
+    .page-schedule main section article .speaker a#gosquared {
+      background-image: url('../images/speakers/companies/optimised/gosquared.png');
       background-size: auto 85%; }
-    .page-schedule main section article .time a#government-digital-service {
-      background-image: url('../images/speakers/companies/optimisedgovernmentds.png');
+    .page-schedule main section article .speaker a#government-digital-service {
+      background-image: url('../images/speakers/companies/optimised/governmentds.png');
       background-size: auto 100%; }
-    .page-schedule main section article .time a#hire-space {
-      background-image: url('../images/speakers/companies/optimisedhirespace.png'); }
-    .page-schedule main section article .time a#onefinestay {
-      background-image: url('../images/speakers/companies/optimisedonefinestay.png'); }
-    .page-schedule main section article .time a#swiftkey {
-      background-image: url('../images/speakers/companies/optimisedswiftkey.png');
+    .page-schedule main section article .speaker a#hire-space {
+      background-image: url('../images/speakers/companies/optimised/hirespace.png'); }
+    .page-schedule main section article .speaker a#onefinestay {
+      background-image: url('../images/speakers/companies/optimised/onefinestay.png'); }
+    .page-schedule main section article .speaker a#swiftkey {
+      background-image: url('../images/speakers/companies/optimised/swiftkey.png');
       background-size: auto 85%; }
-    .page-schedule main section article .time a#the-dots {
-      background-image: url('../images/speakers/companies/optimisedthedots.png'); }
-    .page-schedule main section article .time a#transferwise {
-      background-image: url('../images/speakers/companies/optimisedtransferwise.png');
+    .page-schedule main section article .speaker a#the-dots {
+      background-image: url('../images/speakers/companies/optimised/thedots.png'); }
+    .page-schedule main section article .speaker a#transferwise {
+      background-image: url('../images/speakers/companies/optimised/transferwise.png');
       background-size: auto 80%; }
-    .page-schedule main section article .time a#yplan {
-      background-image: url('../images/speakers/companies/optimisedyplan.png');
+    .page-schedule main section article .speaker a#yplan {
+      background-image: url('../images/speakers/companies/optimised/yplan.png');
       background-size: auto 70%; }
-  .page-schedule main section article .info h3 {
-    margin: 0;
-    position: relative;
-    top: -0.5rem;
-    line-height: 1.4;
-    font-size: 1.75rem;
-    font-weight: 700; }
-  .page-schedule main section article .info p {
-    line-height: 1.7;
-    margin: 1rem 0 0; }
-    .page-schedule main section article .info p.speaker-name, .page-schedule main section article .info p.speaker-company {
-      line-height: 1;
+  .page-schedule main section article .info {
+    padding-bottom: 4.5rem; }
+    .page-schedule main section article .info h3 {
       margin: 0;
-      font-size: 1rem; }
-    .page-schedule main section article .info p.speaker-company {
-      color: #9E9E9E;
-      font-size: 0.875rem; }
-  .page-schedule main section article .info .topic {
-    border-top: 1px solid #EEEEEE;
-    margin: 2rem 0 0;
-    padding: 2rem 0 0; }
-    .page-schedule main section article .info .topic h4 {
-      display: block;
-      text-transform: capitalize;
-      padding-top: 0.5rem;
-      line-height: 1.4;
-      font-size: 1.375rem; }
-    .page-schedule main section article .info .topic .description p {
-      line-height: 1.6;
-      color: #212121;
-      font-size: 0.9375rem; }
+      position: relative;
+      top: -0.5rem;
+      line-height: 1.3;
+      font-size: 1.5rem; }
+    .page-schedule main section article .info p {
+      line-height: 1.7;
+      margin: 0 0 0.25rem; }
+      .page-schedule main section article .info p.speaker-name, .page-schedule main section article .info p.speaker-company {
+        line-height: 1;
+        margin: 0;
+        font-size: 1rem; }
+      .page-schedule main section article .info p.speaker-company {
+        color: #9E9E9E;
+        font-size: 0.875rem; }
+      .page-schedule main section article .info p.topic-description {
+        margin-top: 1rem;
+        font-size: 0.9375rem; }
+    .page-schedule main section article .info .about {
+      padding: 2rem 0 0; }
+      .page-schedule main section article .info .about h4 {
+        display: block;
+        padding-top: 0.5rem;
+        line-height: 1.4;
+        font-size: 0.9375rem; }
+      .page-schedule main section article .info .about .description p {
+        line-height: 1.7;
+        margin: 0.5rem 0 0;
+        font-size: 0.8125rem; }
   @media all and (max-width: 768px) {
     .page-schedule main section article .info {
       text-align: center;
@@ -2667,7 +2695,7 @@ footer {
   .page-resources main a:hover article .title, .page-resources main a:focus article .title {
     text-decoration: underline; }
 .page-resources .resources-sign-up {
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   bottom: 0;
   width: 100%;
