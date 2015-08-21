@@ -4,7 +4,7 @@
     <ul>
         <li{!! $bodyClass == 'schedule' ? ' class="active"' : '' !!}><a href="/schedule">Schedule</a></li>
         <li{!! $bodyClass == 'sponsors' ? ' class="active"' : '' !!}><a href="/sponsors">Sponsors</a></li>
-        {{--<li><a href="/getting-here">Getting Here</a></li>--}}
+        <li{!! $bodyClass == 'getting-here' ? ' class="active"' : '' !!}><a href="/getting-here">Getting Here</a></li>
         <li{!! $bodyClass == 'resources' ? ' class="active"' : '' !!}><a href="/resources">Resources</a></li>
     </ul>
 

@@ -17,11 +17,13 @@ Route::get('/buy', 'BuyController@renderView');
 
 Route::get('/code-of-conduct', 'CodeOfConductController@renderView');
 
+Route::get('/getting-here', 'GettingHereController@renderView');
+
 Route::get('/manifesto', 'ManifestoController@renderView');
 
-Route::get('/schedule', 'ScheduleController@renderView');
-
 Route::get('/resources/{name?}', 'ResourcesController@renderView');
+
+Route::get('/schedule', 'ScheduleController@renderView');
 
 Route::get('/sponsors', 'SponsorsController@renderView');
 

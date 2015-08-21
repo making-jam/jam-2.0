@@ -2511,6 +2511,15 @@ footer {
         .container-narrow.documentation article aside .color.color-yellow .darker {
           background: #ccae2a; }
 
+.page-getting-here .static a {
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+  color: #212121;
+  text-decoration: none; }
+  .page-getting-here .static a:hover, .page-getting-here .static a:focus {
+    color: #04f799; }
+
 .page-manifesto #team {
   padding-bottom: 6rem; }
   .page-manifesto #team h3 {
