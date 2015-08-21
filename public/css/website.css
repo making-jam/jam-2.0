@@ -2663,9 +2663,24 @@ footer {
         margin: 0.5rem 0 0;
         font-size: 0.8125rem; }
   @media all and (max-width: 768px) {
-    .page-schedule main section article .info {
-      text-align: center;
-      margin-top: 2rem; } }
+    .page-schedule main section article {
+      display: block; }
+      .page-schedule main section article aside {
+        display: block; }
+        .page-schedule main section article aside:before {
+          display: none; }
+        .page-schedule main section article aside.time strong {
+          margin: 0 0 1rem; }
+        .page-schedule main section article aside.info {
+          border-bottom: 1px solid #EEEEEE;
+          padding-bottom: 3rem;
+          margin-bottom: 3rem;
+          margin-top: 2rem;
+          text-align: center; }
+      .page-schedule main section article:last-of-type aside.info {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0; } }
 
 .page-resources main a {
   -webkit-transition: background .25s;

@@ -183,15 +183,28 @@
                   size: rem(13px)
 
         +respond-to-size($screen-sm)
-          //.time
-          //  img
-          //    margin-left: 0
-          //    margin-right: 0
-          //
-          //  a
-          //    width: rem(140px)
-              
-          .info
-            text-align: center
+          display: block
 
-            margin-top: $double-unit-layout
+          aside
+            display: block
+
+            &:before
+              display: none
+
+            &.time
+              strong
+                margin: 0 0 $base-unit-layout
+
+            &.info
+              border-bottom: 1px solid $color-grey-200
+              padding-bottom: $triple-unit-layout
+              margin-bottom: $triple-unit-layout
+              margin-top: $double-unit-layout
+              text-align: center
+
+          &:last-of-type
+            aside
+              &.info
+                margin-bottom: 0
+                padding-bottom: 0
+                border-bottom: 0
