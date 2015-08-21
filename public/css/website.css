@@ -1296,7 +1296,7 @@ nav#navTop {
       background-image: url('../images/logo/jam-horizontal.svg'); }
     nav#navTop.solid ul li a {
       color: #212121; }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1024px) {
     nav#navTop {
       -webkit-transition: left .25s;
       -o-transition: left .25s;
