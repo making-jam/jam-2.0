@@ -34,23 +34,26 @@
                 </li>
             </ul>
 
-            <hr class="margin-top-triple margin-bottom-triple is-hidden">
+            <hr class="margin-top-triple margin-bottom-triple">
 
-            <ul class="row sponsors is-hidden">
-                <li class="col-sm-2" id="treehouse">
+            <ul class="row sponsors">
+                <li class="col-sm-4 margin-bottom-base" id="treehouse">
                     <a href="https://teamtreehouse.com/" target="_blank"><strong>Treehouse</strong></a>
                 </li>
-                <li class="col-sm-2" id="bohemiancoding">
+                <li class="col-sm-4 margin-bottom-base" id="bohemiancoding">
                     <a href="http://bohemiancoding.com/" target="_blank"><strong>Bohemian Coding</strong></a>
                 </li>
-                <li class="col-sm-2" id="marvelapp">
+                <li class="col-sm-4 margin-bottom-base" id="marvelapp">
                     <a href="https://marvelapp.com/" target="_blank"><strong>Marvel App</strong></a>
                 </li>
-                <li class="col-sm-2" id="podio">
+                <li class="col-sm-4" id="podio">
                     <a href="https://podio.com/" target="_blank"><strong>Podio</strong></a>
                 </li>
-                <li class="col-sm-2" id="dotgrid">
+                <li class="col-sm-4" id="dotgrid">
                     <a href="http://www.adbrain.com/" target="_blank"><strong>dotgrid</strong></a>
+                </li>
+                <li class="col-sm-4" id="product-design-guild">
+                    <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
                 </li>
             </ul>
         </section>

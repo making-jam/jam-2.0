@@ -1457,12 +1457,20 @@ ul.sponsors li#lyst a {
   background-image: url('../images/sponsors/optimised/lyst.png');
   background-size: 40% auto; }
 ul.sponsors li#marvelapp a {
-  background-image: url('../images/sponsors/optimised/marvelapp.png'); }
+  background-image: url('../images/sponsors/optimised/marvelapp.png');
+  background-size: 60% auto; }
 ul.sponsors li#podio a {
-  background-image: url('../images/sponsors/optimised/podio.png'); }
+  background-image: url('../images/sponsors/optimised/podio.png');
+  background-size: auto 50%; }
+ul.sponsors li#product-design-guild a {
+  background-image: url('../images/sponsors/optimised/product-design-guild.png');
+  background-size: 100% auto; }
+@media all and (max-width: 768px) {
+  ul.sponsors li#product-design-guild a {
+    background-size: auto 50% !important; } }
 ul.sponsors li#treehouse a {
   background-image: url('../images/sponsors/optimised/treehouse.png'); }
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   ul.sponsors li a {
     background-size: auto 50% !important; }
   ul.sponsors li#gocardless a {

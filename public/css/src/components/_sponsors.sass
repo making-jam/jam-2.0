@@ -63,18 +63,31 @@ ul.sponsors
       a
         background:
           image: url('#{$image-base}/sponsors/optimised/marvelapp.png')
+          size: 60% auto
 
     &#podio
       a
         background:
           image: url('#{$image-base}/sponsors/optimised/podio.png')
+          size: auto 50%
+
+    &#product-design-guild
+      a
+        background:
+          image: url('#{$image-base}/sponsors/optimised/product-design-guild.png')
+          size: 100% auto
+
+      +respond-to-size($screen-sm)
+        a
+          background:
+            size: auto 50% !important
 
     &#treehouse
       a
         background:
           image: url('#{$image-base}/sponsors/optimised/treehouse.png')
 
-    +respond-to-size(800px)
+    +respond-to-size($screen-sm)
       a
         background:
           size: auto 50% !important
