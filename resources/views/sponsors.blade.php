@@ -53,7 +53,7 @@
                     <a href="http://www.adbrain.com/" target="_blank"><strong>dotgrid</strong></a>
                 </li>
                 <li class="col-sm-4" id="product-design-guild">
-                    <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
+                    <a href="http://www.productdesignguild.com/" target="_blank"><strong>Product Design Guild</strong></a>
                 </li>
             </ul>
         </section>
