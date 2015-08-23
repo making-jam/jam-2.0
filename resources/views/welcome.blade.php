@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            {{--<a class="button black" href="/speakers">Find Out More</a>--}}
+            <a class="button black" href="/schedule">Find Out More</a>
         </section>
 
         <section id="sponsors">
