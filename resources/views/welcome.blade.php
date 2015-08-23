@@ -72,7 +72,7 @@
             <div class="container-small">
                 <h3>9 speakers from some of the best product companies share their stories.</h3>
 
-                <a class="button black see-schedule" href="/speakers">Find Out More</a>
+                <a class="button black see-schedule" href="/schedule">Find Out More</a>
             </div>
         </section>
 
@@ -121,7 +121,7 @@
                     </li>
                 </ul>
                 {{--margin-bottom-half temporary--}}
-                <ul class="row sponsors margin-bottom-half">
+                <ul class="row sponsors margin-bottom-triple">
                     <li class="col-sm-4" id="deskbeers">
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
@@ -136,7 +136,7 @@
                     </li>
                 </ul>
 
-                <a href="/sponsors" class="button black is-hidden">See full list of sponsors</a>
+                <a href="/sponsors" class="button black">See full list of sponsors</a>
             </div>
         </section>
 
@@ -148,25 +148,6 @@
 
                 <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
                         our PDF</a></small>
-
-                <div class="social block-center padding-top-double is-hidden">
-                    <div class="inline">
-                        <div class="fb-share-button" data-href="http://www.jam2015.london/"
-                             data-layout="button"></div>
-                    </div>
-
-                    <div class="inline">
-                        <a class="twitter-share-button"
-                           href="https://twitter.com/intent/tweet?text={{ $tweetText }}&url={{ $tweetUrl }}"
-                           data-count="none">
-                            Tweet</a>
-                    </div>
-
-                    <div class="inline">
-                        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                        <script type="IN/Share" data-url="http://www.jam2015.london"></script>
-                    </div>
-                </div>
             </div>
         </section>
 
