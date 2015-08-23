@@ -30,6 +30,10 @@
             &:before
               height: $time-offset
 
+            &.no-speaker-slot
+              &:before
+                height: 0
+
         .time
           &:before
             +z-index(schedule-time-line)
@@ -54,6 +58,23 @@
             line-height: 1
             font:
               size: rem(14px)
+
+          &.no-speaker-slot
+            &:before
+              top: 0
+
+            strong
+              background: $color-black
+              color: white
+              margin-top: 0
+              top: -(rem(4px))
+              font:
+                weight: 500
+
+          //&.speaker-slot
+          //  strong
+          //    background: $color-black
+          //    color: white
 
         .speaker
           strong
@@ -158,11 +179,9 @@
             &.topic-description
               margin-top: $base-unit-layout
               font:
-                size: rem(15px)
+                size: rem(16px)
 
           .about
-            //border-top: 1px solid $color-grey-200
-            //margin: $double-unit-layout 0 0
             padding: $double-unit-layout 0 0
 
             h4
@@ -173,13 +192,15 @@
               line-height: 1.4
               font:
                 size: rem(15px)
+                weight: 700
 
             .description
               p
-                line-height: 1.7
+                color: $color-black
+                line-height: 1.6
                 margin: $half-unit-layout 0 0
                 font:
-                  size: rem(13px)
+                  size: rem(14px)
 
         +respond-to-size($screen-sm)
           display: block

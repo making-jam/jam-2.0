@@ -2574,6 +2574,8 @@ footer {
     border-bottom: 0; }
     .page-schedule main section article:last-of-type .time:before {
       height: 4rem; }
+    .page-schedule main section article:last-of-type .time.no-speaker-slot:before {
+      height: 0; }
   .page-schedule main section article .time:before {
     z-index: 1;
     position: absolute;
@@ -2593,6 +2595,14 @@ footer {
     padding: 0.375rem 0.75rem;
     line-height: 1;
     font-size: 0.875rem; }
+  .page-schedule main section article .time.no-speaker-slot:before {
+    top: 0; }
+  .page-schedule main section article .time.no-speaker-slot strong {
+    background: #212121;
+    color: white;
+    margin-top: 0;
+    top: -0.25rem;
+    font-weight: 500; }
   .page-schedule main section article .speaker strong {
     display: block;
     margin-bottom: 1rem; }
@@ -2659,18 +2669,20 @@ footer {
         font-size: 0.875rem; }
       .page-schedule main section article .info p.topic-description {
         margin-top: 1rem;
-        font-size: 0.9375rem; }
+        font-size: 1rem; }
     .page-schedule main section article .info .about {
       padding: 2rem 0 0; }
       .page-schedule main section article .info .about h4 {
         display: block;
         padding-top: 0.5rem;
         line-height: 1.4;
-        font-size: 0.9375rem; }
+        font-size: 0.9375rem;
+        font-weight: 700; }
       .page-schedule main section article .info .about .description p {
-        line-height: 1.7;
+        color: #212121;
+        line-height: 1.6;
         margin: 0.5rem 0 0;
-        font-size: 0.8125rem; }
+        font-size: 0.875rem; }
   @media all and (max-width: 768px) {
     .page-schedule main section article {
       display: block; }
