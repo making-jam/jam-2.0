@@ -47,7 +47,7 @@ abstract class Controller extends BaseController
                 'company' => 'OneFineStay', 'link' => 'http://www.onefinestay.com/', 'id' => 'onefinestay',
                 'bio' => 'tim-davey'],
             'Anna Wojnarowska' => ['img' => 'anna-wojnarowska.jpg', 'position' => 'User Researcher',
-                'programme' => ['time' => '1:20 pm', 'topic' => 'Putting the user first in government'],
+                'programme' => ['time' => '1:20 pm', 'topic' => 'Putting people at the heart of government'],
                 'company' => 'Government Digital Service', 'link' => 'https://gds.blog.gov.uk/', 'id' => 'government-digital-service',
                 'bio' => 'anna-wojnarowska'],
             'Will Swannell' => ['img' => 'will-swannell.jpg', 'position' => 'Founder & CEO',
