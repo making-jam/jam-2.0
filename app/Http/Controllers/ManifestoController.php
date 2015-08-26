@@ -25,14 +25,14 @@ class ManifestoController extends Controller
             [
                 'name' => 'Slavo Vojacek',
                 'photo' => 'slavo-vojacek.jpeg',
-                'desc' => 'UX Designer &amp; Developer. Lover of fine English literature.',
+                'desc' => 'UX Designer &amp; UI Developer. Lover of fine English literature.',
                 'linkedin' => 'slavomirvojacek',
                 'twitter' => 'slavomirvojacek'
             ],
             [
                 'name' => 'Mathilde Leo',
                 'photo' => 'mathilde-leo.jpg',
-                'desc' => 'Product Owner. Martial arts aficionado.',
+                'desc' => 'Product Manager. Martial arts aficionado.',
                 'linkedin' => 'mathildeleo',
                 'twitter' => 'Mathilde_Leo'
             ]
