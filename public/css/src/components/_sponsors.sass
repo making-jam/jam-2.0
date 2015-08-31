@@ -48,6 +48,12 @@ ul.sponsors
           image: url('#{$image-base}/sponsors/optimised/gocardless.png')
           size: 90% auto
 
+    &#gro
+      a
+        background:
+          image: url('#{$image-base}/sponsors/optimised/gro.png')
+          size: auto 50%
+
     &#hirespace
       a
         background:
@@ -80,17 +86,18 @@ ul.sponsors
       +respond-to-size($screen-sm)
         a
           background:
-            size: auto 50% !important
+            size: 100% auto !important
 
     &#treehouse
       a
         background:
           image: url('#{$image-base}/sponsors/optimised/treehouse.png')
+          size: 90% auto
 
-    +respond-to-size($screen-sm)
-      a
-        background:
-          size: auto 50% !important
+      +respond-to-size($screen-sm)
+        a
+          background:
+            size: auto 50% !important
 
       &#gocardless
         a

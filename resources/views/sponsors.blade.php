@@ -37,23 +37,26 @@
             <hr class="margin-top-triple margin-bottom-triple">
 
             <ul class="row sponsors">
-                <li class="col-sm-4 margin-bottom-base" id="treehouse">
+                <li class="col-sm-3 margin-bottom-base" id="treehouse">
                     <a href="https://teamtreehouse.com/" target="_blank"><strong>Treehouse</strong></a>
                 </li>
-                <li class="col-sm-4 margin-bottom-base" id="bohemiancoding">
+                <li class="col-sm-3 margin-bottom-base" id="bohemiancoding">
                     <a href="http://bohemiancoding.com/" target="_blank"><strong>Bohemian Coding</strong></a>
                 </li>
-                <li class="col-sm-4 margin-bottom-base" id="marvelapp">
+                <li class="col-sm-3 margin-bottom-base" id="marvelapp">
                     <a href="https://marvelapp.com/" target="_blank"><strong>Marvel App</strong></a>
                 </li>
-                <li class="col-sm-4" id="podio">
+                <li class="col-sm-3 margin-bottom-base" id="podio">
                     <a href="https://podio.com/" target="_blank"><strong>Podio</strong></a>
                 </li>
-                <li class="col-sm-4" id="dotgrid">
+                <li class="col-sm-3" id="dotgrid">
                     <a href="http://www.adbrain.com/" target="_blank"><strong>dotgrid</strong></a>
                 </li>
-                <li class="col-sm-4" id="product-design-guild">
+                <li class="col-sm-3" id="product-design-guild">
                     <a href="http://www.productdesignguild.com/" target="_blank"><strong>Product Design Guild</strong></a>
+                </li>
+                <li class="col-sm-3" id="gro">
+                    <a href="http://www.alwaysgro.com/" target="_blank"><strong>gro</strong></a>
                 </li>
             </ul>
         </section>

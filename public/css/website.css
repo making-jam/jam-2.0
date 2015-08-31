@@ -1451,6 +1451,9 @@ ul.sponsors li#dotgrid a {
 ul.sponsors li#gocardless a {
   background-image: url('../images/sponsors/optimised/gocardless.png');
   background-size: 90% auto; }
+ul.sponsors li#gro a {
+  background-image: url('../images/sponsors/optimised/gro.png');
+  background-size: auto 50%; }
 ul.sponsors li#hirespace a {
   background-image: url('../images/sponsors/optimised/hirespace.png'); }
 ul.sponsors li#lyst a {
@@ -1467,14 +1470,15 @@ ul.sponsors li#product-design-guild a {
   background-size: 100% auto; }
 @media all and (max-width: 768px) {
   ul.sponsors li#product-design-guild a {
-    background-size: auto 50% !important; } }
+    background-size: 100% auto !important; } }
 ul.sponsors li#treehouse a {
-  background-image: url('../images/sponsors/optimised/treehouse.png'); }
+  background-image: url('../images/sponsors/optimised/treehouse.png');
+  background-size: 90% auto; }
 @media all and (max-width: 768px) {
-  ul.sponsors li a {
-    background-size: auto 50% !important; }
-  ul.sponsors li#gocardless a {
-    background-size: 80% auto !important; } }
+  ul.sponsors li#treehouse a {
+    background-size: auto 50% !important; } }
+ul.sponsors li#treehouse#gocardless a {
+  background-size: 80% auto !important; }
 
 table {
   max-width: 100%; }
