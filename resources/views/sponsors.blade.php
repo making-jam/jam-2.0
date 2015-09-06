@@ -12,20 +12,20 @@
     <main class="static">
         <section class="container-narrow">
             <ul class="row sponsors">
-                <li class="col-sm-6 margin-bottom-double" id="adbrain">
+                <li class="col-sm-4 margin-bottom-double" id="adbrain">
                     <a href="http://www.adbrain.com/" target="_blank"><strong>Adbrain</strong></a>
                 </li>
-                <li class="col-sm-6 margin-bottom-double" id="gocardless">
+                <li class="col-sm-4 margin-bottom-double" id="gocardless">
                     <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
+                </li>
+                <li class="col-sm-4" id="deskbeers">
+                    <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                 </li>
             </ul>
             <ul class="row sponsors">
-                <li class="col-sm-4 margin-bottom-double" id="deskbeers">
-                    <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
+                <li class="col-sm-4" id="gro">
+                    <a href="http://www.alwaysgro.com/" target="_blank"><strong>gro</strong></a>
                 </li>
-                {{--<li class="col-sm-4" id="lyst">--}}
-                {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
-                {{--</li>--}}
                 <li class="col-sm-4" id="balsamiq">
                     <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
                 </li>
@@ -54,9 +54,6 @@
                 </li>
                 <li class="col-sm-3" id="product-design-guild">
                     <a href="http://www.productdesignguild.com/" target="_blank"><strong>Product Design Guild</strong></a>
-                </li>
-                <li class="col-sm-3" id="gro">
-                    <a href="http://www.alwaysgro.com/" target="_blank"><strong>gro</strong></a>
                 </li>
             </ul>
         </section>

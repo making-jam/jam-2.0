@@ -113,21 +113,20 @@
                 <h3>JAM wouldn't be possible without <br/>the generous help of our sponsors.</h3>
 
                 <ul class="row sponsors">
-                    <li class="col-sm-6" id="adbrain">
+                    <li class="col-sm-4" id="adbrain">
                         <a href="http://www.adbrain.com/" target="_blank"><strong>Adbrain</strong></a>
                     </li>
-                    <li class="col-sm-6" id="gocardless">
+                    <li class="col-sm-4" id="gocardless">
                         <a href="https://gocardless.com/" target="_blank"><strong>GOCARDLESS</strong></a>
                     </li>
-                </ul>
-                {{--margin-bottom-half temporary--}}
-                <ul class="row sponsors margin-bottom-triple">
                     <li class="col-sm-4" id="deskbeers">
                         <a href="https://www.deskbeers.com/" target="_blank"><strong>DeskBeers</strong></a>
                     </li>
-                    {{--<li class="col-sm-4" id="lyst">--}}
-                    {{--<a href="https://www.lyst.co.uk/" target="_blank"><strong>lyst</strong></a>--}}
-                    {{--</li>--}}
+                </ul>
+                <ul class="row sponsors">
+                    <li class="col-sm-4" id="gro">
+                        <a href="http://www.alwaysgro.com/" target="_blank"><strong>gro</strong></a>
+                    </li>
                     <li class="col-sm-4" id="balsamiq">
                         <a href="https://balsamiq.com/" target="_blank"><strong>balsamiq</strong></a>
                     </li>

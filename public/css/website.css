@@ -1433,29 +1433,30 @@ ul.sponsors li a {
   background-image: url('../images/sponsors/optimised/adbrain.png');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 80% auto; }
+  background-size: 85% auto; }
   ul.sponsors li a strong {
     opacity: 0; }
 ul.sponsors li#balsamiq a {
   background-image: url('../images/sponsors/optimised/balsamiq.png');
-  background-size: 70% auto; }
+  background-size: auto 35%; }
 ul.sponsors li#bohemiancoding a {
   background-image: url('../images/sponsors/optimised/bohemian-coding.png');
   background-size: auto 80%; }
 ul.sponsors li#deskbeers a {
   background-image: url('../images/sponsors/optimised/deskbeers.png');
-  background-size: 70% auto; }
+  background-size: auto 45%; }
 ul.sponsors li#dotgrid a {
   background-image: url('../images/sponsors/optimised/dotgrid.png');
   background-size: auto 80%; }
 ul.sponsors li#gocardless a {
   background-image: url('../images/sponsors/optimised/gocardless.png');
-  background-size: 90% auto; }
+  background-size: 95% auto; }
 ul.sponsors li#gro a {
   background-image: url('../images/sponsors/optimised/gro.png');
-  background-size: auto 50%; }
+  background-size: auto 45%; }
 ul.sponsors li#hirespace a {
-  background-image: url('../images/sponsors/optimised/hirespace.png'); }
+  background-image: url('../images/sponsors/optimised/hirespace.png');
+  background-size: 75% auto; }
 ul.sponsors li#lyst a {
   background-image: url('../images/sponsors/optimised/lyst.png');
   background-size: 40% auto; }
@@ -2918,7 +2919,8 @@ footer {
   .page-welcome section#sponsors .sponsors:first-of-type {
     margin-bottom: 0; }
   .page-welcome section#sponsors .sponsors:last-of-type {
-    margin-top: 1rem; }
+    margin-top: 0;
+    margin-bottom: 3rem; }
 .page-welcome section#sponsors .button {
   display: inline-block; }
 .page-welcome section#quote p {
