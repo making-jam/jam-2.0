@@ -2742,6 +2742,8 @@ footer {
     margin: 0.5rem 0 1rem;
     line-height: 1.4;
     font-size: 1.25rem; }
+  .page-resources main a article .categories .label {
+    text-transform: capitalize !important; }
   .page-resources main a:hover article .title, .page-resources main a:focus article .title {
     text-decoration: underline; }
 .page-resources .resources-sign-up {
