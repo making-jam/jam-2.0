@@ -2,6 +2,16 @@ $(document).ready(function () {
     // Do not remove this bit, as it fixes transition bugs.
     $('body').removeClass('preload');
 
+    setTimeout(function() {
+        var ignore = window.sessionStorage.getItem('notification') == 'ignore';
+        if (!ignore) $('#notification').addClass('active');
+    }, 500);
+
+    $('#closeNotification').click(function() {
+        $('#notification').removeClass('active');
+        window.sessionStorage.setItem('notification', 'ignore');
+    });
+
     $('.toggle-nav').click(function (e) {
         $('#navTop, #navTop .toggle-nav .close').toggleClass('active');
     });

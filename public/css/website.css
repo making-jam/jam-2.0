@@ -1136,7 +1136,7 @@ dl {
     font-size: 0.875rem; }
 
 .modal-backdrop {
-  z-index: 9;
+  z-index: 11;
   top: 0;
   left: 0;
   position: fixed;
@@ -1358,28 +1358,59 @@ nav#navTop {
         margin-top: 2rem; } }
 
 #notification {
-  -webkit-transition: top .25s;
-  -o-transition: top .25s;
-  transition: top .25s;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
   z-index: 8;
   padding: 0 1rem;
   position: fixed;
   width: 100%;
-  height: 6rem;
-  line-height: 6rem;
+  height: 5rem;
+  line-height: 5rem;
   background: #81CFE0;
-  top: -6rem;
+  top: -5rem;
   left: 0; }
+  #notification.bottom {
+    top: auto;
+    bottom: -5rem; }
   #notification.active {
     top: 0; }
+    #notification.active.bottom {
+      top: auto;
+      bottom: 0; }
   #notification.info, #notification.log, #notification.debug {
     background: #81CFE0; }
+  #notification.jam {
+    background: #04f799; }
+    #notification.jam .close {
+      background: #04f799; }
+    #notification.jam main .desc {
+      background: #04f799; }
   #notification.success {
     background: #9CCC65; }
   #notification.warning {
     background: #FDD835; }
   #notification.error {
     background: #F25641; }
+  #notification:hover .close, #notification:focus .close {
+    opacity: 1; }
+  #notification:hover main .desc, #notification:focus main .desc {
+    opacity: 1; }
+  #notification .close {
+    -webkit-transition: opacity .25s;
+    -o-transition: opacity .25s;
+    transition: opacity .25s;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    height: 5rem;
+    width: 4rem;
+    background: #81CFE0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 1.875rem; }
   #notification main {
     max-width: 100%;
     overflow: hidden;
@@ -1388,6 +1419,19 @@ nav#navTop {
     color: rgba(0, 0, 0, 0.4); }
     #notification main a {
       color: rgba(0, 0, 0, 0.4); }
+    #notification main .desc {
+      -webkit-transition: opacity .25s;
+      -o-transition: opacity .25s;
+      transition: opacity .25s;
+      opacity: 0;
+      background: inherit;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #81CFE0;
+      width: 100%;
+      padding: 0 1rem;
+      z-index: 1; }
 
 .progress-bar {
   -webkit-border-radius: 0.25rem;
@@ -2208,7 +2252,7 @@ h1, h2, h3, h4, h5, h6 {
 .margin-triple {
   margin: 3rem !important; }
 
-.text-center, .button.flat-grey, button.flat-grey, nav#navTop .toggle-nav, nav#navTop .logo strong, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
+.text-center, .button.flat-grey, button.flat-grey, nav#navTop .toggle-nav, nav#navTop .logo strong, #notification .close, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
   text-align: center; }
 
 .text-right {

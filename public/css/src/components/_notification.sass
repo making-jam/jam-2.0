@@ -1,21 +1,41 @@
+$notification-height: $nav-height - $base-unit-layout
+
 #notification
-  +transition(top .25s)
+  +transition(all .25s)
   +z-index(notification)
 
   padding: 0 $base-unit-layout
   position: fixed
   width: 100%
-  height: $nav-height
-  line-height: $nav-height
+  height: $notification-height
+  line-height: $notification-height
   background: $color-alert-info
-  top: -($nav-height)
+  top: -($notification-height)
   left: 0
+
+  &.bottom
+    top: auto
+    bottom: -($notification-height)
 
   &.active
     top: 0
 
+    &.bottom
+      top: auto
+      bottom: 0
+
   &.info, &.log, &.debug
     background: $color-alert-info
+
+  &.jam
+    background: $color-jam
+
+    .close
+      background: $color-jam
+
+    main
+      .desc
+        background: $color-jam
 
   &.success
     background: $color-alert-success
@@ -26,6 +46,31 @@
   &.error
     background: $color-alert-error
 
+  +hover
+    .close
+      opacity: 1
+
+    main
+      .desc
+        opacity: 1
+
+  .close
+    @extend .text-center
+    +transition(opacity .25s)
+
+    cursor: pointer
+    color: rgba(0, 0, 0, .4)
+    opacity: 0
+    height: $notification-height
+    width: $notification-height - $base-unit-layout
+    background: $color-alert-info
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+    font:
+      size: rem(30px)
+
   main
     +ellipsis
     @extend .text-center
@@ -34,3 +79,16 @@
 
     a
       color: rgba(0, 0, 0, .4)
+
+    .desc
+      +transition(opacity .25s)
+
+      opacity: 0
+      background: inherit
+      position: absolute
+      left: 0
+      top: 0
+      background: $color-alert-info
+      width: 100%
+      padding: 0 $base-unit-layout
+      z-index: 1

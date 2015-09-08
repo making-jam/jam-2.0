@@ -30,7 +30,20 @@
 </head>
 <body class="preload page-{{$bodyClass}}">
 
-<div id="notification"></div>
+<div id="notification" class="bottom jam">
+    <div class="close" id="closeNotification">&times;</div>
+    <main>
+        <div class="desc">
+            Join <a href="https://www.ocado.com" target="_blank">Ocado</a>,
+            <a href="https://www.wahanda.com/" target="_blank">Wahanda</a>,
+            <a href="https://www.duedil.com/" target="_blank">DueDil</a>,
+            <a href="http://yieldify.com/gb/" target="_blank">Yieldify</a>
+            and others to discover the stories behind great products.
+            Get your ticket now and <strong>save £40</strong> on the normal price.
+        </div>
+        The clock is ticking! <strong>Early-bird tickets end this Saturday!</strong>
+    </main>
+</div>
 
 @include('nav')
 
