@@ -2611,6 +2611,7 @@ footer {
 
 .page-schedule main section article {
   zoom: 1;
+  width: 100%;
   display: table;
   table-layout: fixed; }
   .page-schedule main section article:before, .page-schedule main section article:after {
