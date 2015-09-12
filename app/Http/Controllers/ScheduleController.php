@@ -10,6 +10,7 @@ class ScheduleController extends Controller
     public function renderView()
     {
         return view('schedule', ['title' => 'Schedule', 'bodyClass' => 'schedule', 'schedule' => self::scheduleData(),
+            'showEarlyBirds' => parent::showEarlyBirds(),
             'url' => parent::getMetaUrl()]);
     }
 

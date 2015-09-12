@@ -15,6 +15,14 @@ abstract class Controller extends BaseController
         return 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}/";
     }
 
+    protected static function showEarlyBirds()
+    {
+        $today = time();
+        $earlyBirdEnds = strtotime('13 September 2015');
+
+        return $today < $earlyBirdEnds;
+    }
+
     public static function getSpeakers()
     {
         return [

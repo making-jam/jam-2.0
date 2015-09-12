@@ -14,6 +14,7 @@ class ResourcesController extends Controller
         $this->getResources($name);
 
         return view('resources', ['title' => 'Resources', 'bodyClass' => 'resources', 'resources' => $this->resources,
+            'showEarlyBirds' => parent::showEarlyBirds(),
             'url' => parent::getMetaUrl(), 'ogMeta' => $this->getOgMeta()]);
     }
 

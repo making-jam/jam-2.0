@@ -9,6 +9,7 @@ class ManifestoController extends Controller
     public function renderView()
     {
         return view('manifesto', ['title' => 'Manifesto', 'bodyClass' => 'manifesto', 'team' => self::teamData(),
+            'showEarlyBirds' => parent::showEarlyBirds(),
             'url' => parent::getMetaUrl()]);
     }
 
