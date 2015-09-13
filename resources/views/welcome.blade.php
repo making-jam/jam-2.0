@@ -38,7 +38,7 @@
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
-                    <a class="button black" href="/buy">Get Your Early Bird Ticket</a>
+                    <a class="button black" href="/buy">Get Your Ticket</a>
                 </div>
                 <div class="col-sm-4 features is-hidden">
                     <ul>
