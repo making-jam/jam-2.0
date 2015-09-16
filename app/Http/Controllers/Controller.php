@@ -31,7 +31,7 @@ abstract class Controller extends BaseController
                 'company' => 'SwiftKey', 'link' => 'http://swiftkey.com/en/', 'id' => 'swiftkey',
                 'bio' => 'scott-weiss'],
             'Rachel Ilan Simpson' => ['img' => 'rachel-ilan-simpson.jpg', 'position' => 'UX Designer',
-                'programme' => ['time' => '4:55 pm'],
+                'programme' => ['time' => '4:55 pm', 'topic' => 'Research for the rest'],
                 'company' => 'Google Chrome Team', 'link' => 'https://www.google.co.uk/about/company/', 'id' => 'google-chrome-team',
                 'bio' => 'rachel-ilan-simpson'],
             'James Gill' => ['img' => 'james-gill.jpg', 'position' => 'CEO',
