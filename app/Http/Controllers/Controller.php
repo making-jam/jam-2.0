@@ -47,7 +47,7 @@ abstract class Controller extends BaseController
                 'company' => 'Transferwise', 'link' => 'https://transferwise.com/', 'id' => 'transferwise',
                 'bio' => 'graham-paterson'],
             'Karolis Kosas' => ['img' => 'karolis-kosas.jpg', 'position' => 'Creative Director',
-                'programme' => ['time' => '11:20 am', 'topic' => 'Perception vs Reality: How to reconcile product’s perception and the needs of its customers'],
+                'programme' => ['time' => '11:40 am', 'topic' => 'Perception vs Reality: How to reconcile product’s perception and the needs of its customers'],
                 'company' => 'YPlan', 'link' => 'https://yplanapp.com/', 'id' => 'yplan',
                 'bio' => 'karolis-kosas'],
             'Tim Davey' => ['img' => 'tim-davey.jpg', 'position' => 'Co-Founder &amp; Head of Product',
@@ -59,7 +59,7 @@ abstract class Controller extends BaseController
                 'company' => 'Government Digital Service', 'link' => 'https://gds.blog.gov.uk/', 'id' => 'government-digital-service',
                 'bio' => 'anna-wojnarowska'],
             'Will Swannell' => ['img' => 'will-swannell.jpg', 'position' => 'Founder & CEO',
-                'programme' => ['time' => '11:40 am', 'topic' => 'Where do good products roadmaps come from?'],
+                'programme' => ['time' => '11:20 am', 'topic' => 'Where do good products roadmaps come from?'],
                 'company' => 'Hire Space', 'link' => 'https://hirespace.com/', 'id' => 'hire-space',
                 'bio' => 'will-swannell'],
         ];
