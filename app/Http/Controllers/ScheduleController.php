@@ -57,7 +57,6 @@ class ScheduleController extends Controller
             '2:25 pm' => 'Sponsors Intro',
             '2:30 pm' => 'Coffee Break',
             '3:40 pm' => 'Q&amp;A - Ask Them Anything',
-//            '3:55 pm' => 'Competition Givaways',
             '3:55 pm' => 'Coffee Break',
             '5:05 pm' => 'Q&amp;A - Ask Them Anything',
             '5:20 pm' => 'Closing Words',
