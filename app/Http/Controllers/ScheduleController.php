@@ -45,20 +45,23 @@ class ScheduleController extends Controller
     private static function generateNonSpeakerSchedule()
     {
         $additionalSchedule = [
-            '9:00 am' => 'Checkin + coffee',
-            '9:30 am' => 'Welcome Speech',
-            '10:30 am' => 'Q&amp;A - Ask Them Anything',
-            '10:50 am' => 'Coffee Break',
-            '12:00 pm' => 'Q&amp;A - Ask Them Anything',
-            '12:20 pm' => 'Lunch Break',
-            '2:00 pm' => 'Q&amp;A - Ask Them Anything',
-            '2:20 pm' => 'Coffee Break',
-            '3:30 pm' => 'Q&amp;A - Ask Them Anything',
-            '3:45 pm' => 'Competition Givaways',
+            '9:00 am' => 'Registration + Breakfast',
+            '9:45 am' => 'Welcome',
+            '10:40 am' => 'Q&amp;A - Ask Them Anything',
+            '10:55 am' => 'Sponsors Intro',
+            '11:00 am' => 'Coffee Break',
+            '12:10 pm' => 'Q&amp;A - Ask Them Anything',
+            '12:25 pm' => 'Sponsors Intro',
+            '12:30 pm' => 'Lunch',
+            '2:10 pm' => 'Q&amp;A - Ask Them Anything',
+            '2:25 pm' => 'Sponsors Intro',
+            '2:30 pm' => 'Coffee Break',
+            '3:40 pm' => 'Q&amp;A - Ask Them Anything',
+//            '3:55 pm' => 'Competition Givaways',
             '3:55 pm' => 'Coffee Break',
-            '5:45 pm' => 'Q&amp;A - Ask Them Anything',
-            '6:00 pm' => 'Closing Words',
-            '6:15 pm' => 'Drinks'
+            '5:05 pm' => 'Q&amp;A - Ask Them Anything',
+            '5:20 pm' => 'Closing Words',
+            '5:30 pm' => 'Drinks'
         ];
 
         return $additionalSchedule;
