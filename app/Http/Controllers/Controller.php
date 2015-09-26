@@ -44,7 +44,7 @@ abstract class Controller extends BaseController
                 'bio' => 'pip-jamieson'],
             'Graham Paterson' => ['img' => 'graham-paterson.jpg', 'position' => 'Product Manager',
                 'programme' => ['time' => '3:20 pm', 'topic' => 'Using Data To Decide What To Do'],
-                'company' => 'Transferwise', 'link' => 'https://transferwise.com/', 'id' => 'transferwise',
+                'company' => 'Intuit', 'link' => 'http://www.intuit.co.uk/', 'id' => 'intuit',
                 'bio' => 'graham-paterson'],
             'Karolis Kosas' => ['img' => 'karolis-kosas.jpg', 'position' => 'Creative Director',
                 'programme' => ['time' => '11:50 am', 'topic' => 'Perception vs Reality: How to reconcile product’s perception and the needs of its customers'],
