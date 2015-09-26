@@ -43,7 +43,7 @@ abstract class Controller extends BaseController
                 'company' => 'The Dots', 'link' => 'https://the-dots.co.uk/', 'id' => 'the-dots',
                 'bio' => 'pip-jamieson'],
             'Graham Paterson' => ['img' => 'graham-paterson.jpg', 'position' => 'Product Manager',
-                'programme' => ['time' => '3:20 pm', 'topic' => 'How to use data to drive emotional responses in users'],
+                'programme' => ['time' => '3:20 pm', 'topic' => 'Using Data To Decide What To Do'],
                 'company' => 'Transferwise', 'link' => 'https://transferwise.com/', 'id' => 'transferwise',
                 'bio' => 'graham-paterson'],
             'Karolis Kosas' => ['img' => 'karolis-kosas.jpg', 'position' => 'Creative Director',
