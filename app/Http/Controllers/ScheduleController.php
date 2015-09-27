@@ -49,15 +49,15 @@ class ScheduleController extends Controller
             '9:45 am' => 'Welcome',
             '10:40 am' => 'Q&amp;A - Ask Them Anything',
             '11:00 am' => 'Coffee Break',
-            '12:10 pm' => 'Q&amp;A - Ask Them Anything',
+            '12:15 pm' => 'Q&amp;A - Ask Them Anything',
             '12:30 pm' => 'Lunch',
-            '2:10 pm' => 'Q&amp;A - Ask Them Anything',
+            '2:15 pm' => 'Q&amp;A - Ask Them Anything',
             '2:30 pm' => 'Coffee Break',
-            '3:40 pm' => 'Q&amp;A - Ask Them Anything',
-            '3:55 pm' => 'Coffee Break',
-            '5:05 pm' => 'Q&amp;A - Ask Them Anything',
-            '5:20 pm' => 'Closing Words',
-            '5:30 pm' => 'Drinks'
+            '3:45 pm' => 'Q&amp;A - Ask Them Anything',
+            '4:00 pm' => 'Coffee Break',
+            '4:55 pm' => 'Q&amp;A - Ask Them Anything',
+            '5:10 pm' => 'Closing Words',
+            '5:20 pm' => 'Drinks'
         ];
 
         return $additionalSchedule;
