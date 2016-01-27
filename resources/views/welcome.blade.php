@@ -58,11 +58,12 @@
     <main>
         <section>
             <div class="container-small">
-                <p>Have you ever wondered how successful companies like TransferWise, YPlan, GoSquared, or SwiftKey go
-                    about building groundbreaking products? What goes on behind the scenes? How do product managers,
-                    designers, and engineers make it all happen?</p>
-
-                <p>JAM is a 1-day event to reveal the stories behind the products you know and love.</p>
+                <p>JAM 2015 was a real blast. ‘1 day. 9 world-class speakers, great coffee.’ That was the catchline of
+                    our inaugural event last October. It turned out to be much more than this. 200 bright and friendly
+                    peeps from all walks of life turned up on a Saturday, and sticked to the end (despite the Rugby
+                    World Cup!) for an inspiring day, packed with new faces and exciting conversations. And if that
+                    wasn’t enough, we then all shared a drink or two with our new friends on the Oval Space terrace,
+                    where there was... a sunset. THAT was a great time</p>
 
                 <a class="button black margin-top-base" href="/manifesto">Read our Story</a>
             </div>
