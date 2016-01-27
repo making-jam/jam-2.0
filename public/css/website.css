@@ -2769,6 +2769,20 @@ footer {
       .page-schedule main section article .info p.topic-description {
         margin-top: 1rem;
         font-size: 1rem; }
+    .page-schedule main section article .info .download-presentation {
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      display: inline-block;
+      border: 1px solid #04dc88;
+      margin-top: 1rem;
+      background: #04f799;
+      padding: 4px 10px 5px;
+      text-decoration: none;
+      color: white;
+      font-size: 0.875rem; }
+      .page-schedule main section article .info .download-presentation:hover, .page-schedule main section article .info .download-presentation:focus {
+        -webkit-animation: pulse-small 0.25s;
+        animation: pulse-small 0.25s; }
     .page-schedule main section article .info .about {
       padding: 2rem 0 0; }
       .page-schedule main section article .info .about h4 {

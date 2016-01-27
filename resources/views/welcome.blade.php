@@ -72,7 +72,7 @@
             <div class="container-small">
                 <h3>9 speakers from some of the best product companies share their stories.</h3>
 
-                <a class="button black see-schedule" href="/schedule">Find Out More</a>
+                <a class="button black see-schedule" href="/speakers">Find Out More</a>
             </div>
         </section>
 

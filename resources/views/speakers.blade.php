@@ -4,7 +4,7 @@
     <header class="text with-blurb">
         <div class="hero">
             <div class="container-narrow">
-                <h1>Schedule</h1>
+                <h1>Speakers</h1>
                 <p>JAM 2015 was powered by 9 amazing speakers. No theory, no fluff, they’ve just shared their own story -
                     and for this, we’re really grateful.</p>
             </div>
@@ -32,6 +32,8 @@
                             <p class="speaker-company">{{$info['position']}}, {{$info['company']}}</p>
 
                             {!! $info['topic']['description'] !!}
+
+                            <a href="" class="download-presentation">Download Presentation</a>
 
                             <div class="about">
                                 <h4>About {{$info['firstName']}}</h4>
