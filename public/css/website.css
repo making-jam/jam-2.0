@@ -5,7 +5,6 @@
 
 .pre-load * {
   -webkit-transition: none;
-  -o-transition: none;
   transition: none; }
 
 html, body, div, span, object, iframe, hr,
@@ -80,14 +79,6 @@ em, i {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-@-o-keyframes pulse {
-  0% {
-    transform: scale3d(1, 1, 1); }
-  50% {
-    transform: scale3d(1.1, 1.1, 1.1); }
-  100% {
-    transform: scale3d(1, 1, 1); } }
-
 @keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -108,14 +99,6 @@ em, i {
     transform: scale3d(1.05, 1.05, 1.05); }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
-
-@-o-keyframes pulse-small {
-  0% {
-    transform: scale3d(1, 1, 1); }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05); }
-  100% {
     transform: scale3d(1, 1, 1); } }
 
 @keyframes pulse-small {
@@ -143,7 +126,6 @@ em, i {
   font-size: 1rem; }
   .alert .close {
     -webkit-transition: color 0.25s;
-    -o-transition: color 0.25s;
     transition: color 0.25s;
     color: inherit;
     top: 1rem;
@@ -193,7 +175,6 @@ button,
   -webkit-border-radius: 0;
   border-radius: 0;
   -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-appearance: none;
   border: 1px solid #F5F5F5;
@@ -240,8 +221,7 @@ button,
   .button:last-child,
   .input:last-child {
     margin-bottom: 0; }
-  input:hover,
-  input:focus,
+  input:hover, input:focus,
   select:hover,
   select:focus,
   textarea:hover,
@@ -250,7 +230,8 @@ button,
   button:focus,
   .button:hover,
   .button:focus,
-  .input:hover, .input:focus {
+  .input:hover,
+  .input:focus {
     border-color: #EEEEEE; }
   input:focus,
   select:focus,
@@ -269,9 +250,7 @@ button,
     border-color: #F5F5F5;
     color: #EEEEEE;
     cursor: not-allowed; }
-    input:disabled:hover,
-    input:disabled:focus,
-    input:disabled:active,
+    input:disabled:hover, input:disabled:focus, input:disabled:active,
     select:disabled:hover,
     select:disabled:focus,
     select:disabled:active,
@@ -284,7 +263,9 @@ button,
     .button:disabled:hover,
     .button:disabled:focus,
     .button:disabled:active,
-    .input:disabled:hover, .input:disabled:focus, .input:disabled:active {
+    .input:disabled:hover,
+    .input:disabled:focus,
+    .input:disabled:active {
       -webkit-box-shadow: none;
       box-shadow: none;
       border-color: #F5F5F5;
@@ -305,9 +286,9 @@ textarea {
 input:invalid,
 textarea:invalid {
   color: #F25641; }
-  input:invalid:hover,
-  input:invalid:focus,
-  textarea:invalid:hover, textarea:invalid:focus {
+  input:invalid:hover, input:invalid:focus,
+  textarea:invalid:hover,
+  textarea:invalid:focus {
     color: #F25641; }
   input:invalid:focus,
   textarea:invalid:focus {
@@ -338,7 +319,6 @@ textarea:invalid {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
     transition: all 0.25s;
     border: 1px solid #F5F5F5;
     width: 0.875rem;
@@ -350,7 +330,6 @@ textarea:invalid {
       -webkit-border-radius: 2px;
       border-radius: 2px;
       -webkit-transition: background 0.25s;
-      -o-transition: background 0.25s;
       transition: background 0.25s;
       opacity: 0;
       content: "";
@@ -442,7 +421,6 @@ textarea:invalid {
     font-size: 0.875rem; }
   .button:hover, .button:focus, button:hover, button:focus {
     -webkit-animation: pulse 0.3s linear;
-    -o-animation: pulse 0.3s linear;
     animation: pulse 0.3s linear;
     color: #E0E0E0; }
   .button.block, button.block {
@@ -1080,19 +1058,19 @@ textarea:invalid {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
-  .icon[size="16"] {
+  .icon[size='16'] {
     width: 16px;
     height: 16px; }
-  .icon[size="24"] {
+  .icon[size='24'] {
     width: 24px;
     height: 24px; }
-  .icon[size="32"] {
+  .icon[size='32'] {
     width: 32px;
     height: 32px; }
-  .icon[size="36"] {
+  .icon[size='36'] {
     width: 36px;
     height: 36px; }
-  .icon[size="48"] {
+  .icon[size='48'] {
     width: 48px;
     height: 48px; }
   .icon.attachment {
@@ -1136,7 +1114,6 @@ textarea:invalid {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: background 0.25s;
-  -o-transition: background 0.25s;
   transition: background 0.25s;
   color: white;
   background: #212121;
@@ -1171,9 +1148,9 @@ a,
   cursor: pointer;
   color: #04f799;
   text-decoration: underline; }
-  a:hover,
-  a:focus,
-  .link:hover, .link:focus {
+  a:hover, a:focus,
+  .link:hover,
+  .link:focus {
     text-decoration: none; }
   a.link-blue,
   .link.link-blue {
@@ -1267,7 +1244,6 @@ nav#navTop {
     clear: both; }
   nav#navTop .toggle-nav {
     -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
     transition: all 0.25s;
     display: none;
     position: absolute;
@@ -1292,7 +1268,6 @@ nav#navTop {
         top: 65%; }
     nav#navTop .toggle-nav .close {
       -webkit-transition: all 0.25s;
-      -o-transition: all 0.25s;
       transition: all 0.25s;
       z-index: 7;
       position: relative;
@@ -1311,12 +1286,10 @@ nav#navTop {
         nav#navTop .toggle-nav .close i:first-of-type {
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
           transform: rotate(45deg); }
         nav#navTop .toggle-nav .close i:last-of-type {
           -webkit-transform: rotate(135deg);
           -ms-transform: rotate(135deg);
-          -o-transform: rotate(135deg);
           transform: rotate(135deg); }
   nav#navTop .logo {
     float: left;
@@ -1358,7 +1331,6 @@ nav#navTop {
         font-weight: 700; }
   nav#navTop .button {
     -webkit-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
     display: inline-block;
     line-height: 1;
@@ -1378,7 +1350,6 @@ nav#navTop {
   @media all and (max-width: 1024px) {
     nav#navTop {
       -webkit-transition: left 0.25s;
-      -o-transition: left 0.25s;
       transition: left 0.25s;
       background: #212121 !important;
       height: 100%;
@@ -1417,7 +1388,6 @@ nav#navTop {
             display: inline-block; }
             nav#navTop ul li a:after {
               -webkit-transition: width 0.25s;
-              -o-transition: width 0.25s;
               transition: width 0.25s;
               content: '';
               width: 0%;
@@ -1438,7 +1408,6 @@ nav#navTop {
 
 #notification {
   -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
   transition: all 0.25s;
   z-index: 8;
   padding: 0 1rem;
@@ -1477,7 +1446,6 @@ nav#navTop {
     opacity: 1; }
   #notification .close {
     -webkit-transition: opacity 0.25s;
-    -o-transition: opacity 0.25s;
     transition: opacity 0.25s;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.4);
@@ -1500,7 +1468,6 @@ nav#navTop {
       color: rgba(0, 0, 0, 0.4); }
     #notification main .desc {
       -webkit-transition: opacity 0.25s;
-      -o-transition: opacity 0.25s;
       transition: opacity 0.25s;
       opacity: 0;
       background: inherit;
@@ -1522,7 +1489,6 @@ nav#navTop {
     -webkit-border-radius: 0.25rem;
     border-radius: 0.25rem;
     -webkit-transition: width 0.25s;
-    -o-transition: width 0.25s;
     transition: width 0.25s;
     min-width: 0.25rem;
     background: #212121;
@@ -1642,7 +1608,6 @@ table {
   font-size: 0.875rem; }
   .tabs > li {
     -webkit-transition: background 0.25s;
-    -o-transition: background 0.25s;
     transition: background 0.25s;
     cursor: pointer;
     display: table-cell;
@@ -2041,6 +2006,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
+    -ms-grid-row-align: center;
     align-items: center; }
   .flex.center-horizontally, .checkbox-holder .center-horizontally.checkbox, .checkbox-holder .center-horizontally.radio-button, .radio-button-holder .center-horizontally.checkbox, .radio-button-holder .center-horizontally.radio-button {
     -webkit-box-pack: center;
@@ -2167,8 +2133,7 @@ h1, h2, h3, h4, h5, h6 {
 .no-padding {
   padding: 0; }
 
-.wipe-margin-padding,
-.file-button input[type="file"],
+.wipe-margin-padding, .file-button input[type="file"],
 .no-margin-padding,
 .wipe-padding-margin,
 .no-padding-margin {
@@ -2406,6 +2371,8 @@ header {
       bottom: 4rem; }
       header.text .hero h1 {
         font-size: 2.8125rem; }
+  header.with-blurb {
+    height: 25rem; }
 
 footer {
   background: #212121;
@@ -2434,7 +2401,6 @@ footer {
         background-position: center top; } }
   footer ul li a {
     -webkit-transition: color 0.25s;
-    -o-transition: color 0.25s;
     transition: color 0.25s;
     display: block;
     color: #BDBDBD;
@@ -2646,7 +2612,6 @@ footer {
 
 .page-getting-here .static a {
   -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
   transition: color 0.25s;
   color: #212121;
   text-decoration: none; }
@@ -2839,7 +2804,6 @@ footer {
 
 .page-resources main a {
   -webkit-transition: background 0.25s;
-  -o-transition: background 0.25s;
   transition: background 0.25s;
   padding: 3rem 0;
   display: block;

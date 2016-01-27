@@ -5,11 +5,11 @@ namespace JAM\Http\Controllers;
 use Storage;
 use JAM\Http\Controllers\Controller;
 
-class ScheduleController extends Controller
+class SpeakersController extends Controller
 {
     public function renderView()
     {
-        return view('schedule', ['title' => 'Schedule', 'bodyClass' => 'schedule', 'schedule' => self::scheduleData(),
+        return view('speakers', ['title' => 'Schedule', 'bodyClass' => 'schedule', 'schedule' => self::scheduleData(),
             'showEarlyBirds' => parent::showEarlyBirds(),
             'url' => parent::getMetaUrl()]);
     }
@@ -45,19 +45,19 @@ class ScheduleController extends Controller
     private static function generateNonSpeakerSchedule()
     {
         $additionalSchedule = [
-            '9:00 am' => 'Registration + Breakfast',
-            '9:45 am' => 'Welcome',
-            '10:40 am' => 'Q&amp;A - Ask Them Anything',
-            '11:00 am' => 'Coffee Break',
-            '12:15 pm' => 'Q&amp;A - Ask Them Anything',
-            '12:30 pm' => 'Lunch',
-            '2:15 pm' => 'Q&amp;A - Ask Them Anything',
-            '2:30 pm' => 'Coffee Break',
-            '3:45 pm' => 'Q&amp;A - Ask Them Anything',
-            '4:00 pm' => 'Coffee Break',
-            '4:55 pm' => 'Q&amp;A - Ask Them Anything',
-            '5:10 pm' => 'Closing Words',
-            '5:20 pm' => 'Drinks'
+//            '9:00 am' => 'Registration + Breakfast',
+//            '9:45 am' => 'Welcome',
+//            '10:40 am' => 'Q&amp;A - Ask Them Anything',
+//            '11:00 am' => 'Coffee Break',
+//            '12:15 pm' => 'Q&amp;A - Ask Them Anything',
+//            '12:30 pm' => 'Lunch',
+//            '2:15 pm' => 'Q&amp;A - Ask Them Anything',
+//            '2:30 pm' => 'Coffee Break',
+//            '3:45 pm' => 'Q&amp;A - Ask Them Anything',
+//            '4:00 pm' => 'Coffee Break',
+//            '4:55 pm' => 'Q&amp;A - Ask Them Anything',
+//            '5:10 pm' => 'Closing Words',
+//            '5:20 pm' => 'Drinks'
         ];
 
         return $additionalSchedule;

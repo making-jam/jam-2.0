@@ -23,10 +23,8 @@ Route::get('/manifesto', 'ManifestoController@renderView');
 
 Route::get('/resources/{name?}', 'ResourcesController@renderView');
 
-Route::get('/schedule', 'ScheduleController@renderView');
+Route::get('/speakers', 'SpeakersController@renderView');
 
 Route::get('/sponsors', 'SponsorsController@renderView');
-
-Route::get('/speakers', 'ScheduleController@renderView');
 
 Route::get('/thank-you', 'ConfirmationController@renderView');
