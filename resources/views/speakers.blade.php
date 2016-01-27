@@ -5,7 +5,8 @@
         <div class="hero">
             <div class="container-narrow">
                 <h1>Speakers</h1>
-                <p>JAM 2015 was powered by 9 amazing speakers. No theory, no fluff, they’ve just shared their own story -
+                <p>JAM 2015 was powered by 9 amazing speakers. No theory, no fluff, they’ve just shared their own story
+                    -
                     and for this, we’re really grateful.</p>
             </div>
         </div>
@@ -17,7 +18,7 @@
                 <article>
                     @if (isset($info['biog']))
                         {{--<aside class="col-sm-2 time speaker-slot">--}}
-                            {{--<strong>{{$info['programme']['time']}}</strong>--}}
+                        {{--<strong>{{$info['programme']['time']}}</strong>--}}
                         {{--</aside>--}}
                         <aside class="col-sm-4 speaker">
                             <img src="/images/speakers/optimised/{{$info['img']}}">
@@ -33,7 +34,8 @@
 
                             {!! $info['topic']['description'] !!}
 
-                            <a href="" class="download-presentation">Download Presentation</a>
+                            <a href="/docs/presentation/{{$info['bio']}}.pdf" target="_blank"
+                               class="download-presentation">Download Presentation</a>
 
                             <div class="about">
                                 <h4>About {{$info['firstName']}}</h4>
