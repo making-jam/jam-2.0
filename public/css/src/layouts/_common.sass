@@ -36,7 +36,7 @@ main.static section
 header
   position: relative
   background:
-    color: $color-grey-600
+    color: #90a4ae
 
   .features
     +z-index(features)
@@ -62,9 +62,11 @@ header
       display: none
 
   &.text
-    height: rem(300px)
+    height: rem(400px)
 
     .hero
+      +text-shadow(0 0 8px rgba(0,0,0,.1))
+
       color: white
       width: 100%
       position: absolute
@@ -75,7 +77,10 @@ header
           size: rem(45px)
 
   &.with-blurb
-    height: rem(400px)
+    p
+      line-height: 1.5
+      font:
+        size: rem(24px)
 
 footer
   background: $color-black

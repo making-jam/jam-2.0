@@ -35,7 +35,6 @@
                     <h1>Sharing the Stories <br/>Behind Great Products</h1>
 
                     <p>1 day. 9 world-class speakers. Great coffee.</p>
-
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
                     <a class="button black" href="/speakers">Speakers</a>

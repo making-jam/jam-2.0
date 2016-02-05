@@ -2345,7 +2345,7 @@ section {
 
 header {
   position: relative;
-  background-color: #757575; }
+  background-color: #90a4ae; }
   header .features {
     z-index: 3;
     position: absolute;
@@ -2363,16 +2363,20 @@ header {
       header .features {
         display: none; } }
   header.text {
-    height: 18.75rem; }
+    height: 25rem; }
     header.text .hero {
+      -webkit-text-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      -moz-text-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
       color: white;
       width: 100%;
       position: absolute;
       bottom: 4rem; }
       header.text .hero h1 {
         font-size: 2.8125rem; }
-  header.with-blurb {
-    height: 25rem; }
+  header.with-blurb p {
+    line-height: 1.5;
+    font-size: 1.5rem; }
 
 footer {
   background: #212121;
@@ -2618,6 +2622,18 @@ footer {
   .page-getting-here .static a:hover, .page-getting-here .static a:focus {
     color: #04f799; }
 
+.page-code-of-conduct header {
+  background-image: url("../images/bg/hero-alt-resources.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.page-manifesto header {
+  background-image: url("../images/bg/hero-alt-manifesto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
 .page-manifesto #team {
   padding-bottom: 6rem; }
   .page-manifesto #team h3 {
@@ -2649,6 +2665,18 @@ footer {
         padding-bottom: 3rem; }
         .page-manifesto #team .member:last-of-type {
           padding-bottom: 0; } }
+
+.page-sponsors header {
+  background-image: url("../images/bg/hero-alt-sponsors.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.page-schedule header {
+  background-image: url("../images/bg/hero-alt-speakers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
 
 .page-schedule main section article {
   zoom: 1;
@@ -2816,6 +2844,12 @@ footer {
         padding-bottom: 0;
         border-bottom: 0; } }
 
+.page-resources header {
+  background-image: url("../images/bg/hero-alt-resources.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
 .page-resources main a {
   -webkit-transition: background 0.25s;
   transition: background 0.25s;
@@ -2914,7 +2948,7 @@ footer {
   display: table;
   height: 100vh;
   width: 100%;
-  background-image: url("../images/bg/hero-c.jpg");
+  background-image: url("../images/bg/hero-alt-welcome.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -2924,19 +2958,23 @@ footer {
     .page-welcome header .hero .container-narrow {
       position: relative;
       color: white; }
-      .page-welcome header .hero .container-narrow .intro h1 {
-        margin: 0 0 1rem;
-        line-height: 1.4;
-        font-size: 2.8125rem; }
-      .page-welcome header .hero .container-narrow .intro p {
-        margin: 0;
-        color: #FAFAFA; }
-      .page-welcome header .hero .container-narrow .intro .button {
-        display: inline-block;
-        line-height: 1;
-        margin: 1.5rem 0 0;
-        padding: 1.375rem 1.625rem;
-        font-size: 1rem; }
+      .page-welcome header .hero .container-narrow .intro {
+        -webkit-text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+        -moz-text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.25); }
+        .page-welcome header .hero .container-narrow .intro h1 {
+          margin: 0 0 1rem;
+          line-height: 1.4;
+          font-size: 2.8125rem; }
+        .page-welcome header .hero .container-narrow .intro p {
+          margin: 0;
+          color: #FAFAFA; }
+        .page-welcome header .hero .container-narrow .intro .button {
+          display: inline-block;
+          line-height: 1;
+          margin: 1.5rem 0 0;
+          padding: 1.375rem 1.625rem;
+          font-size: 1rem; }
 
 .page-welcome section#photoCarousel {
   padding: 0; }
