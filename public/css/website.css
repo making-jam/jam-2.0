@@ -2938,6 +2938,32 @@ footer {
         padding: 1.375rem 1.625rem;
         font-size: 1rem; }
 
+.page-welcome section#photoCarousel {
+  padding: 0; }
+  .page-welcome section#photoCarousel .grid .grid-sizer {
+    width: 25%; }
+  .page-welcome section#photoCarousel .grid .grid-item {
+    width: 25%;
+    float: left;
+    height: 200px;
+    position: relative; }
+    .page-welcome section#photoCarousel .grid .grid-item a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .page-welcome section#photoCarousel .grid .grid-item.big-width {
+      height: 300px; }
+    .page-welcome section#photoCarousel .grid .grid-item.bigger-width {
+      height: 400px; }
+    .page-welcome section#photoCarousel .grid .grid-item.biggest-width {
+      height: 500px; }
+
 .page-welcome section#getInvolved .button {
   display: inline-block;
   line-height: 1;

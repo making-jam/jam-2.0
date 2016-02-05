@@ -2,6 +2,13 @@ $(document).ready(function () {
     // Do not remove this bit, as it fixes transition bugs.
     $('body').removeClass('preload');
 
+    $('.grid').masonry({
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        fitWidth: true,
+        itemSelector: '.grid-item'
+    });
+
     setTimeout(function() {
         var ignore = window.sessionStorage.getItem('notification') == 'ignore';
         if (!ignore) $('#notification').addClass('active');

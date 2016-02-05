@@ -38,7 +38,7 @@
 
                     <p>Saturday 3rd October 2015. Oval Space, London.</p>
 
-                    <a class="button black" href="/buy">JAM London 2016</a>
+                    <a class="button black" href="/speakers">Speakers</a>
                 </div>
                 <div class="col-sm-4 features is-hidden">
                     <ul>
@@ -108,6 +108,17 @@
             <a class="button black" href="/schedule">Find Out More</a>
         </section>
 
+        <section id="photoCarousel">
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                @foreach ($photos as $key => $data)
+                    <div class="grid-item {{$data["class"]}}">
+                        <a href="" style="background-image: url('/images/photos/{{$data["path"]}}');"></a>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+
         <section id="sponsors">
             <div class="container-small">
                 <h3>JAM wouldn't be possible without <br/>the generous help of our sponsors.</h3>
@@ -139,18 +150,18 @@
             </div>
         </section>
 
-        <section class="jam" id="getInvolved">
-            <div class="container">
-                <h3>Join us!</h3>
+        {{--<section class="jam" id="getInvolved">--}}
+            {{--<div class="container">--}}
+                {{--<h3>Join us!</h3>--}}
 
-                <a class="button white" href="/buy">Get Your Ticket for JAM London 2016</a>
+                {{--<a class="button white" href="/buy">Get Your Ticket for JAM London 2016</a>--}}
 
-                <small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download
-                        our PDF</a></small>
-            </div>
-        </section>
+                {{--<small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download--}}
+                        {{--our PDF</a></small>--}}
+            {{--</div>--}}
+        {{--</section>--}}
 
-        <section id="quote">
+        <section class="grey" id="quote">
             <div class="container">
                 <p>&ldquo;We believe a great product should be the <br> first focus of every startup.&rdquo;</p>
                 <a href="https://www.intercom.io/books/product-management" target="_blank">

@@ -8,7 +8,7 @@
         <li{!! $bodyClass == 'resources' ? ' class="active"' : '' !!}><a href="/resources">Resources</a></li>
     </ul>
 
-    <a class="button black" href="/buy">JAM London 2016</a>
+    <a class="button black" href="/speakers">Speakers</a>
 
     <div class="toggle-nav">
         <div class="close">
