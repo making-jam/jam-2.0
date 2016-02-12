@@ -2290,7 +2290,7 @@ h1, h2, h3, h4, h5, h6 {
 .margin-triple {
   margin: 3rem !important; }
 
-.text-center, .button.flat-grey, button.flat-grey, nav#navTop .toggle-nav, nav#navTop .logo strong, #notification .close, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
+.text-center, .button.flat-grey, button.flat-grey, nav#navTop .toggle-nav, nav#navTop .logo strong, #notification, #notification .close, #notification main, ul.sponsors li a, .tabs > li, section, footer .logo strong, .page-resources .resources-sign-up .close {
   text-align: center; }
 
 .text-right {
@@ -2948,7 +2948,7 @@ footer {
   display: table;
   height: 100vh;
   width: 100%;
-  background-image: url("../images/bg/hero-alt-welcome.jpg");
+  background-image: url("../images/bg/hero-c.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -2980,11 +2980,17 @@ footer {
   padding: 0; }
   .page-welcome section#photoCarousel .grid .grid-sizer {
     width: 25%; }
+    @media all and (max-width: 1024px) {
+      .page-welcome section#photoCarousel .grid .grid-sizer {
+        width: 50%; } }
   .page-welcome section#photoCarousel .grid .grid-item {
     width: 25%;
     float: left;
     height: 200px;
     position: relative; }
+    @media all and (max-width: 1024px) {
+      .page-welcome section#photoCarousel .grid .grid-item {
+        width: 50%; } }
     .page-welcome section#photoCarousel .grid .grid-item a {
       display: block;
       position: absolute;
@@ -2992,6 +2998,7 @@ footer {
       left: 0;
       width: 100%;
       height: 100%;
+      cursor: default;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat; }
