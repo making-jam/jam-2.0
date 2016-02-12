@@ -9,16 +9,6 @@ $(document).ready(function () {
         itemSelector: '.grid-item'
     });
 
-    //setTimeout(function() {
-    //    var ignore = window.sessionStorage.getItem('notification') == 'ignore';
-    //    if (!ignore) $('#notification').addClass('active');
-    //}, 500);
-    //
-    //$('#closeNotification').click(function() {
-    //    $('#notification').removeClass('active');
-    //    window.sessionStorage.setItem('notification', 'ignore');
-    //});
-
     $('.toggle-nav').click(function (e) {
         $('#navTop, #navTop .toggle-nav .close').toggleClass('active');
     });
@@ -58,9 +48,6 @@ $(document).ready(function () {
             contentType: 'application/json; charset=utf-8',
             error: function (err) {
                 $('#notification').attr('class', '').addClass('error active').html(err);
-
-                // @TODO remove after testing
-                console.error(err);
 
                 setTimeout(function () {
                     $('#notification').removeClass('active');
