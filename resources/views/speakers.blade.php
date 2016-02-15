@@ -5,9 +5,7 @@
         <div class="hero">
             <div class="container-narrow">
                 <h1>Speakers</h1>
-                <p>JAM 2015 was powered by 9 amazing speakers. No theory, no fluff, they’ve just shared their own story
-                    -
-                    and for this, we’re really grateful.</p>
+                <p>JAM 2015 was powered by 9 amazing speakers. No theory, no fluff – they just shared their story.</p>
             </div>
         </div>
     </header>

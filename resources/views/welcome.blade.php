@@ -57,13 +57,10 @@
     <main>
         <section>
             <div class="container-small">
-                <p>JAM 2015 was a real blast. 200 bright and friendly peeps from all walks of life turned up on a
-                    Saturday, and sticked to the end (despite the Rugby World Cup!) for an inspiring day, packed with
-                    new faces and exciting conversations. And if that wasn’t enough, we then all shared a drink or two
-                    with our new friends on the Oval Space terrace, where there was... a sunset. THAT was a great
-                    time</p>
+                <p>JAM 2015 was a real blast! More than 200 people rocked up for an awesome day. A big thank you to
+                    everyone who made it great!</p>
 
-                <a class="button black margin-top-base" href="/manifesto">Read our Story</a>
+                {{--<a class="button black margin-top-base" href="/manifesto">Read our Story</a>--}}
             </div>
         </section>
 
@@ -150,14 +147,14 @@
         </section>
 
         {{--<section class="jam" id="getInvolved">--}}
-            {{--<div class="container">--}}
-                {{--<h3>Join us!</h3>--}}
+        {{--<div class="container">--}}
+        {{--<h3>Join us!</h3>--}}
 
-                {{--<a class="button white" href="/buy">Get Your Ticket for JAM London 2016</a>--}}
+        {{--<a class="button white" href="/buy">Get Your Ticket for JAM London 2016</a>--}}
 
-                {{--<small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download--}}
-                        {{--our PDF</a></small>--}}
-            {{--</div>--}}
+        {{--<small><a target="_blank" href="/docs/convince-your-boss.pdf">Need Help Convincing Your Boss? Download--}}
+        {{--our PDF</a></small>--}}
+        {{--</div>--}}
         {{--</section>--}}
 
         <section class="grey" id="quote">
