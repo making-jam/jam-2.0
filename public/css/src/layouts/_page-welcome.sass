@@ -66,13 +66,21 @@
     .column
       float: left
 
+      &:first-of-type
+        .grid-item
+          margin-left: 20px
+
       .grid-item
+        margin: 0 20px 20px 0
         display: block
         height: 200px
         background:
           repeat: no-repeat
           position: center center
           size: cover
+
+        &:first-of-type
+          margin-top: 20px
 
         &.big-height
           height: 200px

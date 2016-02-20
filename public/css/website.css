@@ -3013,12 +3013,17 @@ footer {
       content: '4 .column.size-1of4'; } }
   .page-welcome section#photoCarousel .column {
     float: left; }
+    .page-welcome section#photoCarousel .column:first-of-type .grid-item {
+      margin-left: 20px; }
     .page-welcome section#photoCarousel .column .grid-item {
+      margin: 0 20px 20px 0;
       display: block;
       height: 200px;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover; }
+      .page-welcome section#photoCarousel .column .grid-item:first-of-type {
+        margin-top: 20px; }
       .page-welcome section#photoCarousel .column .grid-item.big-height {
         height: 200px; }
       .page-welcome section#photoCarousel .column .grid-item.bigger-height {
