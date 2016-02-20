@@ -1203,7 +1203,17 @@ dl {
     margin: 8rem auto;
     width: 100%;
     max-width: 37.5rem;
-    background: white; }
+    background: white;
+    position: relative; }
+    .modal-backdrop .modal .close {
+      cursor: pointer;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      padding: 0.5rem 0.875rem;
+      background: white;
+      line-height: 1;
+      font-size: 1.625rem; }
     .modal-backdrop .modal header,
     .modal-backdrop .modal main,
     .modal-backdrop .modal footer {
@@ -1218,9 +1228,11 @@ dl {
         position: absolute; }
       .modal-backdrop .modal header .heading {
         font-size: 1.5rem; }
-    .modal-backdrop .modal main {
-      border-top: 1px solid #FAFAFA;
-      border-bottom: 1px solid #FAFAFA; }
+    .modal-backdrop .modal main img {
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      max-width: 100%; }
     @media all and (max-width: 768px) {
       .modal-backdrop .modal {
         margin: 2rem auto; } }
@@ -2978,36 +2990,49 @@ footer {
 
 .page-welcome section#photoCarousel {
   padding: 0; }
-  .page-welcome section#photoCarousel .grid .grid-sizer {
-    width: 25%; }
-    @media all and (max-width: 1024px) {
-      .page-welcome section#photoCarousel .grid .grid-sizer {
-        width: 50%; } }
-  .page-welcome section#photoCarousel .grid .grid-item {
-    width: 25%;
-    float: left;
-    height: 200px;
-    position: relative; }
-    @media all and (max-width: 1024px) {
-      .page-welcome section#photoCarousel .grid .grid-item {
-        width: 50%; } }
-    .page-welcome section#photoCarousel .grid .grid-item a {
+  .page-welcome section#photoCarousel #grid {
+    zoom: 1; }
+    .page-welcome section#photoCarousel #grid:before, .page-welcome section#photoCarousel #grid:after {
+      content: "";
+      display: table; }
+    .page-welcome section#photoCarousel #grid:after {
+      clear: both; }
+  .page-welcome section#photoCarousel #grid[data-columns]::before {
+    content: '3 .column.size-1of3'; }
+  @media screen and (max-width: 480px) {
+    .page-welcome section#photoCarousel #grid[data-columns]::before {
+      content: '1 .column.size-1of1'; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .page-welcome section#photoCarousel #grid[data-columns]::before {
+      content: '2 .column.size-1of2'; } }
+  @media screen and (min-width: 769px) {
+    .page-welcome section#photoCarousel #grid[data-columns]::before {
+      content: '3 .column.size-1of3'; } }
+  @media screen and (min-width: 900px) {
+    .page-welcome section#photoCarousel #grid[data-columns]::before {
+      content: '4 .column.size-1of4'; } }
+  .page-welcome section#photoCarousel .column {
+    float: left; }
+    .page-welcome section#photoCarousel .column .grid-item {
       display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      cursor: default;
-      background-size: cover;
+      height: 200px;
+      background-repeat: no-repeat;
       background-position: center center;
-      background-repeat: no-repeat; }
-    .page-welcome section#photoCarousel .grid .grid-item.big-width {
-      height: 300px; }
-    .page-welcome section#photoCarousel .grid .grid-item.bigger-width {
-      height: 400px; }
-    .page-welcome section#photoCarousel .grid .grid-item.biggest-width {
-      height: 500px; }
+      background-size: cover; }
+      .page-welcome section#photoCarousel .column .grid-item.big-height {
+        height: 200px; }
+      .page-welcome section#photoCarousel .column .grid-item.bigger-height {
+        height: 300px; }
+      .page-welcome section#photoCarousel .column .grid-item.biggest-height {
+        height: 400px; }
+  .page-welcome section#photoCarousel .size-1of1 {
+    width: 100%; }
+  .page-welcome section#photoCarousel .size-1of2 {
+    width: 50%; }
+  .page-welcome section#photoCarousel .size-1of3 {
+    width: 33.333%; }
+  .page-welcome section#photoCarousel .size-1of4 {
+    width: 25%; }
 
 .page-welcome section#getInvolved .button {
   display: inline-block;

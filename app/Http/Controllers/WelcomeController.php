@@ -21,7 +21,7 @@ class WelcomeController extends Controller
     {
         $photos_src = File::files(public_path() . '/images/photos');
         $photos = [];
-        $classes = ['default', 'big-width', 'bigger-width', 'biggest-width', 'big-height', 'bigger-height', 'biggest-height'];
+        $classes = ['default', 'big-height', 'bigger-height', 'biggest-height'];
 
         foreach ($photos_src as $path) {
             $path_exploded = explode('/', $path);
@@ -35,6 +35,6 @@ class WelcomeController extends Controller
 
         shuffle($photos);
 
-        return array_slice($photos, 5);
+        return array_slice($photos, 2);
     }
 }

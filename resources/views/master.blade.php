@@ -48,7 +48,6 @@
 </head>
 <body class="preload page-{{$bodyClass}}">
 
-
 <div id="notification"></div>
 
 @include('nav')
@@ -57,6 +56,7 @@
 
 @include('footer')
 
+<script src="/js/masonry.js"></script>
 <script src="/js/website.js"></script>
 
 <script>

@@ -2,15 +2,33 @@ $(document).ready(function () {
     // Do not remove this bit, as it fixes transition bugs.
     $('body').removeClass('preload');
 
-    $('.grid').masonry({
-        columnWidth: '.grid-sizer',
-        percentPosition: true,
-        fitWidth: true,
-        itemSelector: '.grid-item'
-    });
-
     $('.toggle-nav').click(function (e) {
         $('#navTop, #navTop .toggle-nav .close').toggleClass('active');
+    });
+
+    function openPhoto(name) {
+        $('.modal-backdrop').removeClass('is-hidden');
+
+        var whereToPutTheImage = $('.modal-backdrop .modal main'),
+            html = '<img src="/images/photos/' + name + '" alt="Photo – ' + name + '">';
+
+        whereToPutTheImage.html(html);
+    }
+
+    $('.modal-backdrop, .close').click(function () {
+        $('.modal-backdrop').addClass('is-hidden');
+    });
+
+    $('.modal').click(function (e) {
+        e.stopPropagation();
+    });
+
+    $('.grid-item').click(function (e) {
+        e.preventDefault();
+
+        var image = $(this).data('image');
+
+        openPhoto(image);
     });
 
     var applyNavClass = function () {

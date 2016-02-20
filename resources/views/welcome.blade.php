@@ -28,6 +28,13 @@
             return t;
         }(document, "script", "twitter-wjs"));</script>
 
+    <div class="modal-backdrop is-hidden">
+        <div class="modal">
+            <div class="close">&times;</div>
+            <main></main>
+        </div>
+    </div>
+
     <header>
         <div class="hero">
             <div class="container-narrow">
@@ -105,12 +112,11 @@
         </section>
 
         <section id="photoCarousel">
-            <div class="grid">
-                <div class="grid-sizer"></div>
+            <div id="grid" data-columns>
+                {{--<div class="grid-sizer"></div>--}}
                 @foreach ($photos as $key => $data)
-                    <div class="grid-item {{$data["class"]}}">
-                        <a href="" style="background-image: url('/images/photos/{{$data["path"]}}');"></a>
-                    </div>
+                    <a class="grid-item {{$data["class"]}}" data-image="{{$data["path"]}}"
+                       style="background-image: url('/images/photos/{{$data["path"]}}');"></a>
                 @endforeach
             </div>
         </section>

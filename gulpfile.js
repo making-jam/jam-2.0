@@ -15,7 +15,6 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     gulp.src(['bower_components/jquery/dist/jquery.min.js',
         'bower_components/smooth-scroll.js/dist/js/smooth-scroll.min.js',
-        'bower_components/masonry/dist/masonry.pkgd.min.js',
         'public/js/src/*.js'])
         .pipe(concat('website.js'))
         .pipe(uglify())
